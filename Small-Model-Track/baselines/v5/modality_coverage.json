@@ -1,0 +1,51 @@
+{
+  "train": {
+    "n_meta": 2931,
+    "depth": {
+      "empty": 0,
+      "missing_dir": 0,
+      "ok": 2931,
+      "frames_mean": 29.300238826339132,
+      "frames_median": 24.0,
+      "frames_min": 1,
+      "frames_max": 236,
+      "empty_or_missing_rate": 0.0
+    },
+    "ir": {
+      "empty": 0,
+      "missing_dir": 0,
+      "ok": 2931,
+      "frames_mean": 29.300238826339132,
+      "frames_median": 24.0,
+      "frames_min": 1,
+      "frames_max": 236,
+      "empty_or_missing_rate": 0.0
+    },
+    "depth_empty_by_user": {},
+    "ir_empty_by_user": {},
+    "depth_empty_top_actions": {}
+  },
+  "test": {
+    "n_clips": 405,
+    "depth": {
+      "empty": 0,
+      "missing": 0,
+      "ok": 405,
+      "frames_mean": 22.691358024691358,
+      "frames_median": 20.0,
+      "frames_min": 2,
+      "frames_max": 101,
+      "empty_or_missing_rate": 0.0
+    },
+    "ir": {
+      "empty": 0,
+      "missing": 0,
+      "ok": 405,
+      "frames_mean": 22.691358024691358,
+      "frames_median": 20.0,
+      "frames_min": 2,
+      "frames_max": 101,
+      "empty_or_missing_rate": 0.0
+    }
+  }
+}

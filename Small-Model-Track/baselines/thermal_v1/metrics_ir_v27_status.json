@@ -1,0 +1,55 @@
+﻿{
+    "promote_gate":  {
+                         "disagree_vs_v7_max":  15,
+                         "nested_fixed_min":  0.75196,
+                         "mid":  "classic_aligned_mid"
+                     },
+    "strong_t24":  {
+                       "warmstart_stopped_best":  0.687,
+                       "mildaug_scratch_stopped_best":  0.6713,
+                       "strongb_final":  {
+                                             "verdict":  "MISS_\u003c\u003c0.69",
+                                             "early_stop_ep":  18,
+                                             "recipe":  "std_aug unfreeze@4 gamma1.5 lr1e-4 ep48 pat12",
+                                             "best_ep":  6,
+                                             "best":  0.663366
+                                         }
+                   },
+    "v27b_safe_fuse_classic_mid":  {
+                                       "best_near":  {
+                                                         "nested_fixed":  0.75011,
+                                                         "dis":  6,
+                                                         "delta":  -0.00185
+                                                     },
+                                       "v7_reproduce":  {
+                                                            "full":  0.753036,
+                                                            "nested_fixed":  0.751962
+                                                        },
+                                       "n_clear":  0
+                                   },
+    "csv":  null,
+    "keep_ir_v7":  true,
+    "best_public":  {
+                        "csv":  "submission_ir_v7.csv",
+                        "public":  0.69154,
+                        "note":  "ir_v26 public 0.67164 WORSE"
+                    },
+    "track_submission_restored_to_v7":  true,
+    "next_roi":  [
+                     "Keep ir_v7; no SAFE candidate",
+                     "GPU free for HOTC/LMT",
+                     "Do not large-disagree fuse"
+                 ],
+    "wrote_csv":  false,
+    "updated_at":  "2026-09-11 05:48:36 PT",
+    "outcome":  "KEEP_V7_STRONGB_AND_V28_TTA_MISS",
+    "v28_t24_tta":  {
+                        "s42_bf":  0.6891,
+                        "s42_base":  0.697,
+                        "details":  "metrics_ir_v28_status.json",
+                        "best_near_miss_nested":  0.75183,
+                        "n_clear_better":  0
+                    },
+    "tag":  "ir_v27_progress",
+    "public_submit":  null
+}

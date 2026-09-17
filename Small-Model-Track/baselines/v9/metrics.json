@@ -1,0 +1,217 @@
+{
+  "track": "v9c_method_blend",
+  "v8_baseline_oof": 0.5383347073371806,
+  "v8_baseline_holdout": 0.5564356435643565,
+  "use_tta": false,
+  "midfuse_seed2": "checkpoints_midfuse_s123",
+  "single_oof": {
+    "oof_midfuse": 0.5032976092333058,
+    "oof_midfuse2": 0.5008244023083265,
+    "oof_stgcn": 0.47444352844187965,
+    "oof_gru": 0.5008244023083265,
+    "oof_deepconv": 0.47444352844187965,
+    "oof_mf_avg": 0.5119538334707338
+  },
+  "single_holdout": {
+    "holdout_midfuse": 0.5366336633663367,
+    "holdout_midfuse2": 0.5227722772277228,
+    "holdout_stgcn": 0.4792079207920792,
+    "holdout_gru": 0.502970297029703,
+    "holdout_deepconv": 0.5148514851485149,
+    "holdout_mf_avg": 0.5425742574257426
+  },
+  "methods": {
+    "conf_v8_3": {
+      "oof_acc_nested": 0.5375103050288541,
+      "oof_acc_in_sample": 0.5387469084913438,
+      "holdout_acc": 0.5584158415841585,
+      "family": "conf_v8_3",
+      "branches": "conf_v8_3",
+      "params": {
+        "temp": 8.0
+      }
+    },
+    "pow_all5": {
+      "oof_acc_nested": 0.5478153338829349,
+      "oof_acc_in_sample": 0.5478153338829349,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow_all5",
+      "branches": "pow_all5",
+      "params": {
+        "p": 0.5
+      }
+    },
+    "eq_mfavg_st_gru": {
+      "oof_acc_nested": 0.5469909315746084,
+      "oof_acc_in_sample": 0.5469909315746084,
+      "holdout_acc": 0.5722772277227722,
+      "family": "eq_mfavg_st_gru",
+      "branches": "eq_mfavg_st_gru",
+      "params": {}
+    },
+    "conf_mfavg_st_gru": {
+      "oof_acc_nested": 0.5478153338829349,
+      "oof_acc_in_sample": 0.5478153338829349,
+      "holdout_acc": 0.5742574257425742,
+      "family": "conf_mfavg_st_gru",
+      "branches": "conf_mfavg_st_gru",
+      "params": {
+        "temp": 6.0
+      }
+    },
+    "pow_mf_mf2_st_gru": {
+      "oof_acc_nested": 0.5474031327287716,
+      "oof_acc_in_sample": 0.5474031327287716,
+      "holdout_acc": 0.5663366336633663,
+      "family": "pow_mf_mf2_st_gru",
+      "branches": "pow_mf_mf2_st_gru",
+      "params": {
+        "p": 0.0
+      }
+    },
+    "blend_ABD": {
+      "oof_acc_nested": 0.5486397361912614,
+      "oof_acc_in_sample": 0.5486397361912614,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "branches": [
+        "pow_all5",
+        "eq_mfavg_st_gru",
+        "pow_mf_mf2_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "eq_mfavg_st_gru",
+          "pow_mf_mf2_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "blend_ABC": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": 0.5453421269579555,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "branches": [
+        "pow_all5",
+        "eq_mfavg_st_gru",
+        "conf_mfavg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "eq_mfavg_st_gru",
+          "conf_mfavg_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "blend_AB": {
+      "oof_acc_nested": 0.542868920032976,
+      "oof_acc_in_sample": 0.542868920032976,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "branches": [
+        "pow_all5",
+        "eq_mfavg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "eq_mfavg_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "blend_AD": {
+      "oof_acc_nested": 0.546166529266282,
+      "oof_acc_in_sample": 0.546166529266282,
+      "holdout_acc": 0.5643564356435643,
+      "family": "method_blend",
+      "branches": [
+        "pow_all5",
+        "pow_mf_mf2_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "pow_mf_mf2_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "blend_BD": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": 0.5453421269579555,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "branches": [
+        "eq_mfavg_st_gru",
+        "pow_mf_mf2_st_gru"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru",
+          "pow_mf_mf2_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "blend_ABCD": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": 0.544517724649629,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "branches": [
+        "pow_all5",
+        "eq_mfavg_st_gru",
+        "conf_mfavg_st_gru",
+        "pow_mf_mf2_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "eq_mfavg_st_gru",
+          "conf_mfavg_st_gru",
+          "pow_mf_mf2_st_gru"
+        ],
+        "w": "equal"
+      }
+    }
+  },
+  "selected_method": "blend_ABD",
+  "selected_oof_acc_nested": 0.5486397361912614,
+  "selected_holdout_acc": 0.5663366336633663,
+  "delta_oof_vs_v8": 0.0103050288540808,
+  "delta_holdout_vs_v8": 0.009900990099009799,
+  "clear_win": true,
+  "overwrite_submission": true,
+  "submission_overwrote_track": true,
+  "ping_disk_saver": true,
+  "holdout_peek_not_used_for_selection": {
+    "best_holdout_method_peek": "conf_mfavg_st_gru",
+    "best_holdout_acc_peek": 0.5742574257425742,
+    "note": "NOT used for selection or overwrite decision"
+  },
+  "elapsed_sec": 9.658479928970337,
+  "finished_at_unix": 1788799784.7020662,
+  "protocol": "GroupKFold nested method OOF; equal method-blend; holdout last",
+  "submission_v9": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v9\\submission_v9.csv",
+  "win_criteria": "nested_OOF>=0.548 or holdout>=0.566",
+  "final_params": {
+    "conf_v8_3": {
+      "temp": 8.0
+    },
+    "pow_all5": {
+      "p": 0.5
+    },
+    "eq_mfavg_st_gru": {},
+    "conf_mfavg_st_gru": {
+      "temp": 6.0
+    },
+    "pow_mf_mf2_st_gru": {
+      "p": 0.0
+    }
+  }
+}

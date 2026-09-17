@@ -1,0 +1,98 @@
+{
+  "tag": "ir_v29b_error_driven_validated",
+  "updated_at": "2026-09-11 05:56:41 PT",
+  "outcome": "SAFE_WIN",
+  "keep_ir_v7": false,
+  "wrote_csv": true,
+  "csv": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v29b.csv",
+  "promoted_track": true,
+  "public_submit": null,
+  "rule": {
+    "pmax": 0.4,
+    "amin": 0.55,
+    "maxch": 15,
+    "T": 2.5,
+    "mid": "classic_aligned_mid"
+  },
+  "hold": {
+    "v7_full": 0.7530364372469636,
+    "v7_nested": 0.7519623092355898,
+    "full": 0.7550607287449392,
+    "nested_fixed": 0.75405874529429,
+    "nested_reselect": 0.75405874529429,
+    "disagree_vs_v7": 1,
+    "n_swapped": 3,
+    "folds": [
+      {
+        "leave": 8,
+        "n": 159,
+        "n_swap_te": 2,
+        "te_acc_rule": 0.7295597484276729,
+        "te_acc_v7": 0.7232704402515723,
+        "delta": 0.0062893081761006275
+      },
+      {
+        "leave": 9,
+        "n": 180,
+        "n_swap_te": 1,
+        "te_acc_rule": 0.7777777777777778,
+        "te_acc_v7": 0.7777777777777778,
+        "delta": 0.0
+      },
+      {
+        "leave": 24,
+        "n": 155,
+        "n_swap_te": 0,
+        "te_acc_rule": 0.7548387096774194,
+        "te_acc_v7": 0.7548387096774194,
+        "delta": 0.0
+      }
+    ],
+    "swap_details": [
+      {
+        "idx": 433,
+        "user": 8,
+        "y": 3,
+        "v7_pred": 3,
+        "sw_pred": 3,
+        "v7_ok": 1,
+        "sw_ok": 1,
+        "c9_conf": 0.11310572177171707,
+        "t24_conf": 0.6778624653816223
+      },
+      {
+        "idx": 139,
+        "user": 9,
+        "y": 20,
+        "v7_pred": 20,
+        "sw_pred": 20,
+        "v7_ok": 1,
+        "sw_ok": 1,
+        "c9_conf": 0.1833408623933792,
+        "t24_conf": 0.572304904460907
+      },
+      {
+        "idx": 435,
+        "user": 8,
+        "y": 3,
+        "v7_pred": 36,
+        "sw_pred": 3,
+        "v7_ok": 0,
+        "sw_ok": 1,
+        "c9_conf": 0.30285486578941345,
+        "t24_conf": 0.7068417072296143
+      }
+    ]
+  },
+  "test": {
+    "n_swapped": 2,
+    "disagree_vs_v7_preds": 2,
+    "file_dis_vs_v7": 2
+  },
+  "promote_gate": {
+    "nested_fixed_min": 0.75196,
+    "disagree_vs_v7_max": 15
+  },
+  "clears_gate": true,
+  "note": "No Kaggle submit from this script; CSV written for review."
+}

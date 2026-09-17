@@ -1,0 +1,306 @@
+{
+  "tag": "ir_v16_thermal_mid_cpu",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "best": {
+    "ir": "mv_top8",
+    "th": "th_v6_soft",
+    "mid": "mid_ir_v4",
+    "mode": "perT",
+    "full": 0.7591093117408907,
+    "cfg": {
+      "wa": 0.25,
+      "wb": 0.6666666666666666,
+      "wc": 0.08333333333333337,
+      "Ta": 2.5,
+      "Tb": 3.0,
+      "Tc": 3.0,
+      "acc": 0.7591093117408907,
+      "n": 494,
+      "mode": "perT"
+    },
+    "nested_fixed": 0.7584139221388156,
+    "nested_retune": null,
+    "disagree_vs_v7": 23,
+    "honest_nested": 0.7584139221388156,
+    "clears_gate": false,
+    "note": "Top-ranked perT nested_fixed is optimistic (cfg fit on full hold). Prefer best_honest_sameT for decisions."
+  },
+  "top10": [
+    {
+      "ir": "mv_top8",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_v4",
+      "mode": "perT",
+      "full": 0.7591093117408907,
+      "nested_fixed": 0.7584139221388156,
+      "nested_retune": null,
+      "disagree_vs_v7": 23,
+      "cfg": {
+        "wa": 0.25,
+        "wb": 0.6666666666666666,
+        "wc": 0.08333333333333337,
+        "Ta": 2.5,
+        "Tb": 3.0,
+        "Tc": 3.0,
+        "acc": 0.7591093117408907,
+        "n": 494,
+        "mode": "perT"
+      }
+    },
+    {
+      "ir": "mv_top8",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_11n",
+      "mode": "perT",
+      "full": 0.7591093117408907,
+      "nested_fixed": 0.7584139221388156,
+      "nested_retune": null,
+      "disagree_vs_v7": 23,
+      "cfg": {
+        "wa": 0.25,
+        "wb": 0.6666666666666666,
+        "wc": 0.08333333333333337,
+        "Ta": 2.5,
+        "Tb": 3.0,
+        "Tc": 3.0,
+        "acc": 0.7591093117408907,
+        "n": 494,
+        "mode": "perT"
+      }
+    },
+    {
+      "ir": "mv_top8",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7591093117408907,
+      "nested_fixed": 0.7584139221388156,
+      "nested_retune": 0.7467595410382993,
+      "disagree_vs_v7": 22,
+      "cfg": {
+        "wa": 0.3,
+        "wb": 0.6333333333333333,
+        "wc": 0.06666666666666665,
+        "T": 2.5,
+        "acc": 0.7591093117408907,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "mv_top8",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_11n",
+      "mode": "sameT",
+      "full": 0.7591093117408907,
+      "nested_fixed": 0.7584139221388156,
+      "nested_retune": 0.7467595410382993,
+      "disagree_vs_v7": 22,
+      "cfg": {
+        "wa": 0.3,
+        "wb": 0.6333333333333333,
+        "wc": 0.06666666666666665,
+        "T": 2.5,
+        "acc": 0.7591093117408907,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_v4",
+      "mode": "perT",
+      "full": 0.757085020242915,
+      "nested_fixed": 0.7558283176664187,
+      "nested_retune": null,
+      "disagree_vs_v7": 31,
+      "cfg": {
+        "wa": 0.6666666666666666,
+        "wb": 0.25,
+        "wc": 0.08333333333333337,
+        "Ta": 2.5,
+        "Tb": 2.0,
+        "Tc": 2.0,
+        "acc": 0.757085020242915,
+        "n": 494,
+        "mode": "perT"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_11n",
+      "mode": "perT",
+      "full": 0.757085020242915,
+      "nested_fixed": 0.7558283176664187,
+      "nested_retune": null,
+      "disagree_vs_v7": 31,
+      "cfg": {
+        "wa": 0.6666666666666666,
+        "wb": 0.25,
+        "wc": 0.08333333333333337,
+        "Ta": 2.5,
+        "Tb": 2.0,
+        "Tc": 2.0,
+        "acc": 0.757085020242915,
+        "n": 494,
+        "mode": "perT"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v3_ens_aligned",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.7536777800320101,
+      "nested_retune": 0.7457271026351976,
+      "disagree_vs_v7": 32,
+      "cfg": {
+        "wa": 0.7,
+        "wb": 0.16666666666666669,
+        "wc": 0.13333333333333336,
+        "T": 2.75,
+        "acc": 0.7550607287449392,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v3_ens_aligned",
+      "mid": "mid_ir_11n",
+      "mode": "sameT",
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.7536777800320101,
+      "nested_retune": 0.7457271026351976,
+      "disagree_vs_v7": 32,
+      "cfg": {
+        "wa": 0.7,
+        "wb": 0.16666666666666669,
+        "wc": 0.13333333333333336,
+        "T": 2.75,
+        "acc": 0.7550607287449392,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_v4",
+      "mode": "geom",
+      "full": 0.757085020242915,
+      "nested_fixed": 0.7439834539347624,
+      "nested_retune": null,
+      "disagree_vs_v7": 30,
+      "cfg": {
+        "wa": 0.5833333333333333,
+        "wb": 0.2916666666666667,
+        "wc": 0.12500000000000006,
+        "T": 1.0,
+        "acc": 0.757085020242915,
+        "n": 494,
+        "mode": "geom"
+      }
+    },
+    {
+      "ir": "mv_top6",
+      "th": "th_v6_soft",
+      "mid": "mid_ir_11n",
+      "mode": "geom",
+      "full": 0.757085020242915,
+      "nested_fixed": 0.7439834539347624,
+      "nested_retune": null,
+      "disagree_vs_v7": 30,
+      "cfg": {
+        "wa": 0.5833333333333333,
+        "wb": 0.2916666666666667,
+        "wc": 0.12500000000000006,
+        "T": 1.0,
+        "acc": 0.757085020242915,
+        "n": 494,
+        "mode": "geom"
+      }
+    }
+  ],
+  "inventory": {
+    "thermal_ckpts": {
+      "v1": "checkpoints/thermal_yolo_r2p1d18",
+      "v2_trio": "checkpoints/thermal_yolo_r2p1d18_v2 (v1+seed123+seed7) \u2014 used by ir_v7 as hold_thermal_v6",
+      "v3": "checkpoints/thermal_yolo_r2p1d18_v3 (pool seeds + alldata test)"
+    },
+    "thermal_solo_hold_approx": {
+      "v2_trio_ens": 0.6032,
+      "v3_best_pool_seed2024": 0.5813,
+      "midfuse_blend_v2": 0.664,
+      "midfuse_blend_v3_v2trio": 0.6741
+    },
+    "ir_pools": {
+      "classic9_base": 0.697029702970297,
+      "classic_top6_base": 0.699009900990099,
+      "classic9_selTTA": 0.7089108910891089,
+      "classic_acc_w_base": 0.695049504950495,
+      "mv_top6": 0.7108910891089109,
+      "mv_top8": 0.7029702970297029,
+      "mv_all": 0.699009900990099,
+      "classic9_plus_v15": 0.7069306930693069,
+      "mv8_plus_v15": 0.7069306930693069
+    },
+    "midfuse_sources": [
+      "mid_ir_v4",
+      "mid_ir_11n"
+    ],
+    "gpu_policy": "CPU-only; LMT holds 3060 for sequence-iterative graft"
+  },
+  "wrote_csv": false,
+  "csv": null,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "next_roi": [
+    "Thermal/Mid reweight + existing ens variants did not clear +0.01 nested gate",
+    "Aligned v3 thermal ens did not beat v2_trio in top ranks \u2014 train 1-2 stronger Thermal seeds when GPU free (YOLO crop cache ready)",
+    "Best cfg leans more Thermal/Mid than v7 \u2014 thermal quality is the bottleneck, not IR weight headroom",
+    "Do not fight LMT for GPU; wait for nvidia-smi free / parent ping"
+  ],
+  "elapsed_sec": 71.4,
+  "n_combos_scored": 232,
+  "best_honest_sameT": {
+    "ir": "mv_top8",
+    "th": "th_v6_soft",
+    "mid": "mid_ir_v4",
+    "mode": "sameT",
+    "full": 0.7591093117408907,
+    "nested_fixed": 0.7584139221388156,
+    "nested_retune": 0.7467595410382993,
+    "honest_nested": 0.7467595410382993,
+    "disagree_vs_v7": 22,
+    "clears_gate": false,
+    "cfg": {
+      "wa": 0.3,
+      "wb": 0.6333333333333333,
+      "wc": 0.06666666666666665,
+      "T": 2.5,
+      "mode": "sameT"
+    }
+  },
+  "delta_vs_gate": {
+    "optimistic_best_full": -0.003927125506072882,
+    "honest_nested_vs_gate": -0.016276896208664238
+  },
+  "gpu_status_at_finish": "LMT still on 3060 (pid 33940); no GPU train started"
+}

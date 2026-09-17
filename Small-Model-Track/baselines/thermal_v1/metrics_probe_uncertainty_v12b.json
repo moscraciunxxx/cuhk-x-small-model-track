@@ -1,0 +1,15 @@
+{
+  "tag": "probe_uncertainty_v12b",
+  "best_hold": {
+    "signal": "agree",
+    "thr": 0.4,
+    "aux": "th",
+    "w": 0.3,
+    "n_low": 39,
+    "acc": 0.7489878542510121
+  },
+  "beat_v7_count": 0,
+  "nested": [],
+  "any_clear": false,
+  "elapsed_s": 2.6432018280029297
+}

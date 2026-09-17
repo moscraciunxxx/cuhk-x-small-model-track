@@ -1,0 +1,96 @@
+{
+  "tag": "ir_v30_thermal_confgate",
+  "updated_at": "2026-09-11 21:36:28 PT",
+  "best_public": {
+    "csv": "submission_ir_v29b.csv",
+    "public": 0.70149
+  },
+  "outcome": "SAFE_WIN",
+  "wrote_csv": true,
+  "csv": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v30.csv",
+  "promoted_track": true,
+  "rule": {
+    "ir": {
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 15
+    },
+    "thermal": {
+      "Tconf": 1.25,
+      "pmax": 0.25,
+      "amin": 0.3,
+      "maxch": 20,
+      "min_margin": 0.0,
+      "seed": 3141,
+      "base": "th_v6_v2trio"
+    },
+    "mid": "classic_aligned_mid",
+    "cfg": {
+      "wa": 0.56,
+      "wb": 0.35,
+      "wc": 0.09,
+      "T": 2.5
+    }
+  },
+  "hold": {
+    "v7_full": 0.7530364372469636,
+    "v7_nested": 0.7519623092355898,
+    "v29b_full": 0.7550607287449392,
+    "v29b_nested": 0.75405874529429,
+    "v29b_reselect": 0.75405874529429,
+    "full": 0.757085020242915,
+    "nested_fixed": 0.7562092829286987,
+    "nested_reselect": 0.7562092829286987,
+    "disagree_vs_v7": 2,
+    "disagree_vs_v29b": 1,
+    "n_swap_ir": 3,
+    "n_swap_th": 12,
+    "folds": [
+      {
+        "leave": 8,
+        "n": 159,
+        "n_swap_ir": 2,
+        "n_swap_th": 4,
+        "te_acc_v30": 0.7295597484276729,
+        "te_acc_v29b_global": 0.7295597484276729,
+        "te_acc_v29b_reselect": 0.7295597484276729,
+        "delta_vs_v29b_reselect": 0.0
+      },
+      {
+        "leave": 9,
+        "n": 180,
+        "n_swap_ir": 1,
+        "n_swap_th": 5,
+        "te_acc_v30": 0.7777777777777778,
+        "te_acc_v29b_global": 0.7777777777777778,
+        "te_acc_v29b_reselect": 0.7777777777777778,
+        "delta_vs_v29b_reselect": 0.0
+      },
+      {
+        "leave": 24,
+        "n": 155,
+        "n_swap_ir": 0,
+        "n_swap_th": 3,
+        "te_acc_v30": 0.7612903225806451,
+        "te_acc_v29b_global": 0.7548387096774194,
+        "te_acc_v29b_reselect": 0.7548387096774194,
+        "delta_vs_v29b_reselect": 0.006451612903225712
+      }
+    ],
+    "thermal_solo_s3141": 0.6150793650793651
+  },
+  "test": {
+    "n_swap_ir": 2,
+    "n_swap_th": 20,
+    "disagree_vs_v7": 3,
+    "disagree_vs_v29b": 1,
+    "file_dis_vs_v29b": 1
+  },
+  "promote_gate": {
+    "nested_min_strict_gt": 0.75405874529429,
+    "disagree_max": 15
+  },
+  "clears_gate": true,
+  "deploy_pack_mb": 66.09796333312988,
+  "note": "Writer entry write_ir_v30_safe.main; kaggle submit is a separate step after local gate."
+}

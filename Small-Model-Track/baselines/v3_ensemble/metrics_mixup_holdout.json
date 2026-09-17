@@ -1,0 +1,6 @@
+{
+  "holdout_best": 0.5108910891089109,
+  "ckpt": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v3_ensemble\\checkpoints_mixup\\best_holdout.pt",
+  "mixup": 0.2,
+  "epochs": 60
+}

@@ -1,0 +1,49 @@
+{
+  "ir_ens_hold": 0.6871287128712872,
+  "members": {
+    "pool_seed123": 0.6613861386138614,
+    "pool_seed42": 0.6752475247524753,
+    "pool_seed7": 0.6633663366336634
+  },
+  "ir_mid": {
+    "w": 0.7250000000000001,
+    "T": 2.5,
+    "acc": 0.7145748987854251,
+    "n": 494
+  },
+  "triple": {
+    "wa": 0.5,
+    "wb": 0.2,
+    "wc": 0.3,
+    "T": 2.5,
+    "acc": 0.7307692307692307,
+    "n": 494
+  },
+  "th_mid": {
+    "w": 0.625,
+    "T": 3.0,
+    "acc": 0.6740890688259109,
+    "n": 494
+  },
+  "ir_th": {
+    "w": 0.47500000000000003,
+    "T": 3.0,
+    "acc": 0.7186234817813765,
+    "n": 494
+  },
+  "best_name": "triple",
+  "best_acc": 0.7307692307692307,
+  "best_cfg": {
+    "wa": 0.5,
+    "wb": 0.2,
+    "wc": 0.3,
+    "T": 2.5,
+    "acc": 0.7307692307692307,
+    "n": 494
+  },
+  "v3_blend": 0.6740890688259109,
+  "delta": 0.05668016194331982,
+  "submission_inspect": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v4.csv",
+  "submission_v4": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_thermal_mid_v4.csv",
+  "mid_src": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\cache\\ir_yolo_v4\\midfuse_aligned_train_logits.npy"
+}

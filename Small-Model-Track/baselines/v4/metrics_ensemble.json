@@ -1,0 +1,32 @@
+{
+  "bone_metrics": {
+    "oof_accuracy": 0.4957352439440464,
+    "fold_accs": [
+      0.4470774091627172,
+      0.5542635658914729,
+      0.5411089866156787,
+      0.5209302325581395,
+      0.43159609120521175
+    ],
+    "mean_fold": 0.498995257086644,
+    "holdout_acc": 0.497029702970297
+  },
+  "bags": [
+    "v2_folds",
+    "bone_folds",
+    "bone_all",
+    "seed_bag"
+  ],
+  "combos": [
+    "v2folds_seeds",
+    "v2folds_bonefolds",
+    "v4_triple_bag",
+    "v2folds_boneall",
+    "v4_full_mix"
+  ],
+  "primary": "v4_full_mix",
+  "agreement_vs_v3": 0.8074074074074075,
+  "agreement_vs_v2_single": 0.7135802469135802,
+  "baseline_holdout_v2": 0.5366336633663367,
+  "baseline_oof_v3": 0.5015
+}

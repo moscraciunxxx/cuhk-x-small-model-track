@@ -1,0 +1,47 @@
+﻿{
+    "tag":  "ir_v26_soft_c9_pa_ens4_csv",
+    "outcome":  "WIN",
+    "keep_ir_v7":  false,
+    "wrote_csv":  true,
+    "csv":  "submission_ir_v26.csv",
+    "promoted_track":  "D:\\CUHK-X\\Small-Model-Track\\submission.csv",
+    "gate":  {
+                 "hold_min":  0.758,
+                 "nested_min":  0.758,
+                 "min_disagree":  20
+             },
+    "best_public":  {
+                        "csv":  "submission_ir_v7.csv",
+                        "public":  0.69154
+                    },
+    "method":  "soft_mix(classic9, phaseA_42_888_2024, T=1.5, a=0.6) + th_v6 + mid_ens4_bonetcn(mean bone_tcn+s123+s7+v2b); nested_stacked cfg",
+    "metrics":  {
+                    "full":  0.7611336032388664,
+                    "honest_nested":  0.7598848087283875,
+                    "disagree_hold_vs_v7":  53,
+                    "disagree_test_vs_v7":  53,
+                    "cfg":  {
+                                "wa":  0.75,
+                                "wb":  0.109375,
+                                "wc":  0.140625,
+                                "T":  2.5
+                            },
+                    "mid":  "ens4_bonetcn",
+                    "empty_fallback":  0
+                },
+    "kaggle_note":  "Clear win vs gate 0.758: honest_nested=0.75988 full=0.7611 disagree_test_vs_v7=53. Submit submission_ir_v26.csv (soft classic9+phaseA T1.5 a0.6 + th_v6 + mid ens4_bonetcn). Beat public ir_v7 0.69154.",
+    "next_roi":  [
+                     "Kaggle submit submission_ir_v26.csv (kaggle CLI not installed on MosCraciunXXX)",
+                     "Strong T24 s42 still training (best~0.679 \u003c prior 0.697); if needed try from-scratch strong recipe without warm-start",
+                     "Optional: seed888 strong only if s42-class solo hits \u003e=0.71"
+                 ],
+    "updated_at":  "2026-09-11 03:58:41 PT",
+    "strong_t24":  {
+                       "ckpt_dir":  "checkpoints/ir_yolo_r2p1d18_focal_ft_t24_strong",
+                       "seed":  42,
+                       "best_so_far":  0.67920792079207926,
+                       "prior_s42":  0.697029702970297,
+                       "note":  "warm-start strong recipe; recovering after unfreeze but still under prior 0.697; patience=12",
+                       "status":  "TRAINING"
+                   }
+}

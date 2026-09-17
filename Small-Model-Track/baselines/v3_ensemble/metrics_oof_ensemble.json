@@ -1,0 +1,78 @@
+{
+  "oof_accuracy": 0.5015353121801432,
+  "mean_fold_oof": 0.5050853925069481,
+  "std_fold_oof": 0.05826910368539711,
+  "folds": [
+    {
+      "fold": 0,
+      "ckpt": "..\\skeleton_imu_v2\\checkpoints\\best_fold0.pt",
+      "oof_acc": 0.4549763033175355,
+      "ckpt_val_acc": 0.4549763033175355,
+      "n_val": 633,
+      "val_users": [
+        4,
+        6,
+        8,
+        21
+      ]
+    },
+    {
+      "fold": 1,
+      "ckpt": "..\\skeleton_imu_v2\\checkpoints\\best_fold1.pt",
+      "oof_acc": 0.5717054263565892,
+      "ckpt_val_acc": 0.5717054263565892,
+      "n_val": 516,
+      "val_users": [
+        17,
+        22,
+        24
+      ]
+    },
+    {
+      "fold": 2,
+      "ckpt": "..\\skeleton_imu_v2\\checkpoints\\best_fold2.pt",
+      "oof_acc": 0.5468451242829828,
+      "ckpt_val_acc": 0.5468451242829828,
+      "n_val": 523,
+      "val_users": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "fold": 3,
+      "ckpt": "..\\skeleton_imu_v2\\checkpoints\\best_fold3.pt",
+      "oof_acc": 0.5333333333333333,
+      "ckpt_val_acc": 0.5333333333333333,
+      "n_val": 645,
+      "val_users": [
+        2,
+        3,
+        16,
+        23
+      ]
+    },
+    {
+      "fold": 4,
+      "ckpt": "..\\skeleton_imu_v2\\checkpoints\\best_fold4.pt",
+      "oof_acc": 0.4185667752442997,
+      "ckpt_val_acc": 0.4185667752442997,
+      "n_val": 614,
+      "val_users": [
+        1,
+        5,
+        7,
+        9
+      ]
+    }
+  ],
+  "n_ensemble_models": 5,
+  "ckpt_dir": "..\\skeleton_imu_v2\\checkpoints",
+  "submission": "submission_v3_ensemble.csv",
+  "agreement_vs_single_v2": 0.6790123456790124,
+  "v2_cv_mean": 0.5050853925069481,
+  "v2_cv_std": 0.05826910368539711,
+  "v2_holdout": 0.5366336633663367,
+  "note": "OOF = softmax preds from each fold model on its GroupKFold val users; test = mean of 5 fold softmaxes"
+}

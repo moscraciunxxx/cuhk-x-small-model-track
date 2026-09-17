@@ -1,0 +1,229 @@
+{
+  "track": "CUHK-X Small Model Track v4",
+  "finished_at_pt": "2026-09-07 06:52:35 PT",
+  "baselines": {
+    "v2_holdout": 0.5366336633663367,
+    "v2_cv": 0.5050853925069481,
+    "v3_oof": 0.5015
+  },
+  "bone_midfuse": {
+    "cv_mean": 0.498995257086644,
+    "cv_std": 0.050094721910577636,
+    "holdout": 0.497029702970297,
+    "oof": 0.4957352439440464,
+    "n_params": 2128232
+  },
+  "triple_holdout": null,
+  "seed_bag": {
+    "holdout_probe_mean": 0.5023102310231023,
+    "holdout_per_seed": [
+      0.49306930693069306,
+      0.48316831683168315,
+      0.5306930693069307
+    ],
+    "full_monitor_mean": 0.9749174917491749,
+    "seeds": [
+      42,
+      123,
+      7
+    ]
+  },
+  "gated_thermal": {
+    "holdout_gated_thermal": 0.5287128712871287,
+    "holdout_midfuse_baseline": 0.5366336633663367,
+    "beats_midfuse": false,
+    "beats_v2_0537": false,
+    "history": [
+      {
+        "epoch": 1,
+        "train_acc": 0.971558120362737,
+        "val_acc": 0.5069306930693069,
+        "train_loss": 0.5200969973872342,
+        "val_loss": 2.4046428557669763
+      },
+      {
+        "epoch": 2,
+        "train_acc": 0.9748557295960428,
+        "val_acc": 0.5108910891089109,
+        "train_loss": 0.5156834470469011,
+        "val_loss": 2.3667721377740993
+      },
+      {
+        "epoch": 3,
+        "train_acc": 0.9748557295960428,
+        "val_acc": 0.5128712871287129,
+        "train_loss": 0.5148400397263375,
+        "val_loss": 2.374440592586404
+      },
+      {
+        "epoch": 4,
+        "train_acc": 0.97320692497939,
+        "val_acc": 0.5108910891089109,
+        "train_loss": 0.5149430896463417,
+        "val_loss": 2.3703406912265437
+      },
+      {
+        "epoch": 5,
+        "train_acc": 0.9740313272877164,
+        "val_acc": 0.5108910891089109,
+        "train_loss": 0.5137672997267897,
+        "val_loss": 2.3973655608620974
+      },
+      {
+        "epoch": 6,
+        "train_acc": 0.9727947238252267,
+        "val_acc": 0.5128712871287129,
+        "train_loss": 0.5129365910210102,
+        "val_loss": 2.3489751154833503
+      },
+      {
+        "epoch": 7,
+        "train_acc": 0.9744435284418796,
+        "val_acc": 0.5089108910891089,
+        "train_loss": 0.5131302812034594,
+        "val_loss": 2.3646196544760523
+      },
+      {
+        "epoch": 8,
+        "train_acc": 0.9736191261335532,
+        "val_acc": 0.5128712871287129,
+        "train_loss": 0.5127177857114378,
+        "val_loss": 2.369926414159265
+      },
+      {
+        "epoch": 9,
+        "train_acc": 0.9760923330585326,
+        "val_acc": 0.502970297029703,
+        "train_loss": 0.5117621670453291,
+        "val_loss": 2.3608191884390197
+      },
+      {
+        "epoch": 10,
+        "train_acc": 0.9744435284418796,
+        "val_acc": 0.5069306930693069,
+        "train_loss": 0.5113443879430587,
+        "val_loss": 2.376502777090167
+      },
+      {
+        "epoch": 11,
+        "train_acc": 0.9756801319043693,
+        "val_acc": 0.5089108910891089,
+        "train_loss": 0.5108468905029863,
+        "val_loss": 2.360229492659616
+      },
+      {
+        "epoch": 12,
+        "train_acc": 0.9769167353668591,
+        "val_acc": 0.5168316831683168,
+        "train_loss": 0.5086515101144261,
+        "val_loss": 2.3599949725783698
+      },
+      {
+        "epoch": 13,
+        "train_acc": 0.9756801319043693,
+        "val_acc": 0.5148514851485149,
+        "train_loss": 0.5086629294897049,
+        "val_loss": 2.3519095090356203
+      },
+      {
+        "epoch": 14,
+        "train_acc": 0.9756801319043693,
+        "val_acc": 0.5207920792079208,
+        "train_loss": 0.508306516268385,
+        "val_loss": 2.328385601421394
+      },
+      {
+        "epoch": 15,
+        "train_acc": 0.9798021434460017,
+        "val_acc": 0.502970297029703,
+        "train_loss": 0.5069771006347125,
+        "val_loss": 2.400894484661593
+      },
+      {
+        "epoch": 16,
+        "train_acc": 0.9789777411376752,
+        "val_acc": 0.5287128712871287,
+        "train_loss": 0.5029465102107684,
+        "val_loss": 2.3437564918310336
+      },
+      {
+        "epoch": 17,
+        "train_acc": 0.9781533388293487,
+        "val_acc": 0.5128712871287129,
+        "train_loss": 0.5036943939139011,
+        "val_loss": 2.3595887795533286
+      },
+      {
+        "epoch": 18,
+        "train_acc": 0.9789777411376752,
+        "val_acc": 0.5108910891089109,
+        "train_loss": 0.5037186938627436,
+        "val_loss": 2.38558352914187
+      },
+      {
+        "epoch": 19,
+        "train_acc": 0.9835119538334708,
+        "val_acc": 0.5168316831683168,
+        "train_loss": 0.5000467363803326,
+        "val_loss": 2.3451007894950338
+      },
+      {
+        "epoch": 20,
+        "train_acc": 0.983924154987634,
+        "val_acc": 0.5108910891089109,
+        "train_loss": 0.497816033606085,
+        "val_loss": 2.3682037473905204
+      }
+    ],
+    "elapsed_sec": 215.96187257766724,
+    "ckpt": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v4\\checkpoints_thermal\\best_gated_thermal.pt",
+    "n_params": 110729
+  },
+  "ensemble": {
+    "bone_metrics": {
+      "oof_accuracy": 0.4957352439440464,
+      "fold_accs": [
+        0.4470774091627172,
+        0.5542635658914729,
+        0.5411089866156787,
+        0.5209302325581395,
+        0.43159609120521175
+      ],
+      "mean_fold": 0.498995257086644,
+      "holdout_acc": 0.497029702970297
+    },
+    "bags": [
+      "v2_folds",
+      "bone_folds",
+      "bone_all",
+      "seed_bag"
+    ],
+    "combos": [
+      "v2folds_seeds",
+      "v2folds_bonefolds",
+      "v4_triple_bag",
+      "v2folds_boneall",
+      "v4_full_mix"
+    ],
+    "primary": "v4_full_mix",
+    "agreement_vs_v3": 0.8074074074074075,
+    "agreement_vs_v2_single": 0.7135802469135802,
+    "baseline_holdout_v2": 0.5366336633663367,
+    "baseline_oof_v3": 0.5015
+  },
+  "holdout_best_observed": 0.5287128712871287,
+  "beats_v2_holdout_0537": false,
+  "beats": [],
+  "fails": [
+    "bone holdout 0.4970 vs 0.5366",
+    "bone CV 0.4990 vs v2 CV 0.505",
+    "bone OOF 0.4957 vs v3 OOF 0.5015",
+    "thermal 0.5287 vs midfuse 0.5366",
+    "seed-bag holdout-mean 0.5023"
+  ],
+  "primary_submission": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v4\\submission_v4_best.csv",
+  "recommendation": "Do NOT ping Disk Saver. No holdout >0.537. Keep v3_ensemble submission. Optional diversity: submission_v2folds_seeds.csv (skip bone).",
+  "note_seed7_holdout": 0.5306930693069307,
+  "note_ensemble_mb_v2folds_plus_seeds": "~64MB",
+  "do_not_ping_disk_saver": true
+}

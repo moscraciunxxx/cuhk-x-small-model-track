@@ -1,0 +1,306 @@
+{
+  "tag": "ir_v10",
+  "primary": "submission_ir_v10.csv",
+  "method": "sameT soft-blend recipe=top3_diverse: ['all9_base@v7', 'all9_half@local', 'all9_acc_w_base@v7']",
+  "holdout_acc": 0.7530364372469636,
+  "nested_fixed": 0.7519623092355898,
+  "nested_v7": 0.7519623092355898,
+  "recipe": {
+    "name": "top3_diverse",
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898,
+    "members": [
+      {
+        "ens": "all9_base",
+        "cfg": {
+          "wa": 0.56,
+          "wb": 0.35,
+          "wc": 0.09,
+          "T": 2.5
+        },
+        "w": 0.3333333333333333
+      },
+      {
+        "ens": "all9_half",
+        "cfg": {
+          "wa": 0.54,
+          "wb": 0.35,
+          "wc": 0.10999999999999999,
+          "T": 2.75,
+          "acc": 0.7530364372469636,
+          "n": 494,
+          "mode": "sameT"
+        },
+        "w": 0.3333333333333333
+      },
+      {
+        "ens": "all9_acc_w_base",
+        "cfg": {
+          "wa": 0.56,
+          "wb": 0.35,
+          "wc": 0.09,
+          "T": 2.5
+        },
+        "w": 0.3333333333333333
+      }
+    ],
+    "labels": [
+      "all9_base@v7",
+      "all9_half@local",
+      "all9_acc_w_base@v7"
+    ]
+  },
+  "all_recipes": [
+    {
+      "name": "top3_diverse",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "members": [
+        {
+          "ens": "all9_base",
+          "cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "T": 2.5
+          },
+          "w": 0.3333333333333333
+        },
+        {
+          "ens": "all9_half",
+          "cfg": {
+            "wa": 0.54,
+            "wb": 0.35,
+            "wc": 0.10999999999999999,
+            "T": 2.75,
+            "acc": 0.7530364372469636,
+            "n": 494,
+            "mode": "sameT"
+          },
+          "w": 0.3333333333333333
+        },
+        {
+          "ens": "all9_acc_w_base",
+          "cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "T": 2.5
+          },
+          "w": 0.3333333333333333
+        }
+      ],
+      "labels": [
+        "all9_base@v7",
+        "all9_half@local",
+        "all9_acc_w_base@v7"
+      ]
+    },
+    {
+      "name": "v7_half_accw",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "members": [
+        {
+          "ens": "all9_base",
+          "cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "T": 2.5
+          },
+          "w": 0.3333333333333333
+        },
+        {
+          "ens": "all9_half",
+          "cfg": {
+            "wa": 0.54,
+            "wb": 0.35,
+            "wc": 0.10999999999999999,
+            "T": 2.75,
+            "acc": 0.7530364372469636,
+            "n": 494,
+            "mode": "sameT"
+          },
+          "w": 0.3333333333333333
+        },
+        {
+          "ens": "all9_acc_w_base",
+          "cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "T": 2.5
+          },
+          "w": 0.3333333333333333
+        }
+      ],
+      "labels": [
+        "all9_base@v7",
+        "all9_half@local",
+        "all9_acc_w_base@v7"
+      ]
+    },
+    {
+      "name": "v7_60_best40",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "members": [
+        {
+          "ens": "all9_base",
+          "cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "T": 2.5
+          },
+          "w": 0.6
+        },
+        {
+          "ens": "all9_half",
+          "cfg": {
+            "wa": 0.54,
+            "wb": 0.35,
+            "wc": 0.10999999999999999,
+            "T": 2.75,
+            "acc": 0.7530364372469636,
+            "n": 494,
+            "mode": "sameT"
+          },
+          "w": 0.4
+        }
+      ],
+      "labels": [
+        "all9_base@v7",
+        "all9_half@local"
+      ]
+    },
+    {
+      "name": "half_alone",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "members": [
+        {
+          "ens": "all9_half",
+          "cfg": {
+            "wa": 0.54,
+            "wb": 0.35,
+            "wc": 0.10999999999999999,
+            "T": 2.75,
+            "acc": 0.7530364372469636,
+            "n": 494,
+            "mode": "sameT"
+          },
+          "w": 1.0
+        }
+      ],
+      "labels": [
+        "all9_half@local"
+      ]
+    }
+  ],
+  "near_v7_candidates": [
+    {
+      "label": "all9_base@v7",
+      "ens": "all9_base",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "dist": 0.0,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35,
+        "wc": 0.09,
+        "T": 2.5
+      }
+    },
+    {
+      "label": "all9_half@local",
+      "ens": "all9_half",
+      "full": 0.7530364372469636,
+      "nested": 0.7519623092355898,
+      "dist": 0.065,
+      "cfg": {
+        "wa": 0.54,
+        "wb": 0.35,
+        "wc": 0.10999999999999999,
+        "T": 2.75,
+        "acc": 0.7530364372469636,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "label": "all9_acc_w_base@v7",
+      "ens": "all9_acc_w_base",
+      "full": 0.7510121457489879,
+      "nested": 0.7501104573837379,
+      "dist": 0.0,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35,
+        "wc": 0.09,
+        "T": 2.5
+      }
+    },
+    {
+      "label": "all10_base@local",
+      "ens": "all10_base",
+      "full": 0.7510121457489879,
+      "nested": 0.7501645589594462,
+      "dist": 0.14000000000000007,
+      "cfg": {
+        "wa": 0.5800000000000001,
+        "wb": 0.35,
+        "wc": 0.06999999999999995,
+        "T": 1.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      }
+    },
+    {
+      "label": "all9_sel@local",
+      "ens": "all9_sel",
+      "full": 0.7510121457489879,
+      "nested": 0.7501645589594462,
+      "dist": 0.09000000000000001,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.32999999999999996,
+        "wc": 0.10999999999999999,
+        "T": 2.0,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      }
+    }
+  ],
+  "delta_hold_vs_v7": 0.0,
+  "delta_nested_vs_v7": 0.0,
+  "disagree_vs_v7": 3,
+  "disagree_vs_v9": 13,
+  "disagree_vs_v9_sameT": 14,
+  "v9_sameT_vs_v9_disagree": 1,
+  "empty_fallback": 0,
+  "v7_public": 0.69154,
+  "v9_public": 0.68656,
+  "public_gap_v7": 0.0615,
+  "public_gap_v9": 0.07053,
+  "believe_can_beat_public": false,
+  "submit_recommendation": "leave_for_parent",
+  "v9_sameT_submit": "do_not_submit_clone_of_overfit_v9_disagree1",
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "size_ok_under_100mb": true,
+  "notes": [
+    "v7 public 0.69154 hold 0.7530 gap~0.0615; v9 public 0.68656 hold 0.757 gap~0.0705 REGRESS (perT/top9_sel)",
+    "v10: sameT soft-blend top3_diverse = equal mean of all9_base@v7 (0.56/0.35/0.09@2.5) + all9_half@local (0.54/0.35/0.11@2.75) + all9_acc_w_base@v7",
+    "v10 hold 0.7530 nested 0.7520 (=v7); disagree v7=3 v9=13; pack~66MB",
+    "v9_sameT disagree vs v9 = 1 only \u2014 essentially same overfit path; DO NOT submit",
+    "SUBMIT: leave_for_parent (no nested lift; 3 flips insufficient to claim beat 0.69154)"
+  ],
+  "elapsed_s": 2.662686586380005,
+  "submitted": false,
+  "submit_reason": "nested_fixed=v7 (0.7520) and holdout=v7 (0.7530) with only 3 test flips; soft blend is more robust than v9 but is a coin-flip vs public 0.69154, not a clear expected lift. Per brief: leave for parent unless confident of beating 0.69154."
+}

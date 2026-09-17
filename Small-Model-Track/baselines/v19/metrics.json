@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "selected": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+    "selected_family": "conf",
+    "selected_params": {
+      "keys": [
+        "kd",
+        "kd_mf_v13",
+        "kd_mf_a02",
+        "kd_eq_a02"
+      ],
+      "temp": 0.5
+    },
+    "selected_nested_oof": 0.6652926628194559,
+    "selected_holdout": 0.6435643564356436,
+    "fold_plan": {
+      "kd": [
+        1,
+        2,
+        3
+      ],
+      "kd_mf_v13": [
+        1,
+        2,
+        3
+      ],
+      "kd_mf_a02": [
+        1,
+        2,
+        3
+      ],
+      "kd_eq_a02": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "ckpt_size_mb": 93.53683471679688,
+    "size_constrained": true,
+    "compression": "fewer_midfuse_folds_shared",
+    "v18_nested_oof": 0.6727,
+    "v18_holdout": 0.6317,
+    "v18_size_mb": 83.5,
+    "overbudget_peek": {
+      "name": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.6435643564356436,
+      "nested_oof": 0.6652926628194559,
+      "full5_size_mb": 141.34
+    },
+    "gates": {
+      "hold_alone": 0.642,
+      "hold_soft": 0.637,
+      "oof_soft": 0.68,
+      "budget_mb": 100.0
+    },
+    "clear_win": true,
+    "overwrite_submission": true,
+    "ping_disk_saver": true,
+    "note": "Holdout/OOF from saved holdout-train / NH-OOF logits (v18 protocol). Submission uses fold-subset ensemble to fit <=100MB; midfuse shares folds {1,2,3}."
+  }
+}

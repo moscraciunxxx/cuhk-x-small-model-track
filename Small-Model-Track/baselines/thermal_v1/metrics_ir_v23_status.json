@@ -1,0 +1,532 @@
+{
+  "tag": "ir_v23_imu_spec_4th",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "finished_at": "2026-09-09 23:06:58 PT",
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "inventory_imu": {
+    "imu_train_npz": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\cache\\imu_train.npz",
+    "imu_test_npz": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\cache\\imu_test.npz",
+    "shape_train": [
+      2933,
+      64,
+      30
+    ],
+    "has_imu_train": 2903,
+    "aligned_to_ir": "action_name,user_id,trial",
+    "midfuse_loaders": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\dataset.py",
+    "note": "skeleton_imu_v2 midfuse already uses raw IMU Conv; this stream is STFT spectrogram CNN complementary"
+  },
+  "imu_spec_train": {
+    "seeds": {
+      "42": {
+        "hold_acc": 0.2316831683168317,
+        "hist_len": 50
+      }
+    },
+    "multi_seed": false,
+    "seed42_hold": 0.2316831683168317,
+    "complementarity_vs_mid": {
+      "disagree_vs_mid": 391,
+      "imu_correct_mid_wrong": 23,
+      "mid_correct_imu_wrong": 187,
+      "both_correct": 92,
+      "imu_hold_acc": 0.23279352226720648,
+      "mid_hold_acc": 0.5647773279352226,
+      "n": 494
+    },
+    "ckpt_dir": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\imu_spec_v23"
+  },
+  "baseline_3way": {
+    "full": 0.7489878542510121,
+    "honest_nested": 0.7439293523590541,
+    "cfg": {
+      "wa": 0.4,
+      "wb": 0.3,
+      "wc": 0.3,
+      "T": 1.5,
+      "acc": 0.7489878542510121,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "ir": "classic9_base",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ens4_bonetcn"
+  },
+  "best": {
+    "kind": "conf_gate_imu",
+    "imu": "imu_spec_s42",
+    "full": 0.7469635627530364,
+    "honest_nested": 0.7460257884177542,
+    "folds": [
+      {
+        "leave": 8,
+        "te_acc": 0.6981132075471698,
+        "n": 159,
+        "cfg": {
+          "thr": 0.35,
+          "w": 0.1,
+          "T": 1.5
+        }
+      },
+      {
+        "leave": 9,
+        "te_acc": 0.7722222222222223,
+        "n": 180,
+        "cfg": {
+          "thr": 0.35,
+          "w": 0.1,
+          "T": 1.5
+        }
+      },
+      {
+        "leave": 24,
+        "te_acc": 0.7677419354838709,
+        "n": 155,
+        "cfg": {
+          "thr": 0.35,
+          "w": 0.1,
+          "T": 1.5
+        }
+      }
+    ],
+    "cfg": {
+      "thr": 0.35,
+      "w": 0.1,
+      "T": 1.5,
+      "mode": "conf_gate_imu"
+    },
+    "disagree_vs_v7": 35,
+    "clears": false,
+    "imu_solo": 0.23279352226720648
+  },
+  "top8": [
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_s42",
+      "full": 0.7469635627530364,
+      "honest_nested": 0.7460257884177542,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6981132075471698,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.1,
+        "T": 1.5,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 35,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_ens",
+      "full": 0.7469635627530364,
+      "honest_nested": 0.7460257884177542,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6981132075471698,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.1,
+        "T": 1.5,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 35,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_sm",
+      "full": 0.7469635627530364,
+      "honest_nested": 0.7460257884177542,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6981132075471698,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.5
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.1,
+        "T": 1.5,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 35,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_s42",
+      "full": 0.7449392712550608,
+      "honest_nested": 0.7417788147246455,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7612903225806451,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.2,
+        "T": 1.0,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 26,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_ens",
+      "full": 0.7449392712550608,
+      "honest_nested": 0.7417788147246455,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7612903225806451,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.2,
+        "T": 1.0,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 26,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_sm",
+      "full": 0.7449392712550608,
+      "honest_nested": 0.7417788147246455,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7612903225806451,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 1.0
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.2,
+        "T": 1.0,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 26,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_s42",
+      "full": 0.7388663967611336,
+      "honest_nested": 0.7359245733865332,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 2.0
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7611111111111111,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.1,
+        "T": 2.0,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 38,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    },
+    {
+      "kind": "conf_gate_imu",
+      "imu": "imu_spec_ens",
+      "full": 0.7388663967611336,
+      "honest_nested": 0.7359245733865332,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "T": 2.0
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7611111111111111,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        }
+      ],
+      "cfg": {
+        "thr": 0.35,
+        "w": 0.1,
+        "T": 2.0,
+        "mode": "conf_gate_imu"
+      },
+      "disagree_vs_v7": 38,
+      "clears": false,
+      "imu_solo": 0.23279352226720648
+    }
+  ],
+  "wd_max": 0.125,
+  "nested_lift_vs_3way": 0.002096436058700135,
+  "imu_useless_or_no_lift": true,
+  "wrote_csv": false,
+  "csv": null,
+  "gap_to_gate_nested": 0.01701064882920933,
+  "ceiling": {
+    "verdict": "IMU spectrogram 4th stream MISS: solo hold=0.232 << 0.45; best honest_nested=0.7460 (conf_gate) vs gate 0.763 (gap 0.017); sameT4 nested_retune=0.7314 with wd=0.125; lift vs 3way only +0.002. IMU solo useless \u2014 Mid already covers raw IMU. Small-track ceiling near ir_v7 @ public 0.69154 / hold 0.753. Keep submission_ir_v7.csv.",
+    "vs_gate": 0.7630364372469636,
+    "delta_vs_gate": -0.01701064882920933,
+    "small_track_ceiling": true,
+    "stop_new_ir_kinetics": true,
+    "stop_thermal_seeds": true,
+    "stop_mid_arch_churn": true,
+    "stop_imu_spec_retries": true
+  },
+  "next_roi": [
+    "MISS: IMU spectrogram 4th stream did not clear gate",
+    "Small-track ceiling: keep submission_ir_v7.csv @ public 0.69154 / hold 0.753",
+    "Do NOT train new IR Kinetics-3D / Thermal R2+1D seeds / Mid arch / LOUO / more IMU-spec",
+    "Shift effort elsewhere (Large track / other ROI)"
+  ],
+  "gpu_handoff": {
+    "machine": "MosCraciunXXX",
+    "machineId": "4ff6e647-6f8c-4d02-88f0-5dda6684ae36",
+    "at_start": "exclusive RTX 3060 (LMT CPU-only overnight)",
+    "at_end": "releasing GPU after ir_v23",
+    "finished_at": "2026-09-09 23:05:38 PT",
+    "status": "FREE",
+    "confirmed_at": "2026-09-09 23:06:58 PT",
+    "nvidia_smi": "0 MiB used after ir_v23 \u2014 idle"
+  },
+  "elapsed_sec": 31.2,
+  "notes": [
+    "Nested sameT4 only (+ conf-gate IMU mix); no perT grid overfit",
+    "IMU STFT n_fft=16 hop=4 log1p mag -> tiny Conv2d",
+    "classic9_base + th_v6_v2trio + mid_ens4_bonetcn + imu_spec"
+  ]
+}

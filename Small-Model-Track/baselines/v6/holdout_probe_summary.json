@@ -1,0 +1,1029 @@
+{
+  "summary": {
+    "modes": {
+      "pen+logits": {
+        "best_holdout_acc": 0.5386138613861386,
+        "delta_vs_0.537": 0.0016138613861386153,
+        "baseline": 0.5366336633663367,
+        "best_policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "pen+probs": {
+        "best_holdout_acc": 0.5386138613861386,
+        "delta_vs_0.537": 0.0016138613861386153,
+        "baseline": 0.5366336633663367,
+        "best_policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "fused+logits": {
+        "best_holdout_acc": 0.5405940594059406,
+        "delta_vs_0.537": 0.0035940594059405973,
+        "baseline": 0.5366336633663367,
+        "best_policy": "pairs=True|multi=False|thr=1.01|always=False"
+      },
+      "pen": {
+        "best_holdout_acc": 0.5386138613861386,
+        "delta_vs_0.537": 0.0016138613861386153,
+        "baseline": 0.5366336633663367,
+        "best_policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "logits": {
+        "best_holdout_acc": 0.5366336633663367,
+        "delta_vs_0.537": -0.00036633663366336666,
+        "baseline": 0.5366336633663367,
+        "best_policy": "pairs=True|multi=True|thr=0.05|always=False"
+      }
+    },
+    "best": {
+      "feat_mode": "fused+logits",
+      "best_holdout_acc": 0.5405940594059406,
+      "delta_vs_0.537": 0.0035940594059405973,
+      "best_policy": {
+        "n_defer_pair": 96,
+        "n_defer_multi": 0,
+        "n_flip": 13,
+        "margin_thr": 1.01,
+        "always_if_pair": false,
+        "acc": 0.5405940594059406,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": false,
+        "policy": "pairs=True|multi=False|thr=1.01|always=False"
+      }
+    },
+    "beat_clear": false,
+    "beat_any": true
+  },
+  "detail": {
+    "pen+logits": {
+      "feat_mode": "pen+logits",
+      "baseline_holdout": 0.5366336633663367,
+      "baseline_reported": 0.537,
+      "best_policy": {
+        "n_defer_pair": 13,
+        "n_defer_multi": 0,
+        "n_flip": 7,
+        "margin_thr": 0.1,
+        "always_if_pair": false,
+        "acc": 0.5386138613861386,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": false,
+        "policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "ss_alone": 0.5148514851485149,
+      "ss_blends": [
+        {
+          "policy": "ss_margin<0.05",
+          "acc": 0.5326732673267327,
+          "n_ss": 42
+        },
+        {
+          "policy": "ss_margin<0.1",
+          "acc": 0.5306930693069307,
+          "n_ss": 72
+        },
+        {
+          "policy": "ss_margin<0.2",
+          "acc": 0.5267326732673268,
+          "n_ss": 122
+        },
+        {
+          "policy": "ss_margin<0.15",
+          "acc": 0.5247524752475248,
+          "n_ss": 99
+        },
+        {
+          "policy": "ss_margin<0.3",
+          "acc": 0.5227722772277228,
+          "n_ss": 159
+        },
+        {
+          "policy": "ss_margin<0.5",
+          "acc": 0.5168316831683168,
+          "n_ss": 235
+        }
+      ],
+      "combos": [
+        {
+          "policy": "spec+ss<0.05",
+          "acc": 0.5346534653465347
+        },
+        {
+          "policy": "spec+ss<0.1",
+          "acc": 0.5326732673267327
+        },
+        {
+          "policy": "spec+ss<0.2",
+          "acc": 0.5287128712871287
+        },
+        {
+          "policy": "spec+ss<0.15",
+          "acc": 0.5267326732673268
+        }
+      ],
+      "best_holdout_acc": 0.5386138613861386,
+      "delta_vs_0.537": 0.0016138613861386153,
+      "delta_vs_measured_base": 0.001980198019801982,
+      "winner_family": "specialists",
+      "n_pair_specs": 15,
+      "n_multi_specs": 3,
+      "pair_names": [
+        "pair_9_10",
+        "pair_10_11",
+        "pair_9_11",
+        "pair_30_31",
+        "pair_29_32",
+        "pair_7_26",
+        "pair_12_13",
+        "pair_21_22",
+        "pair_32_34",
+        "pair_6_37",
+        "pair_29_34",
+        "pair_24_26",
+        "pair_19_26",
+        "pair_8_9",
+        "pair_6_7"
+      ],
+      "multi_names": [
+        "multi_kitchen_hand",
+        "multi_exercise",
+        "multi_sedentary_device"
+      ],
+      "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints_midfuse_v2b\\best_holdout.pt",
+      "n_holdout": 505,
+      "top_sweeps": [
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 0,
+          "n_flip": 7,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5386138613861386,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 0,
+          "n_flip": 4,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 34,
+          "n_defer_multi": 0,
+          "n_flip": 11,
+          "margin_thr": 0.35,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.35|always=False"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.5|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 1.01,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 1.01,
+          "always_if_pair": true,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=True"
+        },
+        {
+          "policy": "baseline_midfuse",
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "n_defer_pair": 0,
+          "n_defer_multi": 0,
+          "n_flip": 0
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 6,
+          "n_flip": 9,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5346534653465347,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.05|always=False"
+        }
+      ]
+    },
+    "pen+probs": {
+      "feat_mode": "pen+probs",
+      "baseline_holdout": 0.5366336633663367,
+      "baseline_reported": 0.537,
+      "best_policy": {
+        "n_defer_pair": 13,
+        "n_defer_multi": 0,
+        "n_flip": 6,
+        "margin_thr": 0.1,
+        "always_if_pair": false,
+        "acc": 0.5386138613861386,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": false,
+        "policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "ss_alone": 0.5089108910891089,
+      "ss_blends": [
+        {
+          "policy": "ss_margin<0.05",
+          "acc": 0.5326732673267327,
+          "n_ss": 42
+        },
+        {
+          "policy": "ss_margin<0.1",
+          "acc": 0.5247524752475248,
+          "n_ss": 72
+        },
+        {
+          "policy": "ss_margin<0.2",
+          "acc": 0.5207920792079208,
+          "n_ss": 122
+        },
+        {
+          "policy": "ss_margin<0.15",
+          "acc": 0.5188118811881188,
+          "n_ss": 99
+        },
+        {
+          "policy": "ss_margin<0.3",
+          "acc": 0.5168316831683168,
+          "n_ss": 159
+        },
+        {
+          "policy": "ss_margin<0.5",
+          "acc": 0.5128712871287129,
+          "n_ss": 235
+        }
+      ],
+      "combos": [
+        {
+          "policy": "spec+ss<0.05",
+          "acc": 0.5346534653465347
+        },
+        {
+          "policy": "spec+ss<0.1",
+          "acc": 0.5267326732673268
+        },
+        {
+          "policy": "spec+ss<0.2",
+          "acc": 0.5227722772277228
+        },
+        {
+          "policy": "spec+ss<0.15",
+          "acc": 0.5207920792079208
+        }
+      ],
+      "best_holdout_acc": 0.5386138613861386,
+      "delta_vs_0.537": 0.0016138613861386153,
+      "delta_vs_measured_base": 0.001980198019801982,
+      "winner_family": "specialists",
+      "n_pair_specs": 15,
+      "n_multi_specs": 3,
+      "pair_names": [
+        "pair_9_10",
+        "pair_10_11",
+        "pair_9_11",
+        "pair_30_31",
+        "pair_29_32",
+        "pair_7_26",
+        "pair_12_13",
+        "pair_21_22",
+        "pair_32_34",
+        "pair_6_37",
+        "pair_29_34",
+        "pair_24_26",
+        "pair_19_26",
+        "pair_8_9",
+        "pair_6_7"
+      ],
+      "multi_names": [
+        "multi_kitchen_hand",
+        "multi_exercise",
+        "multi_sedentary_device"
+      ],
+      "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints_midfuse_v2b\\best_holdout.pt",
+      "n_holdout": 505,
+      "top_sweeps": [
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 0,
+          "n_flip": 6,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5386138613861386,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 7,
+          "n_flip": 9,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 0,
+          "n_flip": 3,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 0,
+          "n_defer_multi": 10,
+          "n_flip": 9,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": false,
+          "use_multi": true,
+          "policy": "pairs=False|multi=True|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 12,
+          "n_flip": 14,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 0,
+          "n_defer_multi": 18,
+          "n_flip": 13,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": false,
+          "use_multi": true,
+          "policy": "pairs=False|multi=True|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 52,
+          "n_flip": 28,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.5|always=False"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 0,
+          "n_flip": 11,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.5|always=False"
+        }
+      ]
+    },
+    "fused+logits": {
+      "feat_mode": "fused+logits",
+      "baseline_holdout": 0.5366336633663367,
+      "baseline_reported": 0.537,
+      "best_policy": {
+        "n_defer_pair": 96,
+        "n_defer_multi": 0,
+        "n_flip": 13,
+        "margin_thr": 1.01,
+        "always_if_pair": false,
+        "acc": 0.5405940594059406,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": false,
+        "policy": "pairs=True|multi=False|thr=1.01|always=False"
+      },
+      "ss_alone": 0.5207920792079208,
+      "ss_blends": [
+        {
+          "policy": "ss_margin<0.05",
+          "acc": 0.5366336633663367,
+          "n_ss": 42
+        },
+        {
+          "policy": "ss_margin<0.1",
+          "acc": 0.5287128712871287,
+          "n_ss": 72
+        },
+        {
+          "policy": "ss_margin<0.2",
+          "acc": 0.5267326732673268,
+          "n_ss": 122
+        },
+        {
+          "policy": "ss_margin<0.3",
+          "acc": 0.5247524752475248,
+          "n_ss": 159
+        },
+        {
+          "policy": "ss_margin<0.15",
+          "acc": 0.5227722772277228,
+          "n_ss": 99
+        },
+        {
+          "policy": "ss_margin<0.5",
+          "acc": 0.5227722772277228,
+          "n_ss": 235
+        }
+      ],
+      "combos": [
+        {
+          "policy": "spec+ss<0.05",
+          "acc": 0.5405940594059406
+        },
+        {
+          "policy": "spec+ss<0.2",
+          "acc": 0.5346534653465347
+        },
+        {
+          "policy": "spec+ss<0.1",
+          "acc": 0.5326732673267327
+        },
+        {
+          "policy": "spec+ss<0.15",
+          "acc": 0.5306930693069307
+        }
+      ],
+      "best_holdout_acc": 0.5405940594059406,
+      "delta_vs_0.537": 0.0035940594059405973,
+      "delta_vs_measured_base": 0.003960396039603964,
+      "winner_family": "specialists",
+      "n_pair_specs": 15,
+      "n_multi_specs": 3,
+      "pair_names": [
+        "pair_9_10",
+        "pair_10_11",
+        "pair_9_11",
+        "pair_30_31",
+        "pair_29_32",
+        "pair_7_26",
+        "pair_12_13",
+        "pair_21_22",
+        "pair_32_34",
+        "pair_6_37",
+        "pair_29_34",
+        "pair_24_26",
+        "pair_19_26",
+        "pair_8_9",
+        "pair_6_7"
+      ],
+      "multi_names": [
+        "multi_kitchen_hand",
+        "multi_exercise",
+        "multi_sedentary_device"
+      ],
+      "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints_midfuse_v2b\\best_holdout.pt",
+      "n_holdout": 505,
+      "top_sweeps": [
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 1.01,
+          "always_if_pair": false,
+          "acc": 0.5405940594059406,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 1.01,
+          "always_if_pair": true,
+          "acc": 0.5405940594059406,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=True"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 0,
+          "n_flip": 11,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5386138613861386,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.5|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 0,
+          "n_flip": 4,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 0,
+          "n_flip": 5,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 34,
+          "n_defer_multi": 0,
+          "n_flip": 10,
+          "margin_thr": 0.35,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.35|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 100,
+          "n_flip": 22,
+          "margin_thr": 1.01,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=1.01|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 100,
+          "n_flip": 22,
+          "margin_thr": 1.01,
+          "always_if_pair": true,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=1.01|always=True"
+        }
+      ]
+    },
+    "pen": {
+      "feat_mode": "pen",
+      "baseline_holdout": 0.5366336633663367,
+      "baseline_reported": 0.537,
+      "best_policy": {
+        "n_defer_pair": 13,
+        "n_defer_multi": 0,
+        "n_flip": 9,
+        "margin_thr": 0.1,
+        "always_if_pair": false,
+        "acc": 0.5386138613861386,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": false,
+        "policy": "pairs=True|multi=False|thr=0.1|always=False"
+      },
+      "ss_alone": 0.5108910891089109,
+      "ss_blends": [
+        {
+          "policy": "ss_margin<0.05",
+          "acc": 0.5366336633663367,
+          "n_ss": 42
+        },
+        {
+          "policy": "ss_margin<0.1",
+          "acc": 0.5267326732673268,
+          "n_ss": 72
+        },
+        {
+          "policy": "ss_margin<0.2",
+          "acc": 0.5207920792079208,
+          "n_ss": 122
+        },
+        {
+          "policy": "ss_margin<0.3",
+          "acc": 0.5188118811881188,
+          "n_ss": 159
+        },
+        {
+          "policy": "ss_margin<0.15",
+          "acc": 0.5148514851485149,
+          "n_ss": 99
+        },
+        {
+          "policy": "ss_margin<0.5",
+          "acc": 0.5108910891089109,
+          "n_ss": 235
+        }
+      ],
+      "combos": [
+        {
+          "policy": "spec+ss<0.05",
+          "acc": 0.5386138613861386
+        },
+        {
+          "policy": "spec+ss<0.1",
+          "acc": 0.5287128712871287
+        },
+        {
+          "policy": "spec+ss<0.2",
+          "acc": 0.5227722772277228
+        },
+        {
+          "policy": "spec+ss<0.15",
+          "acc": 0.5168316831683168
+        }
+      ],
+      "best_holdout_acc": 0.5386138613861386,
+      "delta_vs_0.537": 0.0016138613861386153,
+      "delta_vs_measured_base": 0.001980198019801982,
+      "winner_family": "specialists",
+      "n_pair_specs": 15,
+      "n_multi_specs": 3,
+      "pair_names": [
+        "pair_9_10",
+        "pair_10_11",
+        "pair_9_11",
+        "pair_30_31",
+        "pair_29_32",
+        "pair_7_26",
+        "pair_12_13",
+        "pair_21_22",
+        "pair_32_34",
+        "pair_6_37",
+        "pair_29_34",
+        "pair_24_26",
+        "pair_19_26",
+        "pair_8_9",
+        "pair_6_7"
+      ],
+      "multi_names": [
+        "multi_kitchen_hand",
+        "multi_exercise",
+        "multi_sedentary_device"
+      ],
+      "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints_midfuse_v2b\\best_holdout.pt",
+      "n_holdout": 505,
+      "top_sweeps": [
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 0,
+          "n_flip": 9,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5386138613861386,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 0,
+          "n_flip": 6,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 9,
+          "n_flip": 14,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 0,
+          "n_defer_multi": 18,
+          "n_flip": 14,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": false,
+          "use_multi": true,
+          "policy": "pairs=False|multi=True|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 34,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 0.35,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.35|always=False"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 0,
+          "n_flip": 15,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.5|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 16,
+          "margin_thr": 1.01,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=False"
+        },
+        {
+          "n_defer_pair": 96,
+          "n_defer_multi": 0,
+          "n_flip": 16,
+          "margin_thr": 1.01,
+          "always_if_pair": true,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=1.01|always=True"
+        }
+      ]
+    },
+    "logits": {
+      "feat_mode": "logits",
+      "baseline_holdout": 0.5366336633663367,
+      "baseline_reported": 0.537,
+      "best_policy": {
+        "n_defer_pair": 6,
+        "n_defer_multi": 8,
+        "n_flip": 8,
+        "margin_thr": 0.05,
+        "always_if_pair": false,
+        "acc": 0.5366336633663367,
+        "base_acc": 0.5366336633663367,
+        "use_pairs": true,
+        "use_multi": true,
+        "policy": "pairs=True|multi=True|thr=0.05|always=False"
+      },
+      "ss_alone": 0.5188118811881188,
+      "ss_blends": [
+        {
+          "policy": "ss_margin<0.05",
+          "acc": 0.5306930693069307,
+          "n_ss": 42
+        },
+        {
+          "policy": "ss_margin<0.1",
+          "acc": 0.5287128712871287,
+          "n_ss": 72
+        },
+        {
+          "policy": "ss_margin<0.15",
+          "acc": 0.5227722772277228,
+          "n_ss": 99
+        },
+        {
+          "policy": "ss_margin<0.2",
+          "acc": 0.5227722772277228,
+          "n_ss": 122
+        },
+        {
+          "policy": "ss_margin<0.3",
+          "acc": 0.5227722772277228,
+          "n_ss": 159
+        },
+        {
+          "policy": "ss_margin<0.5",
+          "acc": 0.5188118811881188,
+          "n_ss": 235
+        }
+      ],
+      "combos": [
+        {
+          "policy": "spec+ss<0.05",
+          "acc": 0.5306930693069307
+        },
+        {
+          "policy": "spec+ss<0.1",
+          "acc": 0.5287128712871287
+        },
+        {
+          "policy": "spec+ss<0.15",
+          "acc": 0.5227722772277228
+        },
+        {
+          "policy": "spec+ss<0.2",
+          "acc": 0.5227722772277228
+        }
+      ],
+      "best_holdout_acc": 0.5366336633663367,
+      "delta_vs_0.537": -0.00036633663366336666,
+      "delta_vs_measured_base": 0.0,
+      "winner_family": "specialists",
+      "n_pair_specs": 15,
+      "n_multi_specs": 3,
+      "pair_names": [
+        "pair_9_10",
+        "pair_10_11",
+        "pair_9_11",
+        "pair_30_31",
+        "pair_29_32",
+        "pair_7_26",
+        "pair_12_13",
+        "pair_21_22",
+        "pair_32_34",
+        "pair_6_37",
+        "pair_29_34",
+        "pair_24_26",
+        "pair_19_26",
+        "pair_8_9",
+        "pair_6_7"
+      ],
+      "multi_names": [
+        "multi_kitchen_hand",
+        "multi_exercise",
+        "multi_sedentary_device"
+      ],
+      "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints_midfuse_v2b\\best_holdout.pt",
+      "n_holdout": 505,
+      "top_sweeps": [
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 8,
+          "n_flip": 8,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": true,
+          "policy": "pairs=True|multi=True|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 6,
+          "n_defer_multi": 0,
+          "n_flip": 2,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.05|always=False"
+        },
+        {
+          "n_defer_pair": 0,
+          "n_defer_multi": 10,
+          "n_flip": 7,
+          "margin_thr": 0.05,
+          "always_if_pair": false,
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": false,
+          "use_multi": true,
+          "policy": "pairs=False|multi=True|thr=0.05|always=False"
+        },
+        {
+          "policy": "baseline_midfuse",
+          "acc": 0.5366336633663367,
+          "base_acc": 0.5366336633663367,
+          "n_defer_pair": 0,
+          "n_defer_multi": 0,
+          "n_flip": 0
+        },
+        {
+          "n_defer_pair": 34,
+          "n_defer_multi": 0,
+          "n_flip": 13,
+          "margin_thr": 0.35,
+          "always_if_pair": false,
+          "acc": 0.5346534653465347,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.35|always=False"
+        },
+        {
+          "n_defer_pair": 13,
+          "n_defer_multi": 0,
+          "n_flip": 6,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5326732673267327,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 0,
+          "n_defer_multi": 18,
+          "n_flip": 11,
+          "margin_thr": 0.1,
+          "always_if_pair": false,
+          "acc": 0.5326732673267327,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": false,
+          "use_multi": true,
+          "policy": "pairs=False|multi=True|thr=0.1|always=False"
+        },
+        {
+          "n_defer_pair": 48,
+          "n_defer_multi": 0,
+          "n_flip": 16,
+          "margin_thr": 0.5,
+          "always_if_pair": false,
+          "acc": 0.5326732673267327,
+          "base_acc": 0.5366336633663367,
+          "use_pairs": true,
+          "use_multi": false,
+          "policy": "pairs=True|multi=False|thr=0.5|always=False"
+        }
+      ]
+    }
+  }
+}

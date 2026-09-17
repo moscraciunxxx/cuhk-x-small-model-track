@@ -1,0 +1,97 @@
+{
+  "tag": "ir_v6",
+  "primary": "submission_ir_v6.csv",
+  "method": "all9 IR seeds (v5 six + new 1/777/333) logit-mean + Thermal v2_trio + MidFuse; finer same-T grid",
+  "holdout_acc": 0.7469635627530364,
+  "cfg": {
+    "wa": 0.56,
+    "wb": 0.35999999999999993,
+    "wc": 0.08000000000000002,
+    "T": 1.5,
+    "acc": 0.7469635627530364,
+    "n": 494
+  },
+  "delta_vs_v5": 0.0080971659919028,
+  "ir_ens_hold": 0.697029702970297,
+  "ir_members": {
+    "pool_seed2024": 0.6792079207920793,
+    "pool_seed11": 0.6772277227722773,
+    "pool_seed42": 0.6752475247524753,
+    "pool_seed99": 0.6673267326732674,
+    "pool_seed777": 0.6653465346534654,
+    "pool_seed7": 0.6633663366336634,
+    "pool_seed123": 0.6613861386138614,
+    "pool_seed333": 0.6554455445544555,
+    "pool_seed1": 0.6455445544554456
+  },
+  "nested_louo_mean": 0.7246545388967788,
+  "nested_folds": [
+    {
+      "wa": 0.65,
+      "wb": 0.15,
+      "wc": 0.19999999999999998,
+      "T": 3.0,
+      "leave": 8,
+      "te_acc": 0.6477987421383647,
+      "tr_acc": 0.7731343283582089
+    },
+    {
+      "wa": 0.55,
+      "wb": 0.35,
+      "wc": 0.09999999999999998,
+      "T": 2.5,
+      "leave": 9,
+      "te_acc": 0.7777777777777778,
+      "tr_acc": 0.7356687898089171
+    },
+    {
+      "wa": 0.55,
+      "wb": 0.35,
+      "wc": 0.09999999999999998,
+      "T": 2.5,
+      "leave": 24,
+      "te_acc": 0.7483870967741936,
+      "tr_acc": 0.7522123893805309
+    }
+  ],
+  "compromise_hold": 0.7368421052631579,
+  "compromise_cfg": {
+    "wa": 0.5,
+    "wb": 0.3,
+    "wc": 0.2,
+    "T": 1.75
+  },
+  "disagree_vs_v5": 13,
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "size_ok_under_100mb": true,
+  "alts": {
+    "submission_ir_v6_ensbase.csv": "prior all6 finer 0.7429",
+    "submission_ir_v6_compromise.csv": "may be stale top4-based \u2014 regenerate below",
+    "submission_ir_v5.csv": "prev primary 0.7389"
+  },
+  "notes": [
+    "PRIMARY hold 0.7470 (+0.0081 vs v5 0.7389) \u2014 CLEAR WIN",
+    "Nested LOUO mean 0.7247 (honest; still >= v5 full-fit 0.7389? check)",
+    "New seeds alone weak (0.645-0.665) but all9 diversity lifts fuse to 0.7470",
+    "top4-only was 0.7449; all9 preferred",
+    "perT wa=0.1 rejected earlier as overfit",
+    "TTA selective: small IR gain, not used in primary",
+    "Depth_Color skipped (~0.21)",
+    "Do not Kaggle-submit from this script; <=100MB pack ok (~66MB)"
+  ],
+  "recommend_submit_order": [
+    "submission_ir_v6.csv (all9+triple hold 0.7470) \u2014 PRIMARY",
+    "submission_ir_v6_compromise.csv \u2014 public-gap hedge",
+    "submission_ir_v5.csv \u2014 backup hold 0.7389"
+  ],
+  "nested_mean_cfg": {
+    "wa": 0.5833333333333334,
+    "wb": 0.2833333333333333,
+    "wc": 0.1333333333333333,
+    "T": 2.6666666666666665
+  },
+  "nested_mean_cfg_full_acc": 0.742914979757085,
+  "primary_rewritten": true
+}

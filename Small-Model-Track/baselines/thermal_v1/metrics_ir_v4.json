@@ -1,0 +1,33 @@
+{
+  "tag": "ir_v4",
+  "cache": "cache\\ir_yolo_v4",
+  "member_scores": {
+    "seed42": 0.6752475247524753,
+    "seed123": 0.6613861386138614,
+    "seed7": 0.6633663366336634
+  },
+  "holdout_acc_ensemble": 0.6871287128712872,
+  "holdout_macro_f1_ensemble": 0.6053440420619743,
+  "holdout_acc_blend_midfuse": 0.7145748987854251,
+  "blend_cfg": {
+    "w": 0.7250000000000001,
+    "T": 2.5,
+    "acc": 0.7145748987854251,
+    "n": 494
+  },
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "size_ok_under_100mb": true,
+  "submission_video": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v4_video.csv",
+  "submission_fuse": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v4.csv",
+  "empty_fallback": 0,
+  "holdout_users": [
+    8,
+    9,
+    24
+  ],
+  "baseline_v3_blend": 0.6740890688259109,
+  "delta_vs_v3": 0.04048582995951422,
+  "write_v4_gate": true
+}

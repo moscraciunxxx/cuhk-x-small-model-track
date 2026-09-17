@@ -1,0 +1,97 @@
+{
+  "tag": "ir_v5",
+  "tta": false,
+  "cache": "cache\\ir_yolo_v4",
+  "ckpt_dir": "checkpoints\\ir_yolo_r2p1d18_v5",
+  "member_scores": {
+    "pool_seed11": 0.6772277227722773,
+    "pool_seed123": 0.6613861386138614,
+    "pool_seed2024": 0.6792079207920793,
+    "pool_seed42": 0.6752475247524753,
+    "pool_seed7": 0.6633663366336634,
+    "pool_seed99": 0.6673267326732674
+  },
+  "ens_method": "logit_mean",
+  "holdout_acc_ensemble": 0.695049504950495,
+  "ens_candidates": {
+    "logit_mean": 0.695049504950495,
+    "acc_weighted": 0.695049504950495,
+    "softmax_mean": 0.6851485148514852
+  },
+  "holdout_acc_ir_mid": 0.7226720647773279,
+  "ir_mid_cfg": {
+    "w": 0.875,
+    "T": 3.0,
+    "acc": 0.7226720647773279,
+    "n": 494
+  },
+  "holdout_acc_triple": 0.7388663967611336,
+  "triple_cfg": {
+    "wa": 0.55,
+    "wb": 0.35,
+    "wc": 0.09999999999999998,
+    "T": 1.0,
+    "acc": 0.7388663967611336,
+    "n": 494
+  },
+  "holdout_acc_compromise": 0.728744939271255,
+  "compromise_cfg": {
+    "wa": 0.5,
+    "wb": 0.25,
+    "wc": 0.25,
+    "T": 1.75,
+    "acc": 0.728744939271255
+  },
+  "holdout_acc_ir_th": 0.7388663967611336,
+  "ir_th_cfg": {
+    "w": 0.525,
+    "T": 1.5,
+    "acc": 0.7388663967611336,
+    "n": 494
+  },
+  "best_name": "triple",
+  "best_acc": 0.7388663967611336,
+  "best_cfg": {
+    "wa": 0.55,
+    "wb": 0.35,
+    "wc": 0.09999999999999998,
+    "T": 1.0,
+    "acc": 0.7388663967611336,
+    "n": 494
+  },
+  "delta_vs_v4_blend": 0.02429149797570851,
+  "delta_vs_v4_triple": 0.00809716599190291,
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "size_ok_under_100mb": true,
+  "submission_primary": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v5.csv",
+  "submission_video": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v5_video.csv",
+  "submission_irmid": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v5_irmid.csv",
+  "submission_compromise": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v5_compromise.csv",
+  "submission_triple": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v5_triple.csv",
+  "empty_fallback": 0,
+  "holdout_users": [
+    8,
+    9,
+    24
+  ],
+  "mid_src": "cache\\ir_yolo_v4\\midfuse_aligned_train_logits.npy",
+  "notes": [
+    "PRIMARY=holdout-best fuse (usually IR+Thermal+Mid triple)",
+    "submission_ir_v5_compromise.csv hedges MidFuse weight for public-gap",
+    "submission_ir_v5_irmid.csv is IR+Mid only (matches prior public style)",
+    "Do not Kaggle-submit from this script; CSV ready for next window",
+    "Depth_Color skipped (holdout~0.21, YOLO~19%)"
+  ],
+  "tta_probe": {
+    "ens_base": 0.695049504950495,
+    "ens_tta": 0.691089108910891,
+    "decision": "skip_tta_hurts_holdout"
+  },
+  "recommend_submit_order": [
+    "submission_ir_v5.csv (triple IR+Thermal+Mid, hold 0.7389) \u2014 PRIMARY",
+    "submission_ir_v5_compromise.csv (hold 0.7287) \u2014 public-gap hedge more Mid",
+    "submission_ir_v5_irmid.csv (hold 0.7227) \u2014 same style as public 0.64179 ir_v4"
+  ]
+}

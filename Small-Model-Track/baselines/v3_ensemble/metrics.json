@@ -1,0 +1,44 @@
+﻿{
+  "v2_midfuse": {
+    "cv_mean": 0.5050853925069481,
+    "cv_std": 0.05826910368539711,
+    "holdout": 0.5366336633663367,
+    "fold_val": [0.4550, 0.5717, 0.5468, 0.5333, 0.4186],
+    "submission_single": "D:\\CUHK-X\\Small-Model-Track\\baselines\\skeleton_imu_v2\\submission_skeleton_imu_v2.csv",
+    "params": 2072072,
+    "ckpt_mb": 8.355
+  },
+  "v3_ensemble_from_v2_folds": {
+    "oof_accuracy": 0.5015,
+    "mean_fold_oof": 0.5051,
+    "std_fold_oof": 0.0583,
+    "agreement_vs_single_v2": 0.6790,
+    "submission": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v3_ensemble\\submission_v3_ensemble.csv",
+    "primary": true,
+    "note": "Softmax avg of 5 GroupKFold MidFuse ckpts from skeleton_imu_v2/checkpoints. Best practical submit vs single all-train MidFuse (32% pred disagreement)."
+  },
+  "v3_longer_train_80ep": {
+    "cv_mean": 0.500847166912519,
+    "cv_std": 0.05601173057294884,
+    "holdout": 0.5326732673267327,
+    "fold_val": [0.4534, 0.5717, 0.5411, 0.5178, 0.4202],
+    "oof_accuracy": 0.4971,
+    "beats_v2_cv": false,
+    "submission_ensemble": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v3_ensemble\\submission_v3_long_ensemble.csv",
+    "metrics_file": "metrics_v3_long.json"
+  },
+  "v3_mixup_holdout_probe": {
+    "mixup_alpha": 0.2,
+    "holdout_best": 0.5108910891089109,
+    "beats_v2_holdout": false,
+    "note": "Holdout-only probe; did not beat 0.537 so no full MixUp CV."
+  },
+  "midfuse_wide": "registered in model.py; not trained (longer+mixup did not improve)",
+  "thermal_ir_probe": "deferred",
+  "blockers": [
+    "Intermittent MSI local-exec Auto-review classifier failures slowed file transfer",
+    "GPU shared earlier with unrelated DAM4SAM job (freed before long train)",
+    "Longer train and MixUp did not beat v2 CV/holdout"
+  ],
+  "recommendation": "Submit submission_v3_ensemble.csv (v2 fold softmax ensemble). Keep single MidFuse as backup."
+}

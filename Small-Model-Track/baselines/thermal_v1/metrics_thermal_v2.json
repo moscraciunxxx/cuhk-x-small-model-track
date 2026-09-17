@@ -1,0 +1,40 @@
+{
+  "holdout_acc_ensemble": 0.6031746031746031,
+  "holdout_macro_f1_ensemble": 0.5198877621440928,
+  "member_scores": {
+    "v1": 0.5753968253968254,
+    "seed123": 0.5654761904761905,
+    "seed7": 0.5674603174603174
+  },
+  "blend": {
+    "w": 0.6000000000000001,
+    "T": 2.0,
+    "acc": 0.6639676113360324,
+    "n": 494
+  },
+  "holdout_acc_blend": 0.6639676113360324,
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "submission": "D:\\CUHK-X\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v2.csv",
+  "submission_video": "D:\\CUHK-X\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v2_video.csv",
+  "promoted": true,
+  "empty_fallback": 10,
+  "v1_holdout": 0.5754,
+  "delta_blend_vs_v1": 0.08856761133603241,
+  "delta_ens_vs_v1": 0.02777460317460312,
+  "method": "exact_v1_recipe multi-seed + v1 ckpt ensemble + honest MidFuse late-fuse",
+  "promoted_track_submission": "D:\\CUHK-X\\Small-Model-Track\\submission.csv",
+  "holdout_users": [
+    8,
+    9,
+    24
+  ],
+  "notes": [
+    "Thermal video ensemble (v1+seed123+seed7) holdout 0.6032",
+    "Honest MidFuse late-fuse (aligned by user/label/trial/action; 494/504 hold clips) holdout 0.6640",
+    "TTA alone slightly hurt v1; not used in final ensemble logits",
+    "Size unchanged ~66MB (fp16 R2+1D + YOLOv8n)",
+    "Do not auto-submit; human upload submission_thermal_v2.csv"
+  ]
+}

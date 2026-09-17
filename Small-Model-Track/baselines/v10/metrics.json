@@ -1,0 +1,1537 @@
+{
+  "track": "v10b_advanced",
+  "v9_baseline_oof": 0.5486397361912614,
+  "v9_baseline_holdout": 0.5663366336633663,
+  "branches": [
+    "midfuse",
+    "midfuse2",
+    "stgcn",
+    "gru",
+    "deepconv",
+    "midfuse3",
+    "gru2",
+    "cfuse"
+  ],
+  "single_oof": {
+    "oof_midfuse": 0.5032976092333058,
+    "oof_midfuse2": 0.5008244023083265,
+    "oof_stgcn": 0.47444352844187965,
+    "oof_gru": 0.5008244023083265,
+    "oof_deepconv": 0.47444352844187965,
+    "oof_midfuse3": 0.4975267930750206,
+    "oof_gru2": 0.49381698268755153,
+    "oof_cfuse": 0.4917559769167354,
+    "oof_mf_avg": 0.516075845012366
+  },
+  "single_holdout": {
+    "holdout_midfuse": 0.5366336633663367,
+    "holdout_midfuse2": 0.5227722772277228,
+    "holdout_stgcn": 0.4792079207920792,
+    "holdout_gru": 0.502970297029703,
+    "holdout_deepconv": 0.5148514851485149,
+    "holdout_midfuse3": 0.5089108910891089,
+    "holdout_gru2": 0.5089108910891089,
+    "holdout_cfuse": 0.5306930693069307
+  },
+  "methods": {
+    "eq_mfavg_st_gru": {
+      "oof_acc_nested": 0.5457543281121187,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "eq",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "conf_mfavg_st_gru": {
+      "oof_acc_nested": 0.546166529266282,
+      "oof_acc_in_sample": 0.546166529266282,
+      "holdout_acc": 0.5722772277227722,
+      "family": "conf",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "temp": 8.0
+      }
+    },
+    "pow_mfavg_st_gru": {
+      "oof_acc_nested": 0.5474031327287716,
+      "oof_acc_in_sample": 0.5474031327287716,
+      "holdout_acc": 0.5623762376237624,
+      "family": "pow",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "p": 0.5
+      }
+    },
+    "logit_mfavg_st_gru": {
+      "oof_acc_nested": 0.5424567188788129,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "logit_mean",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "rank_mfavg_st_gru": {
+      "oof_acc_nested": 0.533800494641385,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5485148514851486,
+      "family": "rank",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "eq_mf12_st_gru": {
+      "oof_acc_nested": 0.5469909315746084,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5722772277227722,
+      "family": "eq",
+      "keys": [
+        "mf12",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5478153338829349,
+      "oof_acc_in_sample": 0.5478153338829349,
+      "holdout_acc": 0.5742574257425742,
+      "family": "conf",
+      "keys": [
+        "mf12",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "temp": 6.0
+      }
+    },
+    "pow_mf12_st_gru": {
+      "oof_acc_nested": 0.5474031327287716,
+      "oof_acc_in_sample": 0.5474031327287716,
+      "holdout_acc": 0.5663366336633663,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "logit_mf12_st_gru": {
+      "oof_acc_nested": 0.5474031327287716,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "logit_mean",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "pow_all5": {
+      "oof_acc_nested": 0.5478153338829349,
+      "oof_acc_in_sample": 0.5478153338829349,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru",
+        "deepconv"
+      ],
+      "params": {
+        "p": 0.5
+      }
+    },
+    "eq_all5": {
+      "oof_acc_nested": 0.542868920032976,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5564356435643565,
+      "family": "eq",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru",
+        "deepconv"
+      ],
+      "params": {}
+    },
+    "logit_all5": {
+      "oof_acc_nested": 0.5449299258037923,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5564356435643565,
+      "family": "logit_mean",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru",
+        "deepconv"
+      ],
+      "params": {}
+    },
+    "rank_all5": {
+      "oof_acc_nested": 0.5399835119538334,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5465346534653466,
+      "family": "rank",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru",
+        "deepconv"
+      ],
+      "params": {}
+    },
+    "pow_mfs_st_gru": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": 0.5490519373454246,
+      "holdout_acc": 0.5584158415841585,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "logit_mfs_st_gru": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5584158415841585,
+      "family": "logit_mean",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "eq_mfs_st_gru": {
+      "oof_acc_nested": 0.5395713107996702,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5544554455445545,
+      "family": "eq",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "pow_mfs_st_gru_dc": {
+      "oof_acc_nested": 0.5416323165704864,
+      "oof_acc_in_sample": 0.5436933223413025,
+      "holdout_acc": 0.5524752475247525,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "conf_mfs_st_gru": {
+      "oof_acc_nested": 0.5412201154163232,
+      "oof_acc_in_sample": 0.5412201154163232,
+      "holdout_acc": 0.5564356435643565,
+      "family": "conf",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "temp": 4.0
+      }
+    },
+    "eq_mfavg_st_gru_cf": {
+      "oof_acc_nested": 0.5507007419620775,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5782178217821782,
+      "family": "eq",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {}
+    },
+    "pow_mfavg_st_gru_cf": {
+      "oof_acc_nested": 0.5527617477328937,
+      "oof_acc_in_sample": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "pow",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "conf_mfavg_st_gru_cf": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": 0.5494641384995878,
+      "holdout_acc": 0.5801980198019802,
+      "family": "conf",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {
+        "temp": 8.0
+      }
+    },
+    "pow_mfs_st_gru_cf": {
+      "oof_acc_nested": 0.5502885408079142,
+      "oof_acc_in_sample": 0.5502885408079142,
+      "holdout_acc": 0.5683168316831683,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {
+        "p": 0.5
+      }
+    },
+    "logit_mfs_st_gru_cf": {
+      "oof_acc_nested": 0.5465787304204451,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "logit_mean",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {}
+    },
+    "pow_all_cf": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": 0.5465787304204451,
+      "holdout_acc": 0.5643564356435643,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv",
+        "cfuse"
+      ],
+      "params": {
+        "p": 0.5
+      }
+    },
+    "pow_all_grus_cf": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": 0.5469909315746084,
+      "holdout_acc": 0.5544554455445545,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "gru2",
+        "deepconv",
+        "cfuse"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "eq_mfavg_gru_cf": {
+      "oof_acc_nested": 0.5399835119538334,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "eq",
+      "keys": [
+        "mf_avg",
+        "gru",
+        "cfuse"
+      ],
+      "params": {}
+    },
+    "pow_mf12_st_gru_cf": {
+      "oof_acc_nested": 0.5399835119538334,
+      "oof_acc_in_sample": 0.5474031327287716,
+      "holdout_acc": 0.5544554455445545,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "stgcn",
+        "gru",
+        "cfuse"
+      ],
+      "params": {
+        "p": 2.0
+      }
+    },
+    "eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5494641384995878,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "eq",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru_avg"
+      ],
+      "params": {}
+    },
+    "conf_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5486397361912614,
+      "oof_acc_in_sample": 0.5486397361912614,
+      "holdout_acc": 0.5722772277227722,
+      "family": "conf",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru_avg"
+      ],
+      "params": {
+        "temp": 8.0
+      }
+    },
+    "pow_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": 0.5511129431162407,
+      "holdout_acc": 0.5643564356435643,
+      "family": "pow",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru_avg"
+      ],
+      "params": {
+        "p": 0.5
+      }
+    },
+    "pow_mfs_st_grus": {
+      "oof_acc_nested": 0.5432811211871393,
+      "oof_acc_in_sample": 0.5469909315746084,
+      "holdout_acc": 0.5584158415841585,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "gru2"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "logit_mfs_st_grus": {
+      "oof_acc_nested": 0.5469909315746084,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5584158415841585,
+      "family": "logit_mean",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "gru2"
+      ],
+      "params": {}
+    },
+    "pow_all_grus": {
+      "oof_acc_nested": 0.5502885408079142,
+      "oof_acc_in_sample": 0.5502885408079142,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "gru2",
+        "deepconv"
+      ],
+      "params": {
+        "p": 0.0
+      }
+    },
+    "eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.5469909315746084,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5722772277227722,
+      "family": "eq",
+      "keys": [
+        "mf12",
+        "stgcn",
+        "gru"
+      ],
+      "params": {}
+    },
+    "blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5486397361912614,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_all5",
+        "eq_mf12avg_st_gru",
+        "pow_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_all5",
+          "eq_mf12avg_st_gru",
+          "pow_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "subset_pow": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5702970297029702,
+      "family": "subset_pow",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv",
+        "cfuse",
+        "gru2"
+      ],
+      "params": {
+        "chosen_per_fold": [
+          [
+            "midfuse",
+            "midfuse2",
+            "stgcn",
+            "gru2"
+          ],
+          [
+            "midfuse",
+            "midfuse2",
+            "stgcn",
+            "gru2"
+          ],
+          [
+            "midfuse",
+            "stgcn",
+            "cfuse"
+          ],
+          [
+            "midfuse",
+            "stgcn",
+            "gru2"
+          ],
+          [
+            "midfuse",
+            "midfuse2",
+            "stgcn",
+            "gru2"
+          ]
+        ]
+      }
+    },
+    "subset_eq": {
+      "oof_acc_nested": 0.5482275350370981,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "subset_eq",
+      "keys": [
+        "mf_avg",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "chosen_per_fold": [
+          [
+            "mf12",
+            "stgcn",
+            "gru_avg"
+          ],
+          [
+            "mf12",
+            "stgcn",
+            "gru_avg"
+          ],
+          [
+            "mf12",
+            "stgcn",
+            "gru_avg"
+          ],
+          [
+            "mf12",
+            "stgcn",
+            "gru_avg"
+          ],
+          [
+            "mf_avg",
+            "stgcn",
+            "gru_avg"
+          ]
+        ]
+      }
+    },
+    "logitstack_C0.001": {
+      "oof_acc_nested": 0.11253091508656224,
+      "oof_acc_in_sample": 0.11253091508656224,
+      "holdout_acc": 0.12277227722772277,
+      "family": "logitstack",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv",
+        "cfuse"
+      ],
+      "params": {
+        "C": 0.001,
+        "gap": 0.0
+      }
+    },
+    "logitstack_C0.01": {
+      "oof_acc_nested": 0.35696619950535863,
+      "oof_acc_in_sample": 0.4192085737840066,
+      "holdout_acc": 0.35247524752475246,
+      "family": "logitstack",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv",
+        "cfuse"
+      ],
+      "params": {
+        "C": 0.01,
+        "gap": 0.06224237427864798
+      }
+    },
+    "logitstack_C0.1": {
+      "oof_acc_nested": 0.5292662819455894,
+      "oof_acc_in_sample": 0.5989282769991756,
+      "holdout_acc": 0.5267326732673268,
+      "family": "logitstack",
+      "keys": [
+        "midfuse",
+        "midfuse2",
+        "midfuse3",
+        "stgcn",
+        "gru",
+        "deepconv",
+        "cfuse"
+      ],
+      "params": {
+        "C": 0.1,
+        "gap": 0.06966199505358617
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gru_cf": {
+      "oof_acc_nested": 0.5507007419620775,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5584158415841585,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "eq_mfavg_st_gru_cf"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "eq_mfavg_st_gru_cf"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_pow_mfs_st_gru_cf": {
+      "oof_acc_nested": 0.5502885408079142,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5643564356435643,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.5552349546578731,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5585325638911789,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_pow_mfs_st_gru_cf": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.5507007419620775,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5564356435643565,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5507007419620775,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5762376237623762,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfs_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.5494641384995878,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5544554455445545,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfs_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5486397361912614,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_all_grus_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.551525144270404,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5544554455445545,
+      "family": "method_blend",
+      "keys": [
+        "pow_all_grus",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_all_grus",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gru_cf_pow_mfs_st_gru_cf": {
+      "oof_acc_nested": 0.551525144270404,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "eq_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "eq_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.5519373454245672,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "eq_mfavg_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "eq_mfavg_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5548227535037098,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "eq_mfavg_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "eq_mfavg_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_pow_mfs_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.5519373454245672,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_pow_mfs_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5552349546578731,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfavg_st_gru_cf_pow_all_grus_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5527617477328937,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfavg_st_gru_cf",
+        "pow_all_grus",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfavg_st_gru_cf",
+          "pow_all_grus",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_pow_mfs_st_gru_cf_pow_all_grus": {
+      "oof_acc_nested": 0.549876339653751,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5603960396039604,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf",
+        "pow_all_grus"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf",
+          "pow_all_grus"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_pow_mfs_st_gru_cf_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5502885408079142,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5762376237623762,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "pow_mfs_st_gru_cf",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "pow_mfs_st_gru_cf",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_eq_mfavg_st_gru_cf_pow_all_grus_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.549876339653751,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "eq_mfavg_st_gru_cf",
+        "pow_all_grus",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "eq_mfavg_st_gru_cf",
+          "pow_all_grus",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfs_st_gru_cf_pow_all_grus_eq_mfavg_st_gruavg": {
+      "oof_acc_nested": 0.5490519373454246,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5524752475247525,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru_cf",
+        "pow_all_grus",
+        "eq_mfavg_st_gruavg"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru_cf",
+          "pow_all_grus",
+          "eq_mfavg_st_gruavg"
+        ],
+        "w": "equal"
+      }
+    },
+    "eqblend_pow_mfs_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.5432811211871393,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mfs_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mfs_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5436933223413025,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mfs_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5603960396039604,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mfs_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.5432811211871393,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mfs_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mfs_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5465787304204451,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5584158415841585,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mfs_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5603960396039604,
+      "family": "method_blend",
+      "keys": [
+        "pow_mfs_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "pow_mfs_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_logit_mfs_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.5432811211871393,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_logit_mfs_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_logit_mfs_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5436933223413025,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_logit_mfs_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5603960396039604,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_logit_mfs_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.5432811211871393,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_logit_mfs_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_logit_mfs_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5465787304204451,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5584158415841585,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_logit_mfs_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5603960396039604,
+      "family": "method_blend",
+      "keys": [
+        "logit_mfs_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "logit_mfs_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mf12_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mf12_st_gru__eq_mf12_st_gru": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "eq_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "eq_mf12_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mf12_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.544517724649629,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w12_pow_mf12_st_gru__conf_mf12_st_gru": {
+      "oof_acc_nested": 0.5465787304204451,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "conf_mf12_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "conf_mf12_st_gru"
+        ],
+        "w": [
+          1,
+          2
+        ]
+      }
+    },
+    "eqblend_pow_mf12_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": "equal"
+      }
+    },
+    "w21_pow_mf12_st_gru__eq_mf12avg_st_gru": {
+      "oof_acc_nested": 0.5441055234954658,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "eq_mf12avg_st_gru"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "eq_mf12avg_st_gru"
+        ],
+        "w": [
+          2,
+          1
+        ]
+      }
+    },
+    "eqblend_pow_mf12_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5465787304204451,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": "equal"
+      }
+    },
+    "w12_pow_mf12_st_gru__blend_ABD_v9replay": {
+      "oof_acc_nested": 0.5453421269579555,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "keys": [
+        "pow_mf12_st_gru",
+        "blend_ABD_v9replay"
+      ],
+      "params": {
+        "members": [
+          "pow_mf12_st_gru",
+          "blend_ABD_v9replay"
+        ],
+        "w": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "selected_method": "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gruavg",
+  "selected_oof_acc_nested": 0.5585325638911789,
+  "selected_holdout_acc": 0.5623762376237624,
+  "delta_oof_vs_v9": 0.009892827699917506,
+  "delta_holdout_vs_v9": -0.003960396039603853,
+  "clear_win": true,
+  "overwrite_submission": true,
+  "submission_overwrote_track": true,
+  "ping_disk_saver": true,
+  "holdout_peek_not_used_for_selection": {
+    "best_holdout_method_peek": "conf_mfavg_st_gru_cf",
+    "best_holdout_acc_peek": 0.5801980198019802,
+    "note": "NOT used for selection or overwrite decision"
+  },
+  "elapsed_sec": 46.41515493392944,
+  "finished_at_unix": 1788802049.3310773,
+  "win_criteria": "nested_OOF>=0.558 or holdout>=0.576",
+  "skipped": [
+    "TTA",
+    "radar_fill"
+  ],
+  "submission_v10b": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v10\\submission_v10b.csv",
+  "v9_selected_method": "blend_ABD",
+  "new_checkpoints": [
+    "skeleton_imu_v2/checkpoints_midfuse_s7",
+    "skeleton_imu_v2/checkpoints_gru_s7",
+    "skeleton_imu_v2/checkpoints_compact_fuse"
+  ],
+  "selected_recipe_human": {
+    "name": "eqblend_pow_mfavg_st_gru_cf_eq_mfavg_st_gruavg",
+    "members": [
+      "pow_mfavg_st_gru_cf = power_mean(mf_avg3, stgcn, gru, compact_fuse)",
+      "eq_mfavg_st_gruavg = equal(mf_avg3, stgcn, gru_avg2)"
+    ],
+    "combine": "equal average of member probs"
+  }
+}

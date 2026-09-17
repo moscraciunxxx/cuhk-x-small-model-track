@@ -1,0 +1,4 @@
+train cache 200/505
+train cache 400/505
+train cache 505/505
+saved vision_holdout (505, 2, 8, 48, 64) ok 505

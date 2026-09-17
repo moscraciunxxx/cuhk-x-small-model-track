@@ -1,0 +1,6696 @@
+{
+  "track": "v11_abg_blend",
+  "v9_baseline_oof": 0.5486397361912614,
+  "v9_baseline_holdout": 0.5663366336633663,
+  "v10_baseline_oof": 0.5585325638911789,
+  "v10_baseline_holdout": 0.5623762376237624,
+  "selected_method": "wABG_4_2_3",
+  "selected_oof_acc_nested": 0.5614179719703215,
+  "selected_holdout_acc": 0.5663366336633663,
+  "delta_oof_vs_v10": 0.002885408079142615,
+  "delta_holdout_vs_v9": 0.0,
+  "delta_holdout_vs_v10": 0.003960396039603853,
+  "clear_win_and": true,
+  "overwrite_submission": true,
+  "ping_disk_saver": true,
+  "win_criteria": "nested_OOF>=0.5585 AND holdout>=0.5663",
+  "holdout_peek_not_used_for_selection": {
+    "best_holdout_method_peek": "eq_mfavg_gruavg_cf",
+    "best_holdout_acc_peek": 0.5861386138613861,
+    "note": "NOT used for selection or overwrite decision"
+  },
+  "selected_recipe_human": {
+    "name": "wABG_4_2_3",
+    "params": {
+      "wa": 4,
+      "wb": 2,
+      "wg": 3,
+      "members": [
+        "A",
+        "B",
+        "G"
+      ]
+    },
+    "A": "nested power-mean(mf_avg3, ST-GCN, GRU, compact_fuse)",
+    "B": "equal(mf_avg3, ST-GCN, gru_avg2)",
+    "G": "nested power-mean(mf_avg3, ST-GCN, gru_avg2)"
+  },
+  "both_gate_hits_count": 8,
+  "both_gate_hits_top": {
+    "wABG_4_2_3": {
+      "oof_acc_nested": 0.5614179719703215,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG423_v9x0.25": {
+      "oof_acc_nested": 0.5610057708161583,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG_7_4_5": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG745_Ix0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG745_Ex0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG322_Ex0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG745_v9x0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG322_Mx0.75": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.75
+      }
+    }
+  },
+  "top_by_nested_oof": [
+    {
+      "name": "wABG_4_2_3",
+      "oof_acc_nested": 0.5614179719703215,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG423_v9x0.25",
+      "oof_acc_nested": 0.5610057708161583,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG745_Mx0.25",
+      "oof_acc_nested": 0.5610057708161583,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG_3_1_3",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_3_2_2",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_6_3_5",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_6_4_4",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_3_5",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_4_5",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG423_Mx0.25",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG423_Cx0.25",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG322_Ix0.25",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG745_Ix0.25",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG745_Ex0.25",
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG_4_3_2",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_5_3_2",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_5_3_4",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_3_3",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_4_2",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_5_4",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_7_5_5",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG423_Ix0.25",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG423_Fx0.25",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG322_Ex0.25",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG745_Ix0.5",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    {
+      "name": "wABG745_Ex0.5",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    {
+      "name": "wABG745_Mx0.5",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    {
+      "name": "wABG745_Cx0.25",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG745_Cx0.5",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    {
+      "name": "wABG745_Cx0.75",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    {
+      "name": "wABG745_v9x0.25",
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    {
+      "name": "wABG_2_1_1",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_3_1_2",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_4_1_4",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_4_1_5",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_4_2_2",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_4_2_5",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_5_2_2",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_5_2_3",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    {
+      "name": "wABG_5_2_4",
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    }
+  ],
+  "methods": {
+    "A": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru",
+          "cfuse"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.0
+        }
+      }
+    },
+    "B": {
+      "oof_acc_nested": 0.5494641384995878,
+      "holdout_acc": 0.5742574257425742,
+      "family": "eq",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru_avg"
+        ],
+        "family": "eq",
+        "params": {}
+      }
+    },
+    "G": {
+      "oof_acc_nested": 0.5490519373454246,
+      "holdout_acc": 0.5643564356435643,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru_avg"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.5
+        }
+      }
+    },
+    "E": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru_avg",
+          "cfuse"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.0
+        }
+      }
+    },
+    "C": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5782178217821782,
+      "family": "eq",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru",
+          "cfuse"
+        ],
+        "family": "eq",
+        "params": {}
+      }
+    },
+    "D": {
+      "oof_acc_nested": 0.5486397361912614,
+      "holdout_acc": 0.5801980198019802,
+      "family": "conf",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru",
+          "cfuse"
+        ],
+        "family": "conf",
+        "params": {
+          "temp": 6.0
+        }
+      }
+    },
+    "F": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5762376237623762,
+      "family": "conf",
+      "params": {
+        "keys": [
+          "mf12",
+          "stgcn",
+          "gru_avg",
+          "cfuse"
+        ],
+        "family": "conf",
+        "params": {
+          "temp": 2.0
+        }
+      }
+    },
+    "I": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru2",
+          "cfuse"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.0
+        }
+      }
+    },
+    "M": {
+      "oof_acc_nested": 0.5502885408079142,
+      "holdout_acc": 0.5683168316831683,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "midfuse",
+          "midfuse2",
+          "midfuse3",
+          "stgcn",
+          "gru",
+          "cfuse"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.5
+        }
+      }
+    },
+    "pow_all5": {
+      "oof_acc_nested": 0.5478153338829349,
+      "holdout_acc": 0.5603960396039604,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "midfuse",
+          "midfuse2",
+          "stgcn",
+          "gru",
+          "deepconv"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.5
+        }
+      }
+    },
+    "eq_mf12": {
+      "oof_acc_nested": 0.5469909315746084,
+      "holdout_acc": 0.5722772277227722,
+      "family": "eq",
+      "params": {
+        "keys": [
+          "mf12",
+          "stgcn",
+          "gru"
+        ],
+        "family": "eq",
+        "params": {}
+      }
+    },
+    "pow_mf12": {
+      "oof_acc_nested": 0.5474031327287716,
+      "holdout_acc": 0.5663366336633663,
+      "family": "pow",
+      "params": {
+        "keys": [
+          "midfuse",
+          "midfuse2",
+          "stgcn",
+          "gru"
+        ],
+        "family": "pow",
+        "params": {
+          "p": 0.0
+        }
+      }
+    },
+    "eq_mfavg_gruavg_cf": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5861386138613861,
+      "family": "eq",
+      "params": {
+        "keys": [
+          "mf_avg",
+          "stgcn",
+          "gru_avg",
+          "cfuse"
+        ],
+        "family": "eq",
+        "params": {}
+      }
+    },
+    "v9_blend_ABD": {
+      "oof_acc_nested": 0.5486397361912614,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "params": {
+        "family": "method_blend",
+        "params": {
+          "members": [
+            "pow_all5",
+            "eq_mf12",
+            "pow_mf12"
+          ],
+          "w": "equal"
+        }
+      }
+    },
+    "v10_selected": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "params": {
+        "family": "method_blend",
+        "params": {
+          "members": [
+            "A",
+            "B"
+          ],
+          "w": "equal"
+        }
+      }
+    },
+    "wABG_1_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_0_1": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_0_2": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_0_3": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_0_4": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_0_5": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_1": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_2": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_3": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_4": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_1_5": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_0": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_1": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_2": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_3": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_4": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_2_5": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_0": {
+      "oof_acc_nested": 0.549876339653751,
+      "holdout_acc": 0.5762376237623762,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_1": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5762376237623762,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_2": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_3": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_4": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_3_5": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_0": {
+      "oof_acc_nested": 0.5490519373454246,
+      "holdout_acc": 0.5782178217821782,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_1": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5782178217821782,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_2": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5762376237623762,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_3": {
+      "oof_acc_nested": 0.5511129431162407,
+      "holdout_acc": 0.5742574257425742,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_4": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5742574257425742,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_4_5": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5742574257425742,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_0": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5821782178217821,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_1": {
+      "oof_acc_nested": 0.5511129431162407,
+      "holdout_acc": 0.5782178217821782,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_2": {
+      "oof_acc_nested": 0.5502885408079142,
+      "holdout_acc": 0.5801980198019802,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_3": {
+      "oof_acc_nested": 0.549876339653751,
+      "holdout_acc": 0.5782178217821782,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_4": {
+      "oof_acc_nested": 0.5502885408079142,
+      "holdout_acc": 0.5762376237623762,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_1_5_5": {
+      "oof_acc_nested": 0.551525144270404,
+      "holdout_acc": 0.5742574257425742,
+      "family": "abg_weight",
+      "params": {
+        "wa": 1,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_1": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_2": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_3": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_4": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_0_5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_1": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_2": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_4": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_1_5": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_1": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_2": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_3": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_4": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_2_5": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_1": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_2": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_3": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_4": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_3_5": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_0": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_1": {
+      "oof_acc_nested": 0.5511129431162407,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_2": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_3": {
+      "oof_acc_nested": 0.551525144270404,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_4": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_4_5": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_0": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_1": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5762376237623762,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_2": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5722772277227722,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_3": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_4": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_2_5_5": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 2,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_1": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_2": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_4": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_0_5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_1": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_2": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_3": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_4": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_1_5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_1": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_2": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_4": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_2_5": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_1": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_2": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_3": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_4": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_3_5": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_1": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_2": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_3": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_4": {
+      "oof_acc_nested": 0.5544105523495466,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_4_5": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_0": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_1": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_2": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_3": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_4": {
+      "oof_acc_nested": 0.5511129431162407,
+      "holdout_acc": 0.5702970297029702,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_3_5_5": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 3,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_1": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_2": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_4": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_0_5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_1": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_2": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_4": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_1_5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_1": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_2": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_3": {
+      "oof_acc_nested": 0.5614179719703215,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_4": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_2_5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_1": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_2": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_4": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_3_5": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_1": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_2": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_3": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_4": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_4_5": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_1": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_2": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_3": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_4": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_4_5_5": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 4,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_1": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_2": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_4": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_0_5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_0": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_1": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_2": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_4": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_1_5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_1": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_2": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_3": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_4": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_2_5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_1": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_2": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_3": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_4": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_3_5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_1": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_2": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_3": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_4": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_4_5": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_1": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_2": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_3": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_4": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_5_5_5": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 5,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_1": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_2": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_3": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_4": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_0_5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_0": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_1": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_2": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_4": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_1_5": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_1": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_2": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_3": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_4": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_2_5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_1": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_2": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_3": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_4": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_3_5": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_1": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_2": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_3": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_4": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_4_5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_1": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_2": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_4": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_6_5_5": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 6,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_0": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5544554455445545,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_1": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_2": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_3": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_4": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_0_5": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 0,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_0": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5564356435643565,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_1": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_2": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_3": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_4": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_1_5": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 1,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_1": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_2": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_3": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_4": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_2_5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 2,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_1": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_2": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_3": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_4": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_3_5": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 3,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_0": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_1": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_2": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_3": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_4": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_4_5": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 0,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_1": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 1,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_2": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 2,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_3": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 3,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_4": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 4,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "wABG_7_5_5": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_weight",
+      "params": {
+        "wa": 7,
+        "wb": 5,
+        "wg": 5,
+        "members": [
+          "A",
+          "B",
+          "G"
+        ]
+      }
+    },
+    "v9v10_w0.00": {
+      "oof_acc_nested": 0.5486397361912614,
+      "holdout_acc": 0.5663366336633663,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.0
+      }
+    },
+    "v9v10_w0.05": {
+      "oof_acc_nested": 0.5474031327287716,
+      "holdout_acc": 0.5702970297029702,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.05
+      }
+    },
+    "v9v10_w0.10": {
+      "oof_acc_nested": 0.5465787304204451,
+      "holdout_acc": 0.5702970297029702,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.1
+      }
+    },
+    "v9v10_w0.15": {
+      "oof_acc_nested": 0.5490519373454246,
+      "holdout_acc": 0.5722772277227722,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.15000000000000002
+      }
+    },
+    "v9v10_w0.20": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.2
+      }
+    },
+    "v9v10_w0.25": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.25
+      }
+    },
+    "v9v10_w0.30": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.30000000000000004
+      }
+    },
+    "v9v10_w0.35": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5663366336633663,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.35000000000000003
+      }
+    },
+    "v9v10_w0.40": {
+      "oof_acc_nested": 0.5544105523495466,
+      "holdout_acc": 0.5663366336633663,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.4
+      }
+    },
+    "v9v10_w0.45": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5643564356435643,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.45
+      }
+    },
+    "v9v10_w0.50": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5663366336633663,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.5
+      }
+    },
+    "v9v10_w0.55": {
+      "oof_acc_nested": 0.5544105523495466,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.55
+      }
+    },
+    "v9v10_w0.60": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5702970297029702,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.6000000000000001
+      }
+    },
+    "v9v10_w0.65": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.65
+      }
+    },
+    "v9v10_w0.70": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.7000000000000001
+      }
+    },
+    "v9v10_w0.75": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.75
+      }
+    },
+    "v9v10_w0.80": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5683168316831683,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.8
+      }
+    },
+    "v9v10_w0.85": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.8500000000000001
+      }
+    },
+    "v9v10_w0.90": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5643564356435643,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.9
+      }
+    },
+    "v9v10_w0.95": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 0.9500000000000001
+      }
+    },
+    "v9v10_w1.00": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "v9v10_blend",
+      "params": {
+        "w10": 1.0
+      }
+    },
+    "margin_v10_else_v9_t0.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.0,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.0,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.0,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.05": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5663366336633663,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.05,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.05": {
+      "oof_acc_nested": 0.5519373454245672,
+      "holdout_acc": 0.5762376237623762,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.05,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.05": {
+      "oof_acc_nested": 0.5544105523495466,
+      "holdout_acc": 0.5742574257425742,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.05,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.1": {
+      "oof_acc_nested": 0.551525144270404,
+      "holdout_acc": 0.5663366336633663,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.1,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.1": {
+      "oof_acc_nested": 0.5531739488870568,
+      "holdout_acc": 0.5762376237623762,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.1,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.1": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5722772277227722,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.1,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.15": {
+      "oof_acc_nested": 0.549876339653751,
+      "holdout_acc": 0.5663366336633663,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.15,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.15": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5762376237623762,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.15,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.15": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5722772277227722,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.15,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.2": {
+      "oof_acc_nested": 0.5490519373454246,
+      "holdout_acc": 0.5643564356435643,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.2,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.2": {
+      "oof_acc_nested": 0.5523495465787304,
+      "holdout_acc": 0.5782178217821782,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.2,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.2": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5762376237623762,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.2,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.25": {
+      "oof_acc_nested": 0.5482275350370981,
+      "holdout_acc": 0.5663366336633663,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.25,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.25": {
+      "oof_acc_nested": 0.5507007419620775,
+      "holdout_acc": 0.5782178217821782,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.25,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.25": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5742574257425742,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.25,
+        "fallback": "F"
+      }
+    },
+    "margin_v10_else_v9_t0.3": {
+      "oof_acc_nested": 0.5486397361912614,
+      "holdout_acc": 0.5663366336633663,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.3,
+        "fallback": "v9"
+      }
+    },
+    "margin_v10_else_C_t0.3": {
+      "oof_acc_nested": 0.5511129431162407,
+      "holdout_acc": 0.5782178217821782,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.3,
+        "fallback": "C"
+      }
+    },
+    "margin_v10_else_F_t0.3": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5742574257425742,
+      "family": "margin_gate",
+      "params": {
+        "thr": 0.3,
+        "fallback": "F"
+      }
+    },
+    "wABG423_Ix0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG423_Ix0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    "wABG423_Ix0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "I",
+        "we": 0.75
+      }
+    },
+    "wABG423_Ix1.0": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "I",
+        "we": 1.0
+      }
+    },
+    "wABG423_Ex0.25": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG423_Ex0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    "wABG423_Ex0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "E",
+        "we": 0.75
+      }
+    },
+    "wABG423_Ex1.0": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "E",
+        "we": 1.0
+      }
+    },
+    "wABG423_Mx0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    "wABG423_Mx0.5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    "wABG423_Mx0.75": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "M",
+        "we": 0.75
+      }
+    },
+    "wABG423_Mx1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "M",
+        "we": 1.0
+      }
+    },
+    "wABG423_Cx0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    "wABG423_Cx0.5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    "wABG423_Cx0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    "wABG423_Cx1.0": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "C",
+        "we": 1.0
+      }
+    },
+    "wABG423_Fx0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    "wABG423_Fx0.5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "F",
+        "we": 0.5
+      }
+    },
+    "wABG423_Fx0.75": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "F",
+        "we": 0.75
+      }
+    },
+    "wABG423_Fx1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "F",
+        "we": 1.0
+      }
+    },
+    "wABG423_v9x0.25": {
+      "oof_acc_nested": 0.5610057708161583,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG423_v9x0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 0.5
+      }
+    },
+    "wABG423_v9x0.75": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 0.75
+      }
+    },
+    "wABG423_v9x1.0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 2,
+        "wg": 3,
+        "extra": "v9",
+        "we": 1.0
+      }
+    },
+    "wABG322_Ix0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG322_Ix0.5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    "wABG322_Ix0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.75
+      }
+    },
+    "wABG322_Ix1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "I",
+        "we": 1.0
+      }
+    },
+    "wABG322_Ex0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG322_Ex0.5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    "wABG322_Ex0.75": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.75
+      }
+    },
+    "wABG322_Ex1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "E",
+        "we": 1.0
+      }
+    },
+    "wABG322_Mx0.25": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    "wABG322_Mx0.5": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    "wABG322_Mx0.75": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.75
+      }
+    },
+    "wABG322_Mx1.0": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "M",
+        "we": 1.0
+      }
+    },
+    "wABG322_Cx0.25": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    "wABG322_Cx0.5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    "wABG322_Cx0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    "wABG322_Cx1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "C",
+        "we": 1.0
+      }
+    },
+    "wABG322_Fx0.25": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    "wABG322_Fx0.5": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.5
+      }
+    },
+    "wABG322_Fx0.75": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.75
+      }
+    },
+    "wABG322_Fx1.0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "F",
+        "we": 1.0
+      }
+    },
+    "wABG322_v9x0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG322_v9x0.5": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.5
+      }
+    },
+    "wABG322_v9x0.75": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.75
+      }
+    },
+    "wABG322_v9x1.0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 3,
+        "wb": 2,
+        "wg": 2,
+        "extra": "v9",
+        "we": 1.0
+      }
+    },
+    "wABG745_Ix0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG745_Ix0.5": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    "wABG745_Ix0.75": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 0.75
+      }
+    },
+    "wABG745_Ix1.0": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "I",
+        "we": 1.0
+      }
+    },
+    "wABG745_Ex0.25": {
+      "oof_acc_nested": 0.560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG745_Ex0.5": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    "wABG745_Ex0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 0.75
+      }
+    },
+    "wABG745_Ex1.0": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "E",
+        "we": 1.0
+      }
+    },
+    "wABG745_Mx0.25": {
+      "oof_acc_nested": 0.5610057708161583,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    "wABG745_Mx0.5": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    "wABG745_Mx0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 0.75
+      }
+    },
+    "wABG745_Mx1.0": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "M",
+        "we": 1.0
+      }
+    },
+    "wABG745_Cx0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    "wABG745_Cx0.5": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    "wABG745_Cx0.75": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    "wABG745_Cx1.0": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "C",
+        "we": 1.0
+      }
+    },
+    "wABG745_Fx0.25": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    "wABG745_Fx0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "F",
+        "we": 0.5
+      }
+    },
+    "wABG745_Fx0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "F",
+        "we": 0.75
+      }
+    },
+    "wABG745_Fx1.0": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "F",
+        "we": 1.0
+      }
+    },
+    "wABG745_v9x0.25": {
+      "oof_acc_nested": 0.5601813685078318,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG745_v9x0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 0.5
+      }
+    },
+    "wABG745_v9x0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 0.75
+      }
+    },
+    "wABG745_v9x1.0": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 7,
+        "wb": 4,
+        "wg": 5,
+        "extra": "v9",
+        "we": 1.0
+      }
+    },
+    "wABG211_Ix0.25": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG211_Ix0.5": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    "wABG211_Ix0.75": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "I",
+        "we": 0.75
+      }
+    },
+    "wABG211_Ix1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "I",
+        "we": 1.0
+      }
+    },
+    "wABG211_Ex0.25": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG211_Ex0.5": {
+      "oof_acc_nested": 0.5597691673536686,
+      "holdout_acc": 0.5584158415841585,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    "wABG211_Ex0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "E",
+        "we": 0.75
+      }
+    },
+    "wABG211_Ex1.0": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "E",
+        "we": 1.0
+      }
+    },
+    "wABG211_Mx0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    "wABG211_Mx0.5": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    "wABG211_Mx0.75": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "M",
+        "we": 0.75
+      }
+    },
+    "wABG211_Mx1.0": {
+      "oof_acc_nested": 0.5556471558120363,
+      "holdout_acc": 0.5683168316831683,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "M",
+        "we": 1.0
+      }
+    },
+    "wABG211_Cx0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    "wABG211_Cx0.5": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    "wABG211_Cx0.75": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    "wABG211_Cx1.0": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "C",
+        "we": 1.0
+      }
+    },
+    "wABG211_Fx0.25": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    "wABG211_Fx0.5": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "F",
+        "we": 0.5
+      }
+    },
+    "wABG211_Fx0.75": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "F",
+        "we": 0.75
+      }
+    },
+    "wABG211_Fx1.0": {
+      "oof_acc_nested": 0.5552349546578731,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "F",
+        "we": 1.0
+      }
+    },
+    "wABG211_v9x0.25": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG211_v9x0.5": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "v9",
+        "we": 0.5
+      }
+    },
+    "wABG211_v9x0.75": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "v9",
+        "we": 0.75
+      }
+    },
+    "wABG211_v9x1.0": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 2,
+        "wb": 1,
+        "wg": 1,
+        "extra": "v9",
+        "we": 1.0
+      }
+    },
+    "wABG432_Ix0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.25
+      }
+    },
+    "wABG432_Ix0.5": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.5
+      }
+    },
+    "wABG432_Ix0.75": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "I",
+        "we": 0.75
+      }
+    },
+    "wABG432_Ix1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "I",
+        "we": 1.0
+      }
+    },
+    "wABG432_Ex0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.25
+      }
+    },
+    "wABG432_Ex0.5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.5
+      }
+    },
+    "wABG432_Ex0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "E",
+        "we": 0.75
+      }
+    },
+    "wABG432_Ex1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "E",
+        "we": 1.0
+      }
+    },
+    "wABG432_Mx0.25": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.25
+      }
+    },
+    "wABG432_Mx0.5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.5
+      }
+    },
+    "wABG432_Mx0.75": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "M",
+        "we": 0.75
+      }
+    },
+    "wABG432_Mx1.0": {
+      "oof_acc_nested": 0.5581203627370157,
+      "holdout_acc": 0.5663366336633663,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "M",
+        "we": 1.0
+      }
+    },
+    "wABG432_Cx0.25": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.25
+      }
+    },
+    "wABG432_Cx0.5": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.5
+      }
+    },
+    "wABG432_Cx0.75": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "C",
+        "we": 0.75
+      }
+    },
+    "wABG432_Cx1.0": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "C",
+        "we": 1.0
+      }
+    },
+    "wABG432_Fx0.25": {
+      "oof_acc_nested": 0.5593569661995054,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.25
+      }
+    },
+    "wABG432_Fx0.5": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5603960396039604,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.5
+      }
+    },
+    "wABG432_Fx0.75": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "F",
+        "we": 0.75
+      }
+    },
+    "wABG432_Fx1.0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "F",
+        "we": 1.0
+      }
+    },
+    "wABG432_v9x0.25": {
+      "oof_acc_nested": 0.5589447650453421,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.25
+      }
+    },
+    "wABG432_v9x0.5": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5643564356435643,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.5
+      }
+    },
+    "wABG432_v9x0.75": {
+      "oof_acc_nested": 0.5572959604286892,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "v9",
+        "we": 0.75
+      }
+    },
+    "wABG432_v9x1.0": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5623762376237624,
+      "family": "abg_plus",
+      "params": {
+        "wa": 4,
+        "wb": 3,
+        "wg": 2,
+        "extra": "v9",
+        "we": 1.0
+      }
+    },
+    "eq_A+B": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "A",
+          "B"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_A+G": {
+      "oof_acc_nested": 0.5585325638911789,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "A",
+          "G"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_A+B+G": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5623762376237624,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "A",
+          "B",
+          "G"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_v10+v9": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5663366336633663,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "v10",
+          "v9"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_v10+F": {
+      "oof_acc_nested": 0.5535861500412201,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "v10",
+          "F"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_v10+C": {
+      "oof_acc_nested": 0.5548227535037098,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "v10",
+          "C"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_I+B+C": {
+      "oof_acc_nested": 0.5577081615828524,
+      "holdout_acc": 0.5683168316831683,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "I",
+          "B",
+          "C"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_A+B+F": {
+      "oof_acc_nested": 0.5560593569661995,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "A",
+          "B",
+          "F"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_F+v10+C": {
+      "oof_acc_nested": 0.5564715581203628,
+      "holdout_acc": 0.5702970297029702,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "F",
+          "v10",
+          "C"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_eq_mfavg_gruavg_cf+B": {
+      "oof_acc_nested": 0.5527617477328937,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "eq_mfavg_gruavg_cf",
+          "B"
+        ],
+        "w": "equal"
+      }
+    },
+    "eq_eq_mfavg_gruavg_cf+v10": {
+      "oof_acc_nested": 0.5568837592745259,
+      "holdout_acc": 0.5742574257425742,
+      "family": "method_blend",
+      "params": {
+        "members": [
+          "eq_mfavg_gruavg_cf",
+          "v10"
+        ],
+        "w": "equal"
+      }
+    }
+  },
+  "protocol": "GroupKFold nested OOF; ABG weight grid + v9/v10 blends; holdout last; AND gate",
+  "elapsed_sec": 7.750715255737305,
+  "finished_at_unix": 1788802999.1971698
+}

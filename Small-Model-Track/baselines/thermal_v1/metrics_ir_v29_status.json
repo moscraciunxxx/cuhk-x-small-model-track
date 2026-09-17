@@ -1,0 +1,53 @@
+﻿{
+    "best_public_prior":  {
+                              "csv":  "submission_ir_v7.csv",
+                              "public":  0.69154
+                          },
+    "updated_at":  "2026-09-11 07:00:47 PT",
+    "recipe_v29":  {
+                       "fuse":  "no lift vs v29b/v7 under SAFE gate; softmix hurts",
+                       "sam":  false,
+                       "label_smoothing":  0.1,
+                       "verdict":  "MISS_solo_lt_0.72",
+                       "members":  {
+                                       "s2024":  0.6554,
+                                       "s4096":  0.6851,
+                                       "ens":  0.6832
+                                   },
+                       "epochs":  40,
+                       "unfreeze_ep":  10,
+                       "mixup":  0.1,
+                       "cache":  "ir_yolo_v4 T16"
+                   },
+    "promote_gate":  {
+                         "disagree_vs_v7_max":  15,
+                         "nested_fixed_min":  0.75196,
+                         "mid":  "classic_aligned_mid"
+                     },
+    "gpu":  "FREE 0 MiB",
+    "tag":  "ir_v29_final",
+    "hashes":  {
+                   "v29b":  "3FC785E7C9CA0B781472392F947F1A66",
+                   "v7":  "88669340B7A0EB907F933E35AD0D469D",
+                   "track":  "3FC785E7C9CA0B781472392F947F1A66"
+               },
+    "safe_win":  {
+                     "full_hold":  0.75506072874493924,
+                     "nested_reselect":  0.75405874529429,
+                     "kaggle_submit":  null,
+                     "promoted_track":  true,
+                     "csv":  "submission_ir_v29b.csv",
+                     "disagree_test":  2,
+                     "nested_fixed":  0.75405874529429,
+                     "rule":  "classic9\u003c-t24s42 when c9_conf\u003c=0.40 and t24_conf\u003e=0.55; V7_CFG; classic aligned mid",
+                     "note":  "This script did not Kaggle-submit; v29b is 2 test flips",
+                     "disagree_hold":  1
+                 },
+    "outcome":  "SAFE_WIN_ERROR_DRIVEN__RECIPE_MISS",
+    "next_roi":  [
+                     "Parent: kaggle-submit submission_ir_v29b.csv if desired (tiny SAFE delta)",
+                     "Thermal lift (v5-rethink style) next if public v29b flat",
+                     "Do NOT SAM-chase this mixup0.1 freeze@10 recipe — solo ceiling ~0.685",
+                     "GPU free for HOTC/LMT"
+                 ]
+}

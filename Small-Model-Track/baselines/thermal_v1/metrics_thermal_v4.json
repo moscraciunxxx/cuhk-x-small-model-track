@@ -1,0 +1,18 @@
+{
+  "tag": "thermal_v4_strong",
+  "cache": "cache\\thermal_yolo",
+  "member_scores": {
+    "seed3141": 0.6150793650793651,
+    "seed7777": 0.5734126984126984
+  },
+  "holdout_acc_ensemble": 0.5992063492063492,
+  "holdout_acc_best_member": 0.6150793650793651,
+  "n_hold": 504,
+  "prior_v2_trio_ens": 0.6031746031746031,
+  "prior_v3_best_pool": 0.5813492063492064,
+  "mixup": 0.05,
+  "unfreeze_ep": 10,
+  "epochs": 48,
+  "patience": 18,
+  "delta_ens_vs_v2_trio": -0.003968253968253954
+}

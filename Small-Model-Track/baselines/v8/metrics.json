@@ -1,0 +1,177 @@
+{
+  "track": "v8_refine_fuse",
+  "v7_baseline_oof": 0.5235,
+  "v7_baseline_holdout": 0.5426,
+  "single_oof": {
+    "oof_midfuse": 0.5032976092333058,
+    "oof_stgcn": 0.47444352844187965,
+    "oof_gru": 0.5008244023083265,
+    "agree_mf_st": 0.5239076669414674,
+    "agree_mf_gru": 0.5523495465787304,
+    "agree_st_gru": 0.47815333882934874
+  },
+  "single_holdout": {
+    "holdout_midfuse": 0.5366336633663367,
+    "holdout_stgcn": 0.4792079207920792,
+    "holdout_gru": 0.502970297029703
+  },
+  "methods": {
+    "alpha2_mf_st": {
+      "oof_acc_nested": 0.5193734542456719,
+      "oof_acc_in_sample": 0.5234954657873042,
+      "holdout_acc": 0.5425742574257426,
+      "family": "alpha2",
+      "branches": [
+        "midfuse",
+        "stgcn"
+      ],
+      "params": {
+        "alpha_stgcn": 0.5
+      }
+    },
+    "alpha2_mf_gru": {
+      "oof_acc_nested": 0.5210222588623248,
+      "oof_acc_in_sample": 0.5263808738664468,
+      "holdout_acc": 0.5584158415841585,
+      "family": "alpha2_mg",
+      "branches": [
+        "midfuse",
+        "gru"
+      ],
+      "params": {
+        "alpha_other": 0.5
+      }
+    },
+    "w3_mf_st_gru": {
+      "oof_acc_nested": 0.5313272877164056,
+      "oof_acc_in_sample": 0.5395713107996702,
+      "holdout_acc": 0.5623762376237624,
+      "family": "w3",
+      "branches": [
+        "midfuse",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "w_mf_st_gru": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333334
+        ]
+      }
+    },
+    "per_class_alpha2_mf_st": {
+      "oof_acc_nested": 0.5193734542456719,
+      "oof_acc_in_sample": 0.5494641384995878,
+      "holdout_acc": 0.5445544554455446,
+      "family": "per_class",
+      "branches": [
+        "midfuse",
+        "stgcn"
+      ],
+      "params": {
+        "alpha_per_class_file": "per_class_alphas.npy"
+      }
+    },
+    "conf_gate_mf_st": {
+      "oof_acc_nested": 0.5243198680956307,
+      "oof_acc_in_sample": 0.52679307502061,
+      "holdout_acc": 0.5465346534653466,
+      "family": "conf_gate",
+      "branches": [
+        "midfuse",
+        "stgcn"
+      ],
+      "params": {
+        "mode": "max_gate",
+        "t": 0.6,
+        "alpha": 0.4
+      }
+    },
+    "conf_weighted_3": {
+      "oof_acc_nested": 0.5383347073371806,
+      "oof_acc_in_sample": 0.5383347073371806,
+      "holdout_acc": 0.5564356435643565,
+      "family": "conf_w",
+      "branches": [
+        "midfuse",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "temp": 4.0
+      }
+    },
+    "stack_logreg_2": {
+      "oof_acc_nested": 0.45754328112118714,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.4891089108910891,
+      "family": "stack_logreg",
+      "branches": [
+        "midfuse",
+        "stgcn"
+      ],
+      "params": {
+        "kind": "logreg"
+      }
+    },
+    "stack_logreg_3": {
+      "oof_acc_nested": 0.4460016488046167,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.46732673267326735,
+      "family": "stack_logreg",
+      "branches": [
+        "midfuse",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "kind": "logreg"
+      }
+    },
+    "stack_mlp_2": {
+      "oof_acc_nested": 0.4888705688375927,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5287128712871287,
+      "family": "stack_mlp",
+      "branches": [
+        "midfuse",
+        "stgcn"
+      ],
+      "params": {
+        "kind": "mlp"
+      }
+    },
+    "stack_mlp_3": {
+      "oof_acc_nested": 0.5115416323165705,
+      "oof_acc_in_sample": null,
+      "holdout_acc": 0.5287128712871287,
+      "family": "stack_mlp",
+      "branches": [
+        "midfuse",
+        "stgcn",
+        "gru"
+      ],
+      "params": {
+        "kind": "mlp"
+      }
+    }
+  },
+  "selected_method": "conf_weighted_3",
+  "selected_oof_acc_nested": 0.5383347073371806,
+  "selected_holdout_acc": 0.5564356435643565,
+  "delta_oof_vs_v7": 0.01483470733718062,
+  "delta_holdout_vs_v7": 0.013835643564356515,
+  "overwrite_submission": true,
+  "submission_overwrote_track": true,
+  "ping_disk_saver": true,
+  "holdout_peek_not_used_for_selection": {
+    "best_holdout_method_peek": "w3_mf_st_gru",
+    "best_holdout_acc_peek": 0.5623762376237624,
+    "note": "NOT used for selection or overwrite decision"
+  },
+  "elapsed_sec": 41.2192862033844,
+  "finished_at_unix": 1788797619.3090248,
+  "protocol": "GroupKFold OOF; nested hyperparam fit on non-holdout; holdout last",
+  "submission_v8": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\v8\\submission_v8.csv"
+}

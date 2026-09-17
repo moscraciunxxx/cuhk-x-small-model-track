@@ -1,0 +1,391 @@
+{
+  "tag": "ir_v18_thermal_rethink_mid_ens3",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "thermal_v5_rethink": {
+    "dir": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\thermal_yolo_r2p1d18_v5_rethink",
+    "members": {
+      "pool_seed2026": {
+        "val_acc": 0.5932539682539683,
+        "epoch": 34,
+        "recipe": {
+          "epochs": 42,
+          "mixup": 0.1,
+          "unfreeze_ep": 7,
+          "patience": 18,
+          "lr": 0.0001,
+          "label_smoothing": 0.05,
+          "resumed_from": 11
+        }
+      }
+    }
+  },
+  "thermal_v5_metrics": {
+    "tag": "thermal_v5_rethink",
+    "cache": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\cache\\thermal_yolo",
+    "member_scores": {
+      "seed2026": 0.5932539682539683
+    },
+    "holdout_acc_ensemble": 0.5932539682539683,
+    "holdout_acc_best_member": 0.5932539682539683,
+    "n_hold": 504,
+    "prior_v2_trio_ens": 0.6031746031746031,
+    "mixup": 0.1,
+    "unfreeze_ep": 7,
+    "epochs": 42,
+    "patience": 18,
+    "best_ep": 34,
+    "delta_ens_vs_v2_trio": -0.009920634920634885,
+    "resumed": true,
+    "start_ep": 11
+  },
+  "mid_ens3": {
+    "members": {
+      "v2b": 0.5366336633663367,
+      "s7": 0.5089108910891089,
+      "s123": 0.5227722772277228
+    },
+    "ens_hold_native": 0.5544554455445545,
+    "weighted_ens_hold": 0.5524752475247525,
+    "best_probmean_T": 2.5,
+    "best_probmean_acc": 0.5603960396039604,
+    "ens_hold_ir_aligned": 0.5544554455445545,
+    "old_mid_ir_hold": 0.5207920792079208,
+    "matched": 2931,
+    "delta_vs_old": 0.03366336633663369
+  },
+  "best": {
+    "ir": "classic_top6_base",
+    "th": "th_v6_soft",
+    "mid": "mid_ens3_softT25",
+    "mode": "sameT",
+    "full": 0.7469635627530364,
+    "cfg": {
+      "wa": 0.25,
+      "wb": 0.45,
+      "wc": 0.3,
+      "T": 3.5,
+      "acc": 0.7469635627530364,
+      "n": 494.0,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7457271026351976,
+    "nested_retune": 0.7415342305177971,
+    "disagree_vs_v7": 21,
+    "th_solo": 0.6153846153846154,
+    "mid_solo": 0.5603960396039604,
+    "ir_solo": 0.699009900990099,
+    "honest_nested": 0.7415342305177971
+  },
+  "best_honest_sameT": {
+    "ir": "classic_top6_base",
+    "th": "th_v6_soft",
+    "mid": "mid_ens3_softT25",
+    "mode": "sameT",
+    "full": 0.7469635627530364,
+    "cfg": {
+      "wa": 0.25,
+      "wb": 0.45,
+      "wc": 0.3,
+      "T": 3.5,
+      "acc": 0.7469635627530364,
+      "n": 494.0,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7457271026351976,
+    "nested_retune": 0.7415342305177971,
+    "disagree_vs_v7": 21,
+    "th_solo": 0.6153846153846154,
+    "mid_solo": 0.5603960396039604,
+    "ir_solo": 0.699009900990099,
+    "honest_nested": 0.7415342305177971
+  },
+  "top10_sameT": [
+    {
+      "ir": "classic_top6_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7469635627530364,
+      "nested_fixed": 0.7457271026351976,
+      "nested_retune": 0.7415342305177971,
+      "honest_nested": 0.7415342305177971,
+      "disagree_vs_v7": 21,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "cfg": {
+        "wa": 0.25,
+        "wb": 0.45,
+        "wc": 0.3,
+        "T": 3.5,
+        "acc": 0.7469635627530364,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "nested_fixed": 0.7498658731768897,
+      "nested_retune": 0.7414801289420888,
+      "honest_nested": 0.7414801289420888,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "nested_fixed": 0.7498658731768897,
+      "nested_retune": 0.7414801289420888,
+      "honest_nested": 0.7414801289420888,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "nested_fixed": 0.7501104573837379,
+      "nested_retune": 0.739628277090237,
+      "honest_nested": 0.739628277090237,
+      "disagree_vs_v7": 15,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "cfg": {
+        "wa": 0.2,
+        "wb": 0.4,
+        "wc": 0.4,
+        "T": 1.75,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "nested_fixed": 0.7480140213250378,
+      "nested_retune": 0.7374777394558283,
+      "honest_nested": 0.7374777394558283,
+      "disagree_vs_v7": 11,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "cfg": {
+        "wa": 0.2,
+        "wb": 0.4,
+        "wc": 0.4,
+        "T": 1.25,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "nested_fixed": 0.7498658731768897,
+      "nested_retune": 0.7372872568246883,
+      "honest_nested": 0.7372872568246883,
+      "disagree_vs_v7": 11,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "cfg": {
+        "wa": 0.30000000000000004,
+        "wb": 0.6,
+        "wc": 0.09999999999999998,
+        "T": 1.75,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "nested_fixed": 0.7477694371181894,
+      "nested_retune": 0.7359245733865332,
+      "honest_nested": 0.7359245733865332,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "nested_fixed": 0.7477694371181894,
+      "nested_retune": 0.7359245733865332,
+      "honest_nested": 0.7359245733865332,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "nested_fixed": 0.7478235386938978,
+      "nested_retune": 0.7353813033971281,
+      "honest_nested": 0.7353813033971281,
+      "disagree_vs_v7": 13,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "cfg": {
+        "wa": 0.30000000000000004,
+        "wb": 0.19999999999999998,
+        "wc": 0.5,
+        "T": 1.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "nested_fixed": 0.7478235386938978,
+      "nested_retune": 0.7353813033971281,
+      "honest_nested": 0.7353813033971281,
+      "disagree_vs_v7": 13,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "cfg": {
+        "wa": 0.30000000000000004,
+        "wb": 0.19999999999999998,
+        "wc": 0.5,
+        "T": 1.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      }
+    }
+  ],
+  "wrote_csv": false,
+  "csv": null,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "delta_vs_gate": {
+    "best_full": -0.016072874493927136,
+    "honest_nested": -0.021502206729166473
+  },
+  "next_roi": [
+    "MISS gate: honest_sameT=0.7415 full=0.7470 dis=21 vs gate 0.763 (delta honest -0.0215)",
+    "Thermal rethink (mixup0.1/unfreeze7) seed2026=0.593 vs v2_trio=0.603 vs v4=0.548 \u2014 stop more same R2+1D thermal seeds (solo<0.60 and fuse still prefers v2trio soft)",
+    "Mid ens3 landed +0.034 hold (0.521->0.554; softT25 0.560) and raised fuse Mid weight to ~0.30 in best cfg \u2014 next Mid ROI: bone-concat MidFuse or stronger architecture, not more weak seeds",
+    "Gate still needs ~+0.02 nested; IR diversity / non-R2+1D backbone more promising than another thermal seed",
+    "Keep ir_v7; no CSV; GPU idle for LMT or next job"
+  ],
+  "elapsed_sec": 31.9,
+  "summary": {
+    "thermal_v5_seed2026_solo": 0.5932539682539683,
+    "thermal_prior_v2_trio": 0.6031746031746031,
+    "thermal_v4_seed888": 0.5476190476190477,
+    "mid_old": 0.5207920792079208,
+    "mid_ens3": 0.5544554455445545,
+    "mid_ens3_softT25": 0.5603960396039604,
+    "best_fuse_full": 0.7469635627530364,
+    "best_fuse_honest_nested": 0.7415342305177971,
+    "gate": 0.7630364372469636,
+    "disagree": 21,
+    "v7_hold": 0.7530364372469636,
+    "public_keep": "submission_ir_v7.csv @ 0.69154"
+  },
+  "phase_a_thermal": {
+    "outcome": "PARTIAL_IMPROVE_BUT_MISS_GATE",
+    "recipe": {
+      "mixup": 0.1,
+      "unfreeze_ep": 7,
+      "patience": 18,
+      "epochs": 42
+    },
+    "seed2026_solo": 0.5933,
+    "vs_v2_trio": -0.0099,
+    "vs_v4": 0.0456,
+    "note": "Rethink beat v4 (0.548) and nearly matched v2_trio (0.603) but fuse best still preferred th_v6_soft; stop 2nd thermal seed (<0.60 and not complementary enough)"
+  },
+  "phase_b_mid": {
+    "outcome": "UPGRADE_LANDED",
+    "old_hold": 0.5208,
+    "ens3_hold": 0.5545,
+    "softT25_hold": 0.5604,
+    "delta": 0.0337,
+    "s99_holdout": 0.493,
+    "note": "Existing holdout seeds ensembled (+0.034). New seed99 underperformed. Bone-concat not in codebase path used."
+  },
+  "gpu_status_at_finish": "idle",
+  "finished_at": "2026-09-09 19:35:49 PT"
+}

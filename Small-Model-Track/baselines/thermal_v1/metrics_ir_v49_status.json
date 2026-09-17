@@ -1,0 +1,53 @@
+{
+  "tag": "ir_v49_irbox_on_v48",
+  "best": {
+    "kind": "irbox_on_v48",
+    "spec": [
+      0.5,
+      0.65,
+      2
+    ],
+    "n": 0,
+    "cfg": {
+      "wa": 0.56,
+      "wb": 0.35,
+      "wc": 0.09,
+      "T": 2.5
+    },
+    "nested": 0.7617107369085457,
+    "full": 0.7631578947368421,
+    "dis": 6,
+    "users_ok": true,
+    "users": {
+      "8": {
+        "te_acc": 0.7358490566037735,
+        "floor": 0.73585,
+        "ok": true
+      },
+      "9": {
+        "te_acc": 0.7944444444444444,
+        "floor": 0.7777777777777778,
+        "ok": true
+      },
+      "24": {
+        "te_acc": 0.7548387096774194,
+        "floor": 0.75484,
+        "ok": true
+      }
+    },
+    "clears": true
+  },
+  "submit_ok": true,
+  "test": {
+    "file_dis_vs_v48": 2,
+    "file_dis_vs_v29b": 11,
+    "diff_paths_v48": [
+      "small_model_track_test/SM_test_0222/",
+      "small_model_track_test/SM_test_0226/"
+    ],
+    "banned_hit": [],
+    "keep_v48_public": true
+  },
+  "deploy_pack_mb": 67.0773115158081,
+  "wc": 0.09
+}

@@ -1,0 +1,1400 @@
+{
+  "tag": "ir_v21_louo_stack",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "wrote_csv": false,
+  "csv": null,
+  "modalities_inventory": {
+    "Depth_Color": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 124,
+      "mean_file_bytes": 210021.43548387097,
+      "max_file_bytes": 213529,
+      "usable_hint": "csv_timeseries"
+    },
+    "IMU": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 6,
+      "mean_file_bytes": 18060.666666666668,
+      "max_file_bytes": 29816,
+      "usable_hint": "csv_timeseries"
+    },
+    "IR": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 124,
+      "mean_file_bytes": 308282.0,
+      "max_file_bytes": 308282,
+      "usable_hint": "csv_timeseries"
+    },
+    "Radar": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 3,
+      "mean_file_bytes": 43.0,
+      "max_file_bytes": 43,
+      "usable_hint": "stub_or_empty"
+    },
+    "Skeleton": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 124,
+      "mean_file_bytes": 1943.6370967741937,
+      "max_file_bytes": 1958,
+      "usable_hint": "csv_timeseries"
+    },
+    "Thermal": {
+      "n_actions": 40,
+      "sample_user": "user16",
+      "n_files_sample": 296,
+      "mean_file_bytes": 16888.091216216217,
+      "max_file_bytes": 17596,
+      "usable_hint": "csv_timeseries"
+    }
+  },
+  "mmwave_note": "Radar CSVs ~43B stubs \u2014 not usable; skip mmWave train",
+  "imu_note": "IMU CSVs present; already used in skeleton_imu_v2 midfuse dual (hold~0.50-0.56) and mid_ens*; spectrogram-only branch not trained this turn",
+  "experiments": {
+    "v21a_class_stack": {
+      "note": "LOUO logistic/ridge/MLP on probs+margin+entropy. Severe overfit.",
+      "best_honest_nested": 0.6582786681995447,
+      "best": {
+        "kind": "louo_stack",
+        "ir": "classic_top6_base",
+        "th": "th_v6_soft",
+        "mid": "mid_ens3_softT25",
+        "feat": "compact_T15",
+        "model": "logreg_l2_C05",
+        "full_resub": 0.9696356275303644,
+        "honest_nested": 0.6582786681995447,
+        "folds": [
+          {
+            "leave": 8,
+            "te_acc": 0.5723270440251572,
+            "tr_acc": 0.991044776119403,
+            "n": 159
+          },
+          {
+            "leave": 9,
+            "te_acc": 0.7444444444444445,
+            "tr_acc": 0.9745222929936306,
+            "n": 180
+          },
+          {
+            "leave": 24,
+            "te_acc": 0.6580645161290323,
+            "tr_acc": 0.9882005899705014,
+            "n": 155
+          }
+        ],
+        "disagree_vs_v7_oof": 142,
+        "disagree_vs_v7_full": 112,
+        "n_mask": 494,
+        "feat_dim": 179,
+        "base_weight_honest": 0.7415342305177971,
+        "base_weight_full": 0.7469635627530364,
+        "delta_vs_base_nested": -0.08325556231825237,
+        "delta_vs_gate_nested": -0.10475776904741885
+      },
+      "vs_weight_blend_delta": -0.08325556231825237
+    },
+    "v21b_gated_weight_stack": {
+      "best": {
+        "kind": "conf_gate",
+        "T": 1.5,
+        "ir": "classic9_base",
+        "th": "th_v6_v2trio",
+        "mid": "mid_ens4_bonetcn",
+        "honest_nested": 0.7481222244764546,
+        "full_resub": 0.7489878542510121,
+        "folds": [
+          {
+            "leave": 8,
+            "te_acc": 0.7044025157232704,
+            "n": 159,
+            "cfg": {
+              "thr": 0.35,
+              "w": 0.2,
+              "g": 0.0,
+              "T": 1.5
+            }
+          },
+          {
+            "leave": 9,
+            "te_acc": 0.7722222222222223,
+            "n": 180,
+            "cfg": {
+              "thr": 0.35,
+              "w": 0.2,
+              "g": 0.0,
+              "T": 1.5
+            }
+          },
+          {
+            "leave": 24,
+            "te_acc": 0.7677419354838709,
+            "n": 155,
+            "cfg": {
+              "thr": 0.35,
+              "w": 0.2,
+              "g": 0.0,
+              "T": 1.5
+            }
+          }
+        ],
+        "disagree_vs_v7_oof": 33,
+        "base_honest": 0.7439293523590541,
+        "base_full": 0.7489878542510121,
+        "delta_vs_base": 0.004192872117400492,
+        "full_cfg": {
+          "thr": 0.35,
+          "w": 0.2,
+          "g": 0.0,
+          "T": 1.5
+        }
+      },
+      "top12": [
+        {
+          "kind": "conf_gate",
+          "T": 1.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7481222244764546,
+          "full_resub": 0.7489878542510121,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.7044025157232704,
+              "n": 159,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.2,
+                "g": 0.0,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7722222222222223,
+              "n": 180,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.2,
+                "g": 0.0,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7677419354838709,
+              "n": 155,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.2,
+                "g": 0.0,
+                "T": 1.5
+              }
+            }
+          ],
+          "disagree_vs_v7_oof": 33,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": 0.004192872117400492,
+          "full_cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "g": 0.0,
+            "T": 1.5
+          }
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 1.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.743576565000789,
+          "full_resub": 0.7469635627530364,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "tr_acc": 0.7671641791044777,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "tr_acc": 0.7261146496815286,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "tr_acc": 0.7404129793510325,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 29,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.00035278735826516083
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 2.0,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7417247131489372,
+          "full_resub": 0.7469635627530364,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "tr_acc": 0.764179104477612,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7722222222222223,
+              "tr_acc": 0.732484076433121,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "tr_acc": 0.7404129793510325,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 30,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.002204639210116932
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 2.0,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens3",
+          "honest_nested": 0.7398728612970853,
+          "full_resub": 0.742914979757085,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "tr_acc": 0.7611940298507462,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "tr_acc": 0.7229299363057324,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "tr_acc": 0.7345132743362832,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 33,
+          "base_honest": 0.7414801289420888,
+          "base_full": 0.7510121457489879,
+          "delta_vs_base": -0.0016072676450035184
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 1.5,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens3",
+          "honest_nested": 0.7380210094452334,
+          "full_resub": 0.7489878542510121,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "tr_acc": 0.7731343283582089,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7611111111111111,
+              "tr_acc": 0.7292993630573248,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "tr_acc": 0.7315634218289085,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 33,
+          "base_honest": 0.7414801289420888,
+          "base_full": 0.7510121457489879,
+          "delta_vs_base": -0.0034591194968554007
+        },
+        {
+          "kind": "conf_gate",
+          "T": 2.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7359786749622416,
+          "full_resub": 0.742914979757085,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6855345911949685,
+              "n": 159,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.5,
+                "g": 1.0,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7611111111111111,
+              "n": 180,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.2,
+                "g": 0.0,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "n": 155,
+              "cfg": {
+                "thr": 0.35,
+                "w": 0.5,
+                "g": 0.5,
+                "T": 2.5
+              }
+            }
+          ],
+          "disagree_vs_v7_oof": 30,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.007950677396812544,
+          "full_cfg": {
+            "thr": 0.35,
+            "w": 0.5,
+            "g": 0.5,
+            "T": 2.5
+          }
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 2.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7356258876039764,
+          "full_resub": 0.7449392712550608,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6918238993710691,
+              "tr_acc": 0.764179104477612,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "tr_acc": 0.7292993630573248,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7483870967741936,
+              "tr_acc": 0.7345132743362832,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 30,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.008303464755077705
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 1.0,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens3",
+          "honest_nested": 0.7356258876039764,
+          "full_resub": 0.7449392712550608,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6918238993710691,
+              "tr_acc": 0.7671641791044777,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "tr_acc": 0.7292993630573248,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7483870967741936,
+              "tr_acc": 0.7315634218289085,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 29,
+          "base_honest": 0.7414801289420888,
+          "base_full": 0.7510121457489879,
+          "delta_vs_base": -0.005854241338112409
+        },
+        {
+          "kind": "weight_stack_logreg_src",
+          "T": 1.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7354895065485448,
+          "full_resub": 0.7408906882591093,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6729559748427673,
+              "tr_acc": 0.7671641791044777,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7722222222222223,
+              "tr_acc": 0.7197452229299363,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "tr_acc": 0.7345132743362832,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 24,
+          "base_honest": 0.7439293523590541,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.008439845810509272
+        },
+        {
+          "kind": "entropy_reweight",
+          "T": 2.5,
+          "ir": "classic_top6_base",
+          "th": "th_v6_soft",
+          "mid": "mid_ens3_softT25",
+          "honest_nested": 0.7354895065485448,
+          "full_resub": 0.7388663967611336,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6729559748427673,
+              "n": 159,
+              "alpha": 0.25
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7722222222222223,
+              "n": 180,
+              "alpha": 0.0
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "n": 155,
+              "alpha": 0.25
+            }
+          ],
+          "disagree_vs_v7_oof": 22,
+          "base_honest": 0.7335294515452763,
+          "base_full": 0.742914979757085,
+          "delta_vs_base": 0.001960055003268568,
+          "alpha_full": 0.25
+        },
+        {
+          "kind": "entropy_reweight",
+          "T": 2.0,
+          "ir": "classic_top6_base",
+          "th": "th_v6_soft",
+          "mid": "mid_ens3_softT25",
+          "honest_nested": 0.7352449223416965,
+          "full_resub": 0.7368421052631579,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6666666666666666,
+              "n": 159,
+              "alpha": 0.0
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "n": 180,
+              "alpha": 0.0
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "n": 155,
+              "alpha": 0.0
+            }
+          ],
+          "disagree_vs_v7_oof": 22,
+          "base_honest": 0.7335294515452763,
+          "base_full": 0.742914979757085,
+          "delta_vs_base": 0.0017154707964202043,
+          "alpha_full": 0.0
+        },
+        {
+          "kind": "weight_stack_ridge",
+          "T": 2.5,
+          "ir": "classic9_base",
+          "th": "th_v6_soft",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7346159915240865,
+          "full_resub": 0.7348178137651822,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "tr_acc": 0.7611940298507462,
+              "n": 159
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7444444444444445,
+              "tr_acc": 0.7229299363057324,
+              "n": 180
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "tr_acc": 0.7256637168141593,
+              "n": 155
+            }
+          ],
+          "disagree_vs_v7_oof": 47,
+          "base_honest": 0.745971686842046,
+          "base_full": 0.7489878542510121,
+          "delta_vs_base": -0.011355695317959436
+        }
+      ],
+      "best_weight_blend_ref": {
+        "ir": "classic9_base",
+        "th": "th_v6_soft",
+        "mid": "mid_ens4_bonetcn",
+        "base_honest": 0.745971686842046,
+        "base_full": 0.7489878542510121
+      },
+      "note": "Low-dim weight/gate stackers; class-level LOUO stack from v21a overfit badly (~0.66 nested)"
+    },
+    "v21c_expand": {
+      "best": {
+        "kind": "dual_gate",
+        "T": 2.5,
+        "ir": "classic9_base",
+        "th": "th_v6_v2trio",
+        "mid": "mid_ens4_bonetcn",
+        "honest_nested": 0.7456730010594891,
+        "full": 0.7469635627530364,
+        "disagree": 21,
+        "folds": [
+          {
+            "leave": 8,
+            "te_acc": 0.7044025157232704,
+            "n": 159,
+            "cfg": {
+              "wa": 0.5,
+              "wb": 0.3,
+              "wc": 0.2,
+              "thr": 0.3,
+              "w": 0.1,
+              "T": 2.5
+            }
+          },
+          {
+            "leave": 9,
+            "te_acc": 0.7777777777777778,
+            "n": 180,
+            "cfg": {
+              "wa": 0.5,
+              "wb": 0.3,
+              "wc": 0.2,
+              "thr": 0.3,
+              "w": 0.1,
+              "T": 2.5
+            }
+          },
+          {
+            "leave": 24,
+            "te_acc": 0.7548387096774194,
+            "n": 155,
+            "cfg": {
+              "wa": 0.5,
+              "wb": 0.3,
+              "wc": 0.2,
+              "thr": 0.3,
+              "w": 0.1,
+              "T": 2.5
+            }
+          }
+        ],
+        "full_cfg": {
+          "wa": 0.5,
+          "wb": 0.3,
+          "wc": 0.2,
+          "thr": 0.3,
+          "w": 0.1,
+          "T": 2.5
+        }
+      },
+      "top10": [
+        {
+          "kind": "dual_gate",
+          "T": 2.5,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7456730010594891,
+          "full": 0.7469635627530364,
+          "disagree": 21,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.7044025157232704,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "n": 180,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.5,
+            "wb": 0.3,
+            "wc": 0.2,
+            "thr": 0.3,
+            "w": 0.1,
+            "T": 2.5
+          }
+        },
+        {
+          "kind": "dual_gate",
+          "T": 2.5,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7456730010594891,
+          "full": 0.7469635627530364,
+          "disagree": 21,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.7044025157232704,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "n": 180,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 2.5
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.5,
+            "wb": 0.3,
+            "wc": 0.2,
+            "thr": 0.3,
+            "w": 0.1,
+            "T": 2.5
+          }
+        },
+        {
+          "kind": "ir_seed_gate",
+          "T": 1.5,
+          "ir": "classic9_seeds",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7431414981628007,
+          "full": 0.7449392712550608,
+          "disagree": 27,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6792452830188679,
+              "n": 159,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7888888888888889,
+              "n": 180,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7612903225806451,
+              "n": 155,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 1.5
+              }
+            }
+          ],
+          "full_cfg": {
+            "thr": 0.0,
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "T": 1.5
+          }
+        },
+        {
+          "kind": "dual_gate",
+          "T": 2.0,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7398728612970853,
+          "full": 0.7449392712550608,
+          "disagree": 19,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.35,
+                "w": 0.1,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "n": 180,
+              "cfg": {
+                "wa": 0.56,
+                "wb": 0.35,
+                "wc": 0.09,
+                "thr": 0.3,
+                "w": 0.2,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.45,
+                "w": 0.1,
+                "T": 2.0
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.5,
+            "wb": 0.3,
+            "wc": 0.2,
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        },
+        {
+          "kind": "dual_gate",
+          "T": 2.0,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7398728612970853,
+          "full": 0.7449392712550608,
+          "disagree": 19,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6981132075471698,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.35,
+                "w": 0.1,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "n": 180,
+              "cfg": {
+                "wa": 0.56,
+                "wb": 0.35,
+                "wc": 0.09,
+                "thr": 0.3,
+                "w": 0.2,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.45,
+                "w": 0.1,
+                "T": 2.0
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.5,
+            "wb": 0.3,
+            "wc": 0.2,
+            "thr": 0.35,
+            "w": 0.1,
+            "T": 2.0
+          }
+        },
+        {
+          "kind": "ir_seed_gate",
+          "T": 2.5,
+          "ir": "classic9_seeds",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7393836928833886,
+          "full": 0.742914979757085,
+          "disagree": 24,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6855345911949685,
+              "n": 159,
+              "cfg": {
+                "thr": 0.2,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "n": 180,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.45,
+                "wb": 0.35,
+                "wc": 0.2,
+                "T": 2.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.45,
+                "wb": 0.35,
+                "wc": 0.2,
+                "T": 2.5
+              }
+            }
+          ],
+          "full_cfg": {
+            "thr": 0.0,
+            "wa": 0.45,
+            "wb": 0.35,
+            "wc": 0.2,
+            "T": 2.5
+          }
+        },
+        {
+          "kind": "fuse4",
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "ens4+v4",
+          "honest_nested": 0.7374777394558283,
+          "full": 0.7489878542510121,
+          "disagree": 24,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6918238993710691,
+              "tr_acc": 0.7701492537313432,
+              "n": 159,
+              "cfg": {
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "wd": 0.0,
+                "T": 1.0,
+                "acc": 0.7701492537313432,
+                "n": 335,
+                "mode": "sameT4"
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7722222222222223,
+              "tr_acc": 0.7356687898089171,
+              "n": 180,
+              "cfg": {
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "wd": 0.0,
+                "T": 1.5,
+                "acc": 0.7356687898089171,
+                "n": 314,
+                "mode": "sameT4"
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7483870967741936,
+              "tr_acc": 0.7463126843657817,
+              "n": 155,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.4,
+                "wc": 0.0,
+                "wd": 0.09999999999999998,
+                "T": 3.0,
+                "acc": 0.7463126843657817,
+                "n": 339,
+                "mode": "sameT4"
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "wd": 0.0,
+            "T": 1.5,
+            "acc": 0.7489878542510121,
+            "n": 494,
+            "mode": "sameT4"
+          }
+        },
+        {
+          "kind": "ir_seed_gate",
+          "T": 2.0,
+          "ir": "classic9_seeds",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7372872568246883,
+          "full": 0.742914979757085,
+          "disagree": 35,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6792452830188679,
+              "n": 159,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7777777777777778,
+              "n": 180,
+              "cfg": {
+                "thr": 0.3,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 2.0
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "thr": 0.0,
+                "wa": 0.4,
+                "wb": 0.3,
+                "wc": 0.3,
+                "T": 2.0
+              }
+            }
+          ],
+          "full_cfg": {
+            "thr": 0.0,
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "T": 2.0
+          }
+        },
+        {
+          "kind": "dual_gate",
+          "T": 1.25,
+          "ir": "classic9_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.733828137327833,
+          "full": 0.7449392712550608,
+          "disagree": 19,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6855345911949685,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.75,
+                "w": 0.1,
+                "T": 1.25
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7611111111111111,
+              "n": 180,
+              "cfg": {
+                "wa": 0.56,
+                "wb": 0.35,
+                "wc": 0.09,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 1.25
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7548387096774194,
+              "n": 155,
+              "cfg": {
+                "wa": 0.45,
+                "wb": 0.35,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.2,
+                "T": 1.25
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.45,
+            "wb": 0.35,
+            "wc": 0.2,
+            "thr": 0.3,
+            "w": 0.2,
+            "T": 1.25
+          }
+        },
+        {
+          "kind": "dual_gate",
+          "T": 1.5,
+          "ir": "classic_acc_w_base",
+          "th": "th_v6_v2trio",
+          "mid": "mid_ens4_bonetcn",
+          "honest_nested": 0.7335294515452763,
+          "full": 0.742914979757085,
+          "disagree": 17,
+          "folds": [
+            {
+              "leave": 8,
+              "te_acc": 0.6855345911949685,
+              "n": 159,
+              "cfg": {
+                "wa": 0.5,
+                "wb": 0.3,
+                "wc": 0.2,
+                "thr": 0.3,
+                "w": 0.1,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 9,
+              "te_acc": 0.7666666666666667,
+              "n": 180,
+              "cfg": {
+                "wa": 0.56,
+                "wb": 0.35,
+                "wc": 0.09,
+                "thr": 0.4,
+                "w": 0.30000000000000004,
+                "T": 1.5
+              }
+            },
+            {
+              "leave": 24,
+              "te_acc": 0.7483870967741936,
+              "n": 155,
+              "cfg": {
+                "wa": 0.56,
+                "wb": 0.35,
+                "wc": 0.09,
+                "thr": 0.4,
+                "w": 0.2,
+                "T": 1.5
+              }
+            }
+          ],
+          "full_cfg": {
+            "wa": 0.56,
+            "wb": 0.35,
+            "wc": 0.09,
+            "thr": 0.4,
+            "w": 0.30000000000000004,
+            "T": 1.5
+          }
+        }
+      ],
+      "elapsed_sec": 4.6
+    },
+    "thermal_soft_Tavg": [
+      {
+        "kind": "thermal_softens_Tavg+logreg",
+        "weight_blend_honest": 0.7378345110649915,
+        "weight_blend_full": 0.7485148514851485,
+        "stack_nested": 0.6525568412152379,
+        "stack_full_resub": 0.9900990099009901,
+        "disagree_oof": 151,
+        "folds": [
+          {
+            "leave": 8,
+            "te_acc": 0.5333333333333333,
+            "tr_acc": 1.0,
+            "n": 165
+          },
+          {
+            "leave": 9,
+            "te_acc": 0.7513812154696132,
+            "tr_acc": 0.9938271604938271,
+            "n": 181
+          },
+          {
+            "leave": 24,
+            "te_acc": 0.6729559748427673,
+            "tr_acc": 0.9942196531791907,
+            "n": 159
+          }
+        ]
+      }
+    ]
+  },
+  "overall_best_honest": {
+    "source": "gated_v21b",
+    "honest_nested": 0.7481222244764546,
+    "detail": {
+      "kind": "conf_gate",
+      "T": 1.5,
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "honest_nested": 0.7481222244764546,
+      "full_resub": 0.7489878542510121,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.7044025157232704,
+          "n": 159,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "g": 0.0,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "g": 0.0,
+            "T": 1.5
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "n": 155,
+          "cfg": {
+            "thr": 0.35,
+            "w": 0.2,
+            "g": 0.0,
+            "T": 1.5
+          }
+        }
+      ],
+      "disagree_vs_v7_oof": 33,
+      "base_honest": 0.7439293523590541,
+      "base_full": 0.7489878542510121,
+      "delta_vs_base": 0.004192872117400492,
+      "full_cfg": {
+        "thr": 0.35,
+        "w": 0.2,
+        "g": 0.0,
+        "T": 1.5
+      }
+    }
+  },
+  "delta_vs_gate": {
+    "overall_nested": -0.014914212770508972,
+    "class_stack_nested": -0.10475776904741885,
+    "prior_v20_weight_blend_nested": -0.02125762252231811
+  },
+  "summary": {
+    "best_honest_nested": 0.7481222244764546,
+    "best_source": "gated_v21b",
+    "detail_kind": "conf_gate",
+    "gate": 0.7630364372469636,
+    "disagree": 33,
+    "public_keep": "submission_ir_v7.csv @ 0.69154",
+    "class_stack_failed": true,
+    "gated_plateau": true
+  },
+  "next_roi": [
+    "MISS gate: best honest nested=0.7481 (v21b conf_gate classic9|th_v6_v2trio|mid_ens4 T=1.5, dis=33) vs gate>=0.763; keep ir_v7 @ 0.69154",
+    "v21a class-level LOUO stack OVERFITS (best nested~0.658 << weight-blend~0.74) \u2014 do not ship; ir_v9 lesson confirmed",
+    "v21b/c gated/weight/fuse4/ir-seed plateau ~0.745-0.748 (best +0.004 vs weight-blend) \u2014 still Delta~-0.015 to gate",
+    "Radar/mmWave unusable (stub). IMU already in mid_ens; new IMU-spectrogram only worth it as complementary 4th stream with cheap hold export",
+    "Next ROI: IR temporal-stride / multi-clip TTA on EXISTING classic9 R2+1D ckpts (no new Kinetics IR 3D); else accept Small-track ceiling",
+    "No new Thermal R2+1D seeds; soft-T thermal ens flat",
+    "GPU unused (CPU-only) \u2014 handoff clear for LMT"
+  ],
+  "gpu_status_at_finish": "idle_unused_cpu_only",
+  "finished_at": "2026-09-09 21:58:02 PT",
+  "artifacts": {
+    "probe_v21": "probe_ir_v21.py",
+    "probe_v21b": "probe_ir_v21b_gated.py",
+    "probe_v21c": "probe_ir_v21c_expand.py",
+    "logs": [
+      "logs/probe_ir_v21.log",
+      "logs/probe_ir_v21b.log",
+      "logs/probe_ir_v21c.log"
+    ]
+  }
+}

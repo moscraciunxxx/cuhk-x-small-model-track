@@ -1,0 +1,58 @@
+{
+  "tag": "ir_v36_noirbox_ft_prefix",
+  "updated_at": "2026-09-12 06:17:00 PT",
+  "best": {
+    "kind": "prefix",
+    "spec": [
+      0.3,
+      0.5,
+      3
+    ],
+    "n": 3,
+    "cfg": {
+      "wa": 0.56,
+      "wb": 0.35,
+      "wc": 0.09,
+      "T": 2.5
+    },
+    "nested": 0.7559105971461418,
+    "full": 0.757085020242915,
+    "dis": 2,
+    "users_ok": true,
+    "users": {
+      "8": {
+        "te_acc": 0.7295597484276729,
+        "floor": 0.7295597484276729,
+        "ok": true
+      },
+      "9": {
+        "te_acc": 0.7833333333333333,
+        "floor": 0.7777777777777778,
+        "ok": true
+      },
+      "24": {
+        "te_acc": 0.7548387096774194,
+        "floor": 0.7548387096774194,
+        "ok": true
+      }
+    },
+    "clears": true
+  },
+  "clears_nested": true,
+  "label_free": true,
+  "submit_ok": true,
+  "wrote_csv": true,
+  "csv": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v36.csv",
+  "test": {
+    "disagree_vs_v29b": 2,
+    "file_dis_vs_v29b": 2,
+    "diff_paths": [
+      "small_model_track_test/SM_test_0301/",
+      "small_model_track_test/SM_test_0358/"
+    ],
+    "only_missed_0379": false
+  },
+  "deploy_pack_mb": 67.0773115158081,
+  "wc": 0.09,
+  "note": "noirbox FT 4ch; ranked prefix; no greedy; no extra mid; no 0-diff submit"
+}

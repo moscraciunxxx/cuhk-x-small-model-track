@@ -1,0 +1,58 @@
+{
+  "oof_rows": [
+    {
+      "alpha_stgcn": 0.2,
+      "oof_acc": 0.5090684253915911
+    },
+    {
+      "alpha_stgcn": 0.3,
+      "oof_acc": 0.5127782357790602
+    },
+    {
+      "alpha_stgcn": 0.4,
+      "oof_acc": 0.5230832646331409
+    },
+    {
+      "alpha_stgcn": 0.5,
+      "oof_acc": 0.5234954657873042
+    },
+    {
+      "alpha_stgcn": 0.6,
+      "oof_acc": 0.5218466611706513
+    }
+  ],
+  "selected_alpha_stgcn": 0.5,
+  "oof_acc_selected": 0.5234954657873042,
+  "oof_midfuse": 0.5032976092333058,
+  "oof_stgcn": 0.47444352844187965,
+  "oof_agreement": 0.5239076669414674,
+  "holdout_latefuse_acc": 0.5425742574257426,
+  "holdout_midfuse": 0.5366336633663367,
+  "holdout_stgcn": 0.4792079207920792,
+  "holdout_agreement": 0.5247524752475248,
+  "holdout_peek_alphas": [
+    {
+      "alpha_stgcn": 0.2,
+      "holdout_acc_peek": 0.5366336633663367
+    },
+    {
+      "alpha_stgcn": 0.3,
+      "holdout_acc_peek": 0.5346534653465347
+    },
+    {
+      "alpha_stgcn": 0.4,
+      "holdout_acc_peek": 0.5485148514851486
+    },
+    {
+      "alpha_stgcn": 0.5,
+      "holdout_acc_peek": 0.5425742574257426
+    },
+    {
+      "alpha_stgcn": 0.6,
+      "holdout_acc_peek": 0.5306930693069307
+    }
+  ],
+  "delta_vs_midfuse_holdout": 0.005940594059405946,
+  "clear_win": false,
+  "baseline_midfuse": 0.5366336633663367
+}

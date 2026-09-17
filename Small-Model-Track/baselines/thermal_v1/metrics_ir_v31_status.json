@@ -1,0 +1,73 @@
+{
+  "tag": "ir_v31_r2p1d34_4ch",
+  "updated_at": "2026-09-11 23:49:14 PT",
+  "best": {
+    "kind": "greedy",
+    "spec": [
+      0.45,
+      0.5,
+      8,
+      8
+    ],
+    "n_swap": [
+      215,
+      460,
+      37,
+      409,
+      213,
+      399,
+      397,
+      467
+    ],
+    "cfg": {
+      "wa": 0.56,
+      "wb": 0.35,
+      "wc": 0.09,
+      "T": 2.5
+    },
+    "extra_mid": false,
+    "nested": 0.7617648384842542,
+    "full": 0.7631578947368421,
+    "dis": 7,
+    "users_ok": true,
+    "users": {
+      "8": {
+        "te_acc": 0.7295597484276729,
+        "v29b": 0.7295597484276729,
+        "ok": true
+      },
+      "9": {
+        "te_acc": 0.7944444444444444,
+        "v29b": 0.7777777777777778,
+        "ok": true
+      },
+      "24": {
+        "te_acc": 0.7612903225806451,
+        "v29b": 0.7548387096774194,
+        "ok": true
+      }
+    },
+    "skipped": null,
+    "clears": true
+  },
+  "clears_nested": true,
+  "submit_ok": false,
+  "wrote_csv": false,
+  "csv": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v31.csv",
+  "test": {
+    "disagree_vs_v29b": 7,
+    "file_dis_vs_v29b": 7,
+    "diff_paths": [
+      "small_model_track_test/SM_test_0003/",
+      "small_model_track_test/SM_test_0024/",
+      "small_model_track_test/SM_test_0074/",
+      "small_model_track_test/SM_test_0114/",
+      "small_model_track_test/SM_test_0314/",
+      "small_model_track_test/SM_test_0358/",
+      "small_model_track_test/SM_test_0369/"
+    ],
+    "only_missed_0379": false
+  },
+  "deploy_pack_mb": 67.0773115158081,
+  "note": "no thermal conf-gate; extra mid only if per-user non-decrease"
+}

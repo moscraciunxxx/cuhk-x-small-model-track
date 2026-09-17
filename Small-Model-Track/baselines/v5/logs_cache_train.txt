@@ -1,0 +1,14 @@
+train cache 200/2426
+train cache 400/2426
+train cache 600/2426
+train cache 800/2426
+train cache 1000/2426
+train cache 1200/2426
+train cache 1400/2426
+train cache 1600/2426
+train cache 1800/2426
+train cache 2000/2426
+train cache 2200/2426
+train cache 2400/2426
+train cache 2426/2426
+saved vision_trainusers (2426, 2, 8, 48, 64) ok 2426

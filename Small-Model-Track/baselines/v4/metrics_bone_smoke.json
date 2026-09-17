@@ -1,0 +1,41 @@
+{
+  "mode": "smoke",
+  "seed": 42,
+  "model": "bonemidfuse",
+  "bone_dim": 168,
+  "device": "cuda",
+  "folds": [
+    {
+      "tag": "smoke",
+      "best_val_acc": 0.3504950495049505,
+      "n_train": 2426,
+      "n_val": 505,
+      "n_params": 2128232,
+      "ckpt": "checkpoints_bone_smoke\\best_smoke.pt",
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 3.4268099876444693,
+          "train_acc": 0.11995053586150041,
+          "val_loss": 3.1517374912110885,
+          "val_acc": 0.20594059405940593
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.8659001635011325,
+          "train_acc": 0.24278647980214343,
+          "val_loss": 2.85638756421533,
+          "val_acc": 0.3504950495049505
+        }
+      ],
+      "elapsed_sec": 9.899129629135132,
+      "val_users": [
+        8,
+        9,
+        24
+      ]
+    }
+  ],
+  "mean_val_acc": 0.3504950495049505,
+  "finished_at_unix": 1788786894.5161135
+}

@@ -1,0 +1,349 @@
+{
+  "tag": "ir_v20_s3d_or_cnn_gru",
+  "outcome": "ABORT",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "new_ir": {
+    "arch": "s3d",
+    "dir": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_s3d_v20",
+    "solo_hold": 0.5881188118811881,
+    "npz": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_s3d_v20\\hold_logits_strong.npz",
+    "pack_note": "S3D fp16 ~16MB or CNN+GRU ~few MB + yolov8n ~6.5MB << 100MB",
+    "abort_note": "ABORT_SIGNAL: s3d solo=0.5881 << MC3=0.6139 and no complementarity (best_blend=0.6970 vs classic9=0.6970)",
+    "mc3_ref_solo": 0.6138613861386139
+  },
+  "best": {
+    "ir": "classic9_base",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ens4_bonetcn",
+    "mode": "sameT",
+    "full": 0.7489878542510121,
+    "cfg": {
+      "wa": 0.4,
+      "wb": 0.3,
+      "wc": 0.3,
+      "T": 1.5,
+      "acc": 0.7489878542510121,
+      "n": 494.0,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7481222244764546,
+    "nested_retune": 0.7417788147246455,
+    "disagree_vs_v7": 33,
+    "th_solo": 0.6153846153846154,
+    "mid_solo": 0.5603960396039604,
+    "ir_solo": 0.697029702970297,
+    "honest_nested": 0.7417788147246455
+  },
+  "best_honest_sameT": {
+    "ir": "classic9_base",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ens4_bonetcn",
+    "mode": "sameT",
+    "full": 0.7489878542510121,
+    "cfg": {
+      "wa": 0.4,
+      "wb": 0.3,
+      "wc": 0.3,
+      "T": 1.5,
+      "acc": 0.7489878542510121,
+      "n": 494.0,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7481222244764546,
+    "nested_retune": 0.7417788147246455,
+    "disagree_vs_v7": 33,
+    "th_solo": 0.6153846153846154,
+    "mid_solo": 0.5603960396039604,
+    "ir_solo": 0.697029702970297,
+    "honest_nested": 0.7417788147246455
+  },
+  "top10_sameT": [
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.4,
+        "wb": 0.3,
+        "wc": 0.3,
+        "T": 1.5,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7481222244764546,
+      "nested_retune": 0.7417788147246455,
+      "disagree_vs_v7": 33,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.697029702970297,
+      "honest_nested": 0.7417788147246455
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.4,
+        "wb": 0.3,
+        "wc": 0.3,
+        "T": 1.5,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7481222244764546,
+      "nested_retune": 0.7417788147246455,
+      "disagree_vs_v7": 33,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.697029702970297,
+      "honest_nested": 0.7417788147246455
+    },
+    {
+      "ir": "classic_top6_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7469635627530364,
+      "cfg": {
+        "wa": 0.25,
+        "wb": 0.45,
+        "wc": 0.3,
+        "T": 3.5,
+        "acc": 0.7469635627530364,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7457271026351976,
+      "nested_retune": 0.7415342305177971,
+      "disagree_vs_v7": 21,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.699009900990099,
+      "honest_nested": 0.7415342305177971
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7498658731768897,
+      "nested_retune": 0.7414801289420888,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.7414801289420888
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens3",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35000000000000003,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7498658731768897,
+      "nested_retune": 0.7414801289420888,
+      "disagree_vs_v7": 10,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5544554455445545,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.7414801289420888
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "cfg": {
+        "wa": 0.2,
+        "wb": 0.4,
+        "wc": 0.4,
+        "T": 1.75,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7501104573837379,
+      "nested_retune": 0.739628277090237,
+      "disagree_vs_v7": 15,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.739628277090237
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.45,
+        "wb": 0.30000000000000004,
+        "wc": 0.25,
+        "T": 2.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7478776402696061,
+      "nested_retune": 0.7380210094452334,
+      "disagree_vs_v7": 23,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.7380210094452334
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v2_ens",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.45,
+        "wb": 0.30000000000000004,
+        "wc": 0.25,
+        "T": 2.0,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7478776402696061,
+      "nested_retune": 0.7380210094452334,
+      "disagree_vs_v7": 23,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.7380210094452334
+    },
+    {
+      "ir": "classic_acc_w_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7510121457489879,
+      "cfg": {
+        "wa": 0.30000000000000004,
+        "wb": 0.5499999999999999,
+        "wc": 0.15000000000000002,
+        "T": 2.25,
+        "acc": 0.7510121457489879,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7502186605351547,
+      "nested_retune": 0.7376400441829535,
+      "disagree_vs_v7": 18,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.695049504950495,
+      "honest_nested": 0.7376400441829535
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_soft",
+      "mid": "mid_ens3_softT25",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.2,
+        "wb": 0.4,
+        "wc": 0.4,
+        "T": 1.25,
+        "acc": 0.7489878542510121,
+        "n": 494.0,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7480140213250378,
+      "nested_retune": 0.7374777394558283,
+      "disagree_vs_v7": 11,
+      "th_solo": 0.6153846153846154,
+      "mid_solo": 0.5603960396039604,
+      "ir_solo": 0.697029702970297,
+      "honest_nested": 0.7374777394558283
+    }
+  ],
+  "wrote_csv": false,
+  "csv": null,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "delta_vs_gate": {
+    "best_full": -0.014048582995951464,
+    "honest_nested": -0.02125762252231811
+  },
+  "next_roi": [
+    "ABORT: S3D seed42 solo=0.5881 << MC3=0.6139; classic9+s3d blend flat (0.6970=classic9); no multi-seed 7/55",
+    "MISS gate: best honest nested=0.7418 full=0.7490 dis=33 vs gate>=0.763; no CSV; keep ir_v7 @ 0.69154",
+    "Stop IR backbone churn (S3D < MC3, zero fuse lift). Prefer Mid feature / LOUO / thermal diversity \u2014 not another Kinetics IR 3D",
+    "Optional one-shot CNN+GRU only if parent wants arch contrast; not required (S3D did not OOM)",
+    "GPU idle 0 MiB \u2014 handoff clear"
+  ],
+  "elapsed_sec": 288.2,
+  "summary": {
+    "new_ir_arch": "s3d",
+    "new_ir_solo": 0.5881188118811881,
+    "mc3_solo": 0.6138613861386139,
+    "best_fuse_full": 0.7489878542510121,
+    "best_fuse_honest_nested": 0.7417788147246455,
+    "gate": 0.7630364372469636,
+    "disagree": 33,
+    "v7_hold": 0.7530364372469636,
+    "public_keep": "submission_ir_v7.csv @ 0.69154"
+  },
+  "gpu_status_at_finish": "idle_0MiB_no_compute_apps",
+  "finished_at": "2026-09-09 21:38:34 PT",
+  "multi_seed": false,
+  "cnn_gru_fallback": false,
+  "cnn_gru_note": "Skipped: S3D trained OK (no OOM); abort on weak solo/no classic9 lift \u2014 CNN+GRU only for OOM per parent",
+  "train": {
+    "script": "train_ir_s3d_v20.py",
+    "seeds": [
+      42
+    ],
+    "epochs": 36,
+    "batch_size": 6,
+    "patience": 12,
+    "best_hold_seed42": 0.5881188118811881,
+    "took_s": 1705.2,
+    "log": "logs\\ir_v20_s3d_20260909_210255.log",
+    "oom": false
+  }
+}

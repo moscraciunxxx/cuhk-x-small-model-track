@@ -1,0 +1,71 @@
+# Competition raw data (download from Kaggle; do not republish)
+Small-Model-Track/Training/
+Small-Model-Track/Testing/data/
+
+# Python / envs
+.venv/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+*.egg-info/
+.Python
+.env
+.env.*
+
+# Secrets
+kaggle.json
+**/kaggle.json
+**/*credentials*
+**/*access_token*
+**/*.pem
+**/*.key
+*.secret
+
+# Weights, caches, tensors (too large; rebuild locally)
+**/cache/
+**/checkpoints/
+**/weights/
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.npy
+**/*.npz
+**/*.bin
+**/*.pkl
+**/*.h5
+**/*.hdf5
+
+# Frames / media
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.bmp
+**/*.mp4
+**/*.avi
+**/*.mkv
+
+# Logs / local scratch
+**/logs/
+**/*.log
+**/*.err
+**/*.pid
+**/_tmp_*
+
+# Archives / encoded dumps
+*.zip
+**/*.zip
+*.b64
+**/*.b64
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep sample schema CSVs under Testing/test_file
+!Small-Model-Track/Testing/test_file/*.csv

@@ -1,0 +1,35 @@
+{
+  "tag": "earlyfuse_v1",
+  "mode": "shared",
+  "member_scores": {
+    "seed42": {
+      "hold": 0.6059405940594059,
+      "nested": 0.606668793638459,
+      "per_user": {
+        "8": 0.5212121212121212,
+        "9": 0.6132596685082873,
+        "24": 0.6855345911949685
+      }
+    }
+  },
+  "holdout_acc_ensemble": 0.6059405940594059,
+  "nested_louo_ensemble": 0.606668793638459,
+  "per_user": {
+    "8": 0.5212121212121212,
+    "9": 0.6132596685082873,
+    "24": 0.6855345911949685
+  },
+  "disagree_vs_v7": -1,
+  "gate": {
+    "min_hold": 0.7630364372469636,
+    "min_nested": 0.7630364372469636,
+    "min_disagree": 20,
+    "clear_win": false
+  },
+  "ir_v7_hold": 0.7530364372469636,
+  "delta_vs_v7_hold": -0.14709584318755764,
+  "wrote_csv": false,
+  "submit": "DO NOT - keep ir_v7",
+  "ckpt_dir": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\sharedstem_ir_depth_v1",
+  "fp16_pack_note": "shared/hybrid/ch6 ~60MB fp16 legal; dual~120MB illegal \u2014 prefer shared"
+}

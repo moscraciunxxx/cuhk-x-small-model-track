@@ -1,0 +1,19 @@
+{
+  "tag": "thermal_v5_rethink",
+  "cache": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\cache\\thermal_yolo",
+  "member_scores": {
+    "seed2026": 0.5932539682539683
+  },
+  "holdout_acc_ensemble": 0.5932539682539683,
+  "holdout_acc_best_member": 0.5932539682539683,
+  "n_hold": 504,
+  "prior_v2_trio_ens": 0.6031746031746031,
+  "mixup": 0.1,
+  "unfreeze_ep": 7,
+  "epochs": 42,
+  "patience": 18,
+  "best_ep": 34,
+  "delta_ens_vs_v2_trio": -0.009920634920634885,
+  "resumed": true,
+  "start_ep": 11
+}

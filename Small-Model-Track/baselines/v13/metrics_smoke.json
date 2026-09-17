@@ -1,0 +1,75 @@
+{
+  "mode": "cv",
+  "seed": 42,
+  "model": "midfuse_wide",
+  "T": 64,
+  "device": "cuda",
+  "dual": true,
+  "weighted_ce": true,
+  "balanced_sampler": false,
+  "label_smoothing": 0.05,
+  "augment": true,
+  "mixup": false,
+  "lr": 0.0007,
+  "weight_decay": 0.00015,
+  "batch_size": 24,
+  "epochs": 2,
+  "patience": 0,
+  "folds": [
+    {
+      "tag": "fold0",
+      "best_val_acc": 0.1358609794628752,
+      "n_train": 2298,
+      "n_val": 633,
+      "n_params": 6262040,
+      "ckpt": "baselines\\v13\\checkpoints_mfw_smoke\\best_fold0.pt",
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 3.577942334018239,
+          "train_acc": 0.072236727589208,
+          "val_loss": 3.5724776141451433,
+          "val_acc": 0.07109004739336493,
+          "lr": 0.00035
+        },
+        {
+          "epoch": 2,
+          "train_loss": 3.162367066888834,
+          "train_acc": 0.12010443864229765,
+          "val_loss": 3.22038596388288,
+          "val_acc": 0.1358609794628752,
+          "lr": 0.0
+        }
+      ],
+      "elapsed_sec": 10.934109210968018,
+      "val_users": [
+        4,
+        6,
+        8,
+        21
+      ],
+      "train_users": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "cv_splits": 5,
+  "mean_val_acc": 0.1358609794628752,
+  "std_val_acc": 0.0,
+  "n_params": 6262040,
+  "oof_acc_nonholdout": 0.033800494641384994,
+  "finished_at_unix": 1788804084.4983947
+}

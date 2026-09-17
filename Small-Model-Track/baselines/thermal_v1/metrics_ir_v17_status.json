@@ -1,0 +1,250 @@
+{
+  "tag": "ir_v17_thermal_v4_then_ir_long",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "thermal_v4": {
+    "tag": "thermal_v4_strong",
+    "cache": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\cache\\thermal_yolo",
+    "member_scores": {
+      "seed888": 0.5476190476190477
+    },
+    "holdout_acc_ensemble": 0.5476190476190477,
+    "holdout_acc_best_member": 0.5476190476190477,
+    "n_hold": 504,
+    "prior_v2_trio_ens": 0.6031746031746031,
+    "prior_v3_best_pool": 0.5813492063492064,
+    "mixup": 0.3,
+    "unfreeze_ep": 3,
+    "epochs": 42,
+    "patience": 14,
+    "delta_ens_vs_v2_trio": -0.05555555555555547
+  },
+  "ir_long_seed7777": {
+    "hold_acc": 0.6554455445544555,
+    "epochs_planned": 48,
+    "early_stop_best_ep_note": "best=0.6554@ep8 early_stop@22",
+    "vs_classic9_mean": 0.697029702970297,
+    "ckpt": "checkpoints/ir_yolo_r2p1d18_v17_long/pool_seed7777.pt",
+    "classic9_base_solo": 0.697029702970297
+  },
+  "fallback_choice": {
+    "decision": "skip_second_thermal_seed__train_longer_IR_ep48",
+    "reason": "Thermal seed888 solo=0.5476 << v2_trio=0.603 and << v3_best=0.581; fuse honest_sameT=0.744 <= v7 0.753 and under gate 0.763",
+    "thermal_seed_trained": [
+      888
+    ],
+    "thermal_recipe": {
+      "epochs": 42,
+      "mixup": 0.3,
+      "unfreeze_ep": 3,
+      "patience": 14
+    },
+    "ir_fallback": {
+      "seed": 7777,
+      "epochs": 48,
+      "mixup": 0.3,
+      "unfreeze_ep": 3,
+      "patience": 14,
+      "cache": "cache/ir_yolo_v4",
+      "ckpt_dir": "checkpoints/ir_yolo_r2p1d18_v17_long",
+      "status": "done",
+      "hold_acc": 0.6554455445544555
+    },
+    "skipped_second_thermal": true
+  },
+  "best": {
+    "ir": "classic9_swap_weak",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ir_v4",
+    "mode": "sameT",
+    "full": 0.7469635627530364,
+    "cfg": {
+      "wa": 0.5333333333333333,
+      "wb": 0.36666666666666664,
+      "wc": 0.10000000000000003,
+      "T": 2.75,
+      "acc": 0.7469635627530364,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7457271026351976,
+    "nested_retune": 0.7293365794278759,
+    "honest_nested": 0.7293365794278759,
+    "disagree_vs_v7": 9,
+    "ir_solo": 0.700990099009901
+  },
+  "best_honest_sameT": {
+    "ir": "classic9_swap_weak",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ir_v4",
+    "mode": "sameT",
+    "full": 0.7469635627530364,
+    "cfg": {
+      "wa": 0.5333333333333333,
+      "wb": 0.36666666666666664,
+      "wc": 0.10000000000000003,
+      "T": 2.75,
+      "acc": 0.7469635627530364,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7457271026351976,
+    "nested_retune": 0.7293365794278759,
+    "honest_nested": 0.7293365794278759,
+    "disagree_vs_v7": 9,
+    "ir_solo": 0.700990099009901
+  },
+  "all_sameT": [
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.5333333333333333,
+        "wb": 0.36666666666666664,
+        "wc": 0.10000000000000003,
+        "T": 2.75,
+        "acc": 0.7489878542510121,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7477153355424809,
+      "nested_retune": 0.7253882915173238,
+      "honest_nested": 0.7253882915173238,
+      "disagree_vs_v7": 5,
+      "ir_solo": 0.697029702970297
+    },
+    {
+      "ir": "classic9_plus_7777",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.5666666666666667,
+        "wb": 0.36666666666666664,
+        "wc": 0.06666666666666671,
+        "T": 1.5,
+        "acc": 0.7489878542510121,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7480140213250378,
+      "nested_retune": 0.7275388291517323,
+      "honest_nested": 0.7275388291517323,
+      "disagree_vs_v7": 6,
+      "ir_solo": 0.700990099009901
+    },
+    {
+      "ir": "classic_top6_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7408906882591093,
+      "cfg": {
+        "wa": 0.6666666666666666,
+        "wb": 0.2333333333333334,
+        "wc": 0.09999999999999998,
+        "T": 3.5,
+        "acc": 0.7408906882591093,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7391391086765401,
+      "nested_retune": 0.7234823380897636,
+      "honest_nested": 0.7234823380897636,
+      "disagree_vs_v7": 20,
+      "ir_solo": 0.699009900990099
+    },
+    {
+      "ir": "classic_top6_plus_7777",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7388663967611336,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.4,
+        "wc": 0.09999999999999998,
+        "T": 1.5,
+        "acc": 0.7388663967611336,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7377764252383852,
+      "nested_retune": 0.7200232185929082,
+      "honest_nested": 0.7200232185929082,
+      "disagree_vs_v7": 18,
+      "ir_solo": 0.697029702970297
+    },
+    {
+      "ir": "classic9_swap_weak",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7469635627530364,
+      "cfg": {
+        "wa": 0.5333333333333333,
+        "wb": 0.36666666666666664,
+        "wc": 0.10000000000000003,
+        "T": 2.75,
+        "acc": 0.7469635627530364,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7457271026351976,
+      "nested_retune": 0.7293365794278759,
+      "honest_nested": 0.7293365794278759,
+      "disagree_vs_v7": 9,
+      "ir_solo": 0.700990099009901
+    }
+  ],
+  "wrote_csv": false,
+  "csv": null,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "delta_vs_gate": {
+    "best_full": -0.016072874493927136,
+    "honest_nested": -0.033699857819087686
+  },
+  "next_roi": [
+    "Thermal stronger recipe (ep42/mixup0.3/unfreeze3) underperformed prior seeds \u2014 do not chase more thermal mixup seeds without recipe rethink (lower mixup / later unfreeze / SoftTarget)",
+    "IR ep48 seed7777 hold=0.6554 below classic9 (~0.66-0.70); adding it did not lift honest nested above ~0.73",
+    "Gate still needs ~+0.02 nested; next ROI: MidFuse upgrade or new crop/backbone, not more of same R2+1D recipe",
+    "Keep ir_v7; GPU idle for LMT or next job"
+  ],
+  "elapsed_sec": 1.5,
+  "phase_a_thermal": {
+    "outcome": "MISS",
+    "seed888_solo": 0.5476,
+    "honest_sameT_best": 0.744,
+    "note": "skipped 2nd thermal; mixup0.3 recipe underperformed prior thermal seeds"
+  },
+  "summary": {
+    "thermal_v4_seed888_solo": 0.5476190476190477,
+    "thermal_prior_v2_trio": 0.6031746031746031,
+    "ir_long_seed7777_solo": 0.6554455445544555,
+    "classic9_base_solo": 0.697029702970297,
+    "best_fuse_full": 0.7469635627530364,
+    "best_fuse_honest_nested": 0.7293365794278759,
+    "gate": 0.7630364372469636,
+    "disagree": 9,
+    "v7_hold": 0.7530364372469636,
+    "public_keep": "submission_ir_v7.csv @ 0.69154"
+  },
+  "gpu_status_at_finish": "idle (no compute apps)"
+}

@@ -1,0 +1,18 @@
+{
+  "midfuse": {
+    "tta": false,
+    "source": "v8"
+  },
+  "stgcn": {
+    "tta": false,
+    "source": "v8"
+  },
+  "gru": {
+    "tta": false,
+    "source": "v8"
+  },
+  "deepconv": {
+    "tta": false,
+    "source": "v9"
+  }
+}

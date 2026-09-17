@@ -1,0 +1,251 @@
+{
+  "members": {
+    "pool_seed2024": 0.6792079207920793,
+    "pool_seed11": 0.6772277227722773,
+    "pool_seed42": 0.6752475247524753,
+    "pool_seed99": 0.6673267326732674,
+    "pool_seed777": 0.6653465346534654,
+    "pool_seed7": 0.6633663366336634,
+    "pool_seed123": 0.6613861386138614,
+    "pool_seed333": 0.6554455445544555,
+    "pool_seed1": 0.6455445544554456
+  },
+  "results": [
+    {
+      "k": 3,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42"
+      ],
+      "ens_acc": 0.693069306930693,
+      "triple_acc": 0.742914979757085,
+      "cfg": {
+        "wa": 0.52,
+        "wb": 0.4,
+        "wc": 0.07999999999999996,
+        "T": 1.0,
+        "acc": 0.742914979757085,
+        "n": 494
+      }
+    },
+    {
+      "k": 4,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99"
+      ],
+      "ens_acc": 0.6871287128712872,
+      "triple_acc": 0.7449392712550608,
+      "cfg": {
+        "wa": 0.52,
+        "wb": 0.32,
+        "wc": 0.15999999999999998,
+        "T": 0.75,
+        "acc": 0.7449392712550608,
+        "n": 494
+      }
+    },
+    {
+      "k": 5,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777"
+      ],
+      "ens_acc": 0.697029702970297,
+      "triple_acc": 0.742914979757085,
+      "cfg": {
+        "wa": 0.52,
+        "wb": 0.32,
+        "wc": 0.15999999999999998,
+        "T": 0.75,
+        "acc": 0.742914979757085,
+        "n": 494
+      }
+    },
+    {
+      "k": 6,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7"
+      ],
+      "ens_acc": 0.699009900990099,
+      "triple_acc": 0.7388663967611336,
+      "cfg": {
+        "wa": 0.48,
+        "wb": 0.4,
+        "wc": 0.12,
+        "T": 2.0,
+        "acc": 0.7388663967611336,
+        "n": 494
+      }
+    },
+    {
+      "k": 7,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7",
+        "pool_seed123"
+      ],
+      "ens_acc": 0.699009900990099,
+      "triple_acc": 0.742914979757085,
+      "cfg": {
+        "wa": 0.6,
+        "wb": 0.32,
+        "wc": 0.08000000000000002,
+        "T": 2.5,
+        "acc": 0.742914979757085,
+        "n": 494
+      }
+    },
+    {
+      "k": 8,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7",
+        "pool_seed123",
+        "pool_seed333"
+      ],
+      "ens_acc": 0.7108910891089109,
+      "triple_acc": 0.7449392712550608,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35999999999999993,
+        "wc": 0.08000000000000002,
+        "T": 1.0,
+        "acc": 0.7449392712550608,
+        "n": 494
+      }
+    },
+    {
+      "k": 9,
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7",
+        "pool_seed123",
+        "pool_seed333",
+        "pool_seed1"
+      ],
+      "ens_acc": 0.697029702970297,
+      "triple_acc": 0.7469635627530364,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35999999999999993,
+        "wc": 0.08000000000000002,
+        "T": 1.5,
+        "acc": 0.7469635627530364,
+        "n": 494
+      }
+    },
+    {
+      "k": "all_mean",
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7",
+        "pool_seed123",
+        "pool_seed333",
+        "pool_seed1"
+      ],
+      "ens_acc": 0.697029702970297,
+      "triple_acc": 0.7469635627530364,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35999999999999993,
+        "wc": 0.08000000000000002,
+        "T": 1.5,
+        "acc": 0.7469635627530364,
+        "n": 494
+      }
+    },
+    {
+      "k": "all_acc_w",
+      "tags": [
+        "pool_seed2024",
+        "pool_seed11",
+        "pool_seed42",
+        "pool_seed99",
+        "pool_seed777",
+        "pool_seed7",
+        "pool_seed123",
+        "pool_seed333",
+        "pool_seed1"
+      ],
+      "ens_acc": 0.695049504950495,
+      "triple_acc": 0.7469635627530364,
+      "cfg": {
+        "wa": 0.56,
+        "wb": 0.35999999999999993,
+        "wc": 0.08000000000000002,
+        "T": 1.5,
+        "acc": 0.7469635627530364,
+        "n": 494
+      }
+    }
+  ],
+  "best": {
+    "k": 9,
+    "tags": [
+      "pool_seed2024",
+      "pool_seed11",
+      "pool_seed42",
+      "pool_seed99",
+      "pool_seed777",
+      "pool_seed7",
+      "pool_seed123",
+      "pool_seed333",
+      "pool_seed1"
+    ],
+    "ens_acc": 0.697029702970297,
+    "triple_acc": 0.7469635627530364,
+    "cfg": {
+      "wa": 0.56,
+      "wb": 0.35999999999999993,
+      "wc": 0.08000000000000002,
+      "T": 1.5,
+      "acc": 0.7469635627530364,
+      "n": 494
+    }
+  },
+  "v5": 0.7388663967611336,
+  "v6_robust_prev": 0.7449392712550608,
+  "improved_vs_v6_robust": true,
+  "improved_vs_v5": true,
+  "wrote": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_ir_v6.csv",
+  "ir_tags_used": [
+    "pool_seed2024",
+    "pool_seed11",
+    "pool_seed42",
+    "pool_seed99",
+    "pool_seed777",
+    "pool_seed7",
+    "pool_seed123",
+    "pool_seed333",
+    "pool_seed1"
+  ],
+  "empty_fallback": 0
+}

@@ -1,0 +1,1853 @@
+{
+  "gates": {
+    "hold_alone": 0.642,
+    "hold_soft": 0.637,
+    "oof_soft": 0.68,
+    "budget_mb": 100.0
+  },
+  "results": [
+    {
+      "plan": "5fold",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 141.34241104125977,
+      "clear_win": false,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "5fold",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7405940594059406,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 101.50443077087402,
+      "clear_win": false,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "5fold",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 101.50443077087402,
+      "clear_win": false,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 93.53683471679688,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7900990099009901,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 93.53683471679688,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7762376237623763,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7782178217821782,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7821782178217822,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 117.43962287902832,
+      "clear_win": false,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7643564356435644,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4b_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7584158415841584,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 117.43962287902832,
+      "clear_win": false,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4b_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7366336633663366,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4b_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7386138613861386,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7386138613861386,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 84.80544662475586,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7267326732673267,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 60.902658462524414,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7247524752475247,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 60.902658462524414,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all4",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7841584158415842,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 113.07392883300781,
+      "clear_win": false,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "plan": "all4",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 81.20354461669922,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "plan": "all4",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 81.20354461669922,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "holdout_ref_fp32": 0.6435643564356436,
+      "pred_diffs_vs_fp32": 102,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 70.98047256469727,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7405940594059406,
+      "holdout_ref_fp32": 0.023762376237623763,
+      "pred_diffs_vs_fp32": 498,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 50.97617149353027,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "holdout_ref_fp32": 0.6376237623762376,
+      "pred_diffs_vs_fp32": 100,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 50.97617149353027,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7900990099009901,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7762376237623763,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7782178217821782,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7722772277227723,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "clear_wins": [
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 93.53683471679688,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7900990099009901,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 93.53683471679688,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7762376237623763,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid3b_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7782178217821782,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 69.63404655456543,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7643564356435644,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4b_c5",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7366336633663366,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "mid4b_c5",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7386138613861386,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 85.56923866271973,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7386138613861386,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 84.80544662475586,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7267326732673267,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 60.902658462524414,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all3",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7247524752475247,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 60.902658462524414,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "all4",
+      "storage": "fp32",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 81.20354461669922,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "plan": "all4",
+      "storage": "fp32",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 81.20354461669922,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "holdout_ref_fp32": 0.6435643564356436,
+      "pred_diffs_vs_fp32": 102,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 70.98047256469727,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7405940594059406,
+      "holdout_ref_fp32": 0.023762376237623763,
+      "pred_diffs_vs_fp32": 498,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 50.97617149353027,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_5fold",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "holdout_ref_fp32": 0.6376237623762376,
+      "pred_diffs_vs_fp32": 100,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 50.97617149353027,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7465346534653465,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid024_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7346534653465346,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          2,
+          4
+        ],
+        "kd_mf_a02": [
+          0,
+          2,
+          4
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7900990099009901,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7762376237623763,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid123_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7782178217821782,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          1,
+          2,
+          3
+        ],
+        "kd_mf_a02": [
+          1,
+          2,
+          3
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "conf_kd_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7722772277227723,
+      "nested_oof_from_full_oof": 0.6649607642442852,
+      "size_mb": 46.975555419921875,
+      "clear_win": true,
+      "folds": {
+        "kd": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "pow_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "plan": "fp16_mid012_c5",
+      "storage": "fp16",
+      "recipe": "eq_kd_mf_v13_kd_mf_a02_kd_eq_a02",
+      "holdout": 0.7623762376237624,
+      "nested_oof_from_full_oof": 0.6656431252132378,
+      "size_mb": 34.97297477722168,
+      "clear_win": true,
+      "folds": {
+        "kd_mf_v13": [
+          0,
+          1,
+          2
+        ],
+        "kd_mf_a02": [
+          0,
+          1,
+          2
+        ],
+        "kd_eq_a02": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "elapsed_sec": 12.853355169296265
+}

@@ -1,0 +1,156 @@
+{
+  "beat_0.537": false,
+  "note": "Late-fuse MidFuse+vision holdout peaked 0.5406 (+0.004) but failed +0.5pp gate; no full CV; no new submit. Focal MidFuse 0.457 failed.",
+  "midfuse_holdout_baseline": 0.5366336633663367,
+  "vision_alone_holdout": 0.14455445544554454,
+  "best_fuse_holdout": {
+    "alpha_midfuse": 0.7,
+    "acc": 0.5405940594059406
+  },
+  "fuse_delta_vs_baseline": 0.003960396039603964,
+  "recommend_full_cv_depth_ir": false,
+  "focal_holdout": 0.45742574257425744,
+  "focal_delta": -0.07920792079207922,
+  "error_analysis_holdout_acc": 0.5366336633663367,
+  "error_analysis_oof_acc": 0.5015353121801432,
+  "top_confused_holdout": [
+    {
+      "true": 9,
+      "pred": 10,
+      "true_name": "9_Pour_drinks",
+      "pred_name": "10_Stir_drinks",
+      "count": 10,
+      "true_support": 18,
+      "frac_of_true": 0.5555555555555556
+    },
+    {
+      "true": 11,
+      "pred": 10,
+      "true_name": "11_Peel_fruits",
+      "pred_name": "10_Stir_drinks",
+      "count": 8,
+      "true_support": 15,
+      "frac_of_true": 0.5333333333333333
+    },
+    {
+      "true": 30,
+      "pred": 31,
+      "true_name": "30_Do_jumping_jacks",
+      "pred_name": "31_Do_stretching_exercises",
+      "count": 6,
+      "true_support": 6,
+      "frac_of_true": 1.0
+    },
+    {
+      "true": 29,
+      "pred": 32,
+      "true_name": "29_Do_squats",
+      "pred_name": "32_Stand_up",
+      "count": 5,
+      "true_support": 14,
+      "frac_of_true": 0.35714285714285715
+    },
+    {
+      "true": 26,
+      "pred": 7,
+      "true_name": "26_Play_games",
+      "pred_name": "7_Eat_food",
+      "count": 5,
+      "true_support": 21,
+      "frac_of_true": 0.23809523809523808
+    }
+  ],
+  "worst_classes_holdout": [
+    {
+      "class": 2,
+      "name": "2_Comb_hair",
+      "support": 8,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pred_count": 0
+    },
+    {
+      "class": 18,
+      "name": "18_Write",
+      "support": 6,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pred_count": 0
+    },
+    {
+      "class": 25,
+      "name": "25_Watch_TV",
+      "support": 6,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pred_count": 0
+    },
+    {
+      "class": 30,
+      "name": "30_Do_jumping_jacks",
+      "support": 6,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pred_count": 0
+    },
+    {
+      "class": 8,
+      "name": "8_Take_and_use_tableware",
+      "support": 0,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pred_count": 18
+    },
+    {
+      "class": 11,
+      "name": "11_Peel_fruits",
+      "support": 15,
+      "correct": 1,
+      "recall": 0.06666666666666667,
+      "precision": 0.08333333333333333,
+      "pred_count": 12
+    },
+    {
+      "class": 26,
+      "name": "26_Play_games",
+      "support": 21,
+      "correct": 2,
+      "recall": 0.09523809523809523,
+      "precision": 0.5,
+      "pred_count": 4
+    },
+    {
+      "class": 29,
+      "name": "29_Do_squats",
+      "support": 14,
+      "correct": 2,
+      "recall": 0.14285714285714285,
+      "precision": 0.3333333333333333,
+      "pred_count": 6
+    }
+  ],
+  "imbalance_verdict_holdout": [
+    "Positive support\u2013recall corr (0.407); rarer classes tend to have lower recall \u2014 imbalance contributes.",
+    "High-vs-low support recall gap=0.274.",
+    "Top confusions look largely semantic/similar-motion (not pure frequency): 9_Pour_drinks\u219210_Stir_drinks (10); 11_Peel_fruits\u219210_Stir_drinks (8); 30_Do_jumping_jacks\u219231_Do_stretching_exercises (6); 29_Do_squats\u219232_Stand_up (5); 26_Play_games\u21927_Eat_food (5)"
+  ],
+  "depth_ir_coverage_train_empty_rate": 0.0,
+  "depth_ir_coverage_test_empty_rate": 0.0,
+  "promoted_submission": "D:\\CUHK-X\\Small-Model-Track\\submission.csv",
+  "promoted_copy": "D:\\CUHK-X\\Small-Model-Track\\submissions\\submission_v3_ensemble.csv",
+  "source_submission": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v3_ensemble\\submission_v3_ensemble.csv",
+  "paths": {
+    "error_analysis_md": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\error_analysis.md",
+    "error_analysis_json": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\error_analysis.json",
+    "vision_probe": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\vision_holdout_probe.json",
+    "focal_probe": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\focal_holdout_probe.json",
+    "modality_coverage": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\modality_coverage.json",
+    "v5_readme": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v5\\README.md"
+  },
+  "ping_disk_saver": false
+}

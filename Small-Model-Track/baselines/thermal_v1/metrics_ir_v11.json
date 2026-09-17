@@ -1,0 +1,97 @@
+{
+  "tag": "ir_v11",
+  "status": "leave_for_parent",
+  "wrote_csv": false,
+  "submission_ir_v11_exists": false,
+  "clear_win": false,
+  "gate": {
+    "min_delta_hold_and_nested": 0.01,
+    "min_disagree_vs_v7": 20
+  },
+  "v7": {
+    "public": 0.69154,
+    "hold": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "v9_public_overfit": 0.68656,
+  "v10": "approx_v7_3flips",
+  "best_attempt": {
+    "name": "4way_all9_base+mid+depth (wd=0 effectively v7-ish coarse grid)",
+    "hold": 0.7469635627530364,
+    "nested_fixed": 0.7456188994837808,
+    "delta_hold_vs_v7": -0.006072874493927127,
+    "delta_nested_vs_v7": -0.006343409751809026,
+    "disagree_vs_v7": 6,
+    "note": "coarse 4way grid with wd=0 undershoots true v7; depth unused"
+  },
+  "new_signals_tried": {
+    "depth_detect_fix_yolo_v4": {
+      "detect_train": {
+        "yolo": 1906,
+        "motion": 999,
+        "center": 26
+      },
+      "detect_test": {
+        "yolo": 215,
+        "motion": 179,
+        "center": 11
+      },
+      "kinetics_seeds_hold": {
+        "42": 0.5723,
+        "123": 0.5703,
+        "7": 0.5624
+      },
+      "ens_hold": 0.5821782178217821,
+      "vs_old_depth_hold": 0.2099,
+      "fuse_result": "wd->0 on holdout; does not lift IR+Th+Mid past v7"
+    },
+    "ir_strong_mixup_new_seeds": {
+      "seeds_hold": {
+        "888": 0.6594,
+        "2025": 0.6356,
+        "314": 0.6693
+      },
+      "ens_hold": 0.6712871287128713,
+      "vs_all9_base_ir_hold": 0.697,
+      "best_3way_with_th_mid": {
+        "hold": 0.7267,
+        "nested": 0.7266
+      },
+      "fuse_result": "weaker than all9_base; no lift"
+    },
+    "ir_thermal_video_diversity_probe": {
+      "best_seen": "<=0.751 hold (sm_mean / 0.7ir+0.3th variants)",
+      "vs_v7": "all below 0.753"
+    }
+  },
+  "size": {
+    "fp16_pack_mb": 59.85,
+    "yolo_mb": 6.25,
+    "total_approx_mb": 66.1,
+    "ok_under_100mb": true
+  },
+  "gpu": {
+    "device": "RTX 3060 Laptop 6GB",
+    "shared_with_LMT_at_start": false,
+    "note": "GPU free (0 MiB) when started; LMT present on disk but no GPU training competing; hyperspectral gdown CPU-only"
+  },
+  "artifacts": {
+    "depth_cache": "cache/depth_color_yolo_v4",
+    "depth_ckpts": "checkpoints/depth_yolo_r2p1d18_v11",
+    "ir_strong_ckpts": "checkpoints/ir_yolo_r2p1d18_v11",
+    "scripts": [
+      "build_cache_yolo_v4.py",
+      "train_depth_v11.py",
+      "train_ir_v11_strong.py",
+      "write_ir_v11.py"
+    ]
+  },
+  "submit_recommendation": "leave_for_parent \u2014 keep ir_v7 (public 0.69154); do NOT write/submit ir_v11",
+  "finished_pt": "2026-09-08 evening PT",
+  "notes": [
+    "REAL new signals built: Depth YOLO-v4 detect fix + Kinetics (0.21->0.58 hold) and IR mixup seeds (ens 0.671).",
+    "Neither lifts nested/hold by >=+0.01 vs v7; diversity disagree only 6 on best (failed) candidate.",
+    "Honest gate: no submission_ir_v11.csv.",
+    "Pack still ~66MB if parent later wants depth-backed deploy."
+  ]
+}

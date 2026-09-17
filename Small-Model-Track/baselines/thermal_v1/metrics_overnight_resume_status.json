@@ -1,0 +1,46 @@
+{
+  "tag": "overnight_resume_status",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "gate": {
+    "need_hold_nested": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "step1_cpu_fuse_v14": {
+    "clears_gate": false,
+    "best_hold": 0.7550607287449392,
+    "best_nested": 0.7542210500214152,
+    "disagree_vs_v7": 15,
+    "note": "v7 IR + v13 strong seeds; +0.002 only; metrics_ir_v14_status.json"
+  },
+  "step2_yolo11n": {
+    "cache": "cache/ir_yolo_11n_v1",
+    "detect_train_yolo_hits": "2899/2933 (~98.8%) vs v4 2905/2933 (~99.0%) \u2014 proceeded",
+    "members": {
+      "seed42": 0.6772,
+      "seed123": 0.6673,
+      "seed7": 0.6673
+    },
+    "ens_hold": 0.6891,
+    "fuse_y11_only_hold": 0.7227,
+    "fuse_best_overall_hold": 0.751,
+    "fuse_best_nested": 0.7502,
+    "disagree": 11,
+    "clears_gate": false,
+    "metrics": "metrics_ir_yolo11n_v1_status.json",
+    "note": "YOLO11n crops did not beat classic ir_yolo_v4 fused score; ens IR alone 0.689 < classic9 ens ~0.709"
+  },
+  "wrote_csv": false,
+  "gpu_handoff": "logs/gpu_handoff_yolo11n.txt \u2014 3060 IDLE",
+  "next_roi": [
+    "Stay on cache/ir_yolo_v4 (YOLO11n crop rebuild miss for fused score)",
+    "Alternate IR upgrade: hold-TTA for classic/v13/y11 members; longer train + more seeds on ir_yolo_v4; stronger aug/mixup schedule",
+    "Do NOT resume Depth early/late fuse (DEAD-END)",
+    "Gate still: hold+nested >=0.763 and >=20 disagrees vs ir_v7 before any CSV"
+  ]
+}

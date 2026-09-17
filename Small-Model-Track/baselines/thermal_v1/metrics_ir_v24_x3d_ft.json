@@ -1,0 +1,156 @@
+{
+  "tag": "ir_v24_x3d_r50",
+  "outcome": "IN_PROGRESS_OR_MISS",
+  "keep_ir_v7": true,
+  "finished_partial": true,
+  "gate": {
+    "hold_min": 0.758,
+    "nested_min": 0.758,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7408906882591093,
+    "nested": 0.7398728612970853
+  },
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "new_ir": {
+    "tag": "x3d_m_ft_s42",
+    "solo_hold": 0.5603960396039604,
+    "path": "checkpoints\\ir_yolo_x3d_m_ft_v24\\hold_logits_strong.npz"
+  },
+  "best": {
+    "ir": "classic9_mix2_x3d_m_ft_s42",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ens4_bonetcn",
+    "full": 0.7510121457489879,
+    "cfg": {
+      "wa": 0.5,
+      "wb": 0.35,
+      "wc": 0.15000000000000002,
+      "T": 3.5,
+      "acc": 0.7510121457489879,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "nested_fixed": 0.7496753905457497,
+    "nested_retune": 0.7377223236626768,
+    "honest_nested": 0.7377223236626768,
+    "disagree_vs_v7": 25,
+    "ir_solo": 0.7049504950495049,
+    "clears": false
+  },
+  "top8": [
+    {
+      "ir": "classic9_mix2_x3d_m_ft_s42",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "full": 0.7510121457489879,
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.35,
+        "wc": 0.15000000000000002,
+        "T": 3.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7496753905457497,
+      "nested_retune": 0.7377223236626768,
+      "honest_nested": 0.7377223236626768,
+      "disagree_vs_v7": 25,
+      "ir_solo": 0.7049504950495049,
+      "clears": false
+    },
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "full": 0.7489878542510121,
+      "cfg": {
+        "wa": 0.4,
+        "wb": 0.3,
+        "wc": 0.3,
+        "T": 1.5,
+        "acc": 0.7489878542510121,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7481222244764546,
+      "nested_retune": 0.7359245733865332,
+      "honest_nested": 0.7359245733865332,
+      "disagree_vs_v7": 37,
+      "ir_solo": 0.697029702970297,
+      "clears": false
+    },
+    {
+      "ir": "classic9_plus_x3d_m_ft_s42",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "full": 0.7408906882591093,
+      "cfg": {
+        "wa": 0.5333333333333333,
+        "wb": 0.23333333333333334,
+        "wc": 0.23333333333333334,
+        "T": 2.5,
+        "acc": 0.7408906882591093,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7399269628727936,
+      "nested_retune": 0.7298257478415726,
+      "honest_nested": 0.7298257478415726,
+      "disagree_vs_v7": 56,
+      "ir_solo": 0.695049504950495,
+      "clears": false
+    },
+    {
+      "ir": "classic9_mix3_x3d_m_ft_s42",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "full": 0.7408906882591093,
+      "cfg": {
+        "wa": 0.5333333333333333,
+        "wb": 0.23333333333333334,
+        "wc": 0.23333333333333334,
+        "T": 2.5,
+        "acc": 0.7408906882591093,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7399269628727936,
+      "nested_retune": 0.7298257478415726,
+      "honest_nested": 0.7298257478415726,
+      "disagree_vs_v7": 56,
+      "ir_solo": 0.695049504950495,
+      "clears": false
+    },
+    {
+      "ir": "new_only_x3d_m_ft_s42",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "full": 0.7165991902834008,
+      "cfg": {
+        "wa": 0.26666666666666666,
+        "wb": 0.41555555555555557,
+        "wc": 0.3177777777777778,
+        "T": 3.5,
+        "acc": 0.7165991902834008,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed": 0.7159385496269245,
+      "nested_retune": 0.6990272987534095,
+      "honest_nested": 0.6990272987534095,
+      "disagree_vs_v7": 95,
+      "ir_solo": 0.5603960396039604,
+      "clears": false
+    }
+  ],
+  "wrote_csv": false,
+  "csv": null,
+  "elapsed_sec": 4.2
+}

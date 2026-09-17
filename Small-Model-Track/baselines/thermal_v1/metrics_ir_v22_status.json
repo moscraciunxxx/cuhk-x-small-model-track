@@ -1,0 +1,790 @@
+{
+  "tag": "ir_v22_temporal_tta",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "finished_at": "2026-09-09 22:54:39 PT",
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested": 0.7519623092355898
+  },
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "inventory_classic9": [
+    {
+      "tag": "pool_seed42",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed42.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed2024",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed2024.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed777",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v6\\pool_seed777.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed11",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed11.pt",
+      "exists": true,
+      "size_mb": 188.19,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed99",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed99.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed123",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed123.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed7",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v5\\pool_seed7.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed333",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v6\\pool_seed333.pt",
+      "exists": true,
+      "size_mb": 188.2,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    },
+    {
+      "tag": "pool_seed1",
+      "path": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\ir_yolo_r2p1d18_v6\\pool_seed1.pt",
+      "exists": true,
+      "size_mb": 188.19,
+      "infer_frames": 16,
+      "infer_size": 112,
+      "train_sample": "linspace_full_clip_yolo_crop_cached_ir_yolo_v4"
+    }
+  ],
+  "current_infer": {
+    "frames": 16,
+    "size": 112,
+    "cache": "cache/ir_yolo_v4 train_x_t16_s112 (linspace full-clip YOLO crop)",
+    "prior_tta": "v15 spatial mild4/flip on cached T=16 (NOT temporal)",
+    "this_tta": {
+      "views": [
+        "full",
+        "early",
+        "late",
+        "center",
+        "stride0",
+        "stride1"
+      ],
+      "flip": true,
+      "aggregate": "mean logits across views",
+      "full_view_source": "existing ir_yolo_v4 cache (exact)",
+      "other_views": "YOLO-box cached re-sample with start-offset / stride windows"
+    }
+  },
+  "solo_ir": {
+    "classic9_base": 0.697029702970297,
+    "classic9_temp": 0.6792079207920793,
+    "classic9_mix50": 0.700990099009901,
+    "per_seed_temp": {
+      "pool_seed42": 0.6851485148514852,
+      "pool_seed99": 0.6673267326732674,
+      "pool_seed777": 0.6653465346534654,
+      "pool_seed2024": 0.6633663366336634,
+      "pool_seed11": 0.6613861386138614,
+      "pool_seed7": 0.6613861386138614,
+      "pool_seed333": 0.6594059405940594,
+      "pool_seed123": 0.6574257425742575,
+      "pool_seed1": 0.6475247524752475
+    },
+    "per_seed_full_noflip": {
+      "pool_seed42": 0.6752475247524753,
+      "pool_seed99": 0.6673267326732674,
+      "pool_seed777": 0.6653465346534654,
+      "pool_seed2024": 0.6792079207920793,
+      "pool_seed11": 0.6772277227722773,
+      "pool_seed7": 0.6633663366336634,
+      "pool_seed333": 0.6554455445544555,
+      "pool_seed123": 0.6613861386138614,
+      "pool_seed1": 0.6455445544554456
+    }
+  },
+  "best": {
+    "ir": "classic9_base",
+    "th": "th_v6_v2trio",
+    "mid": "mid_ens4_bonetcn",
+    "mode": "sameT",
+    "full": 0.7489878542510121,
+    "honest_nested": 0.7439293523590541,
+    "folds": [
+      {
+        "leave": 8,
+        "te_acc": 0.6918238993710691,
+        "tr_acc": 0.7701492537313432,
+        "n": 159,
+        "cfg": {
+          "wa": 0.4,
+          "wb": 0.3,
+          "wc": 0.3,
+          "T": 1.0,
+          "acc": 0.7701492537313432,
+          "n": 335,
+          "mode": "sameT"
+        }
+      },
+      {
+        "leave": 9,
+        "te_acc": 0.7722222222222223,
+        "tr_acc": 0.7356687898089171,
+        "n": 180,
+        "cfg": {
+          "wa": 0.4,
+          "wb": 0.3,
+          "wc": 0.3,
+          "T": 1.5,
+          "acc": 0.7356687898089171,
+          "n": 314,
+          "mode": "sameT"
+        }
+      },
+      {
+        "leave": 24,
+        "te_acc": 0.7677419354838709,
+        "tr_acc": 0.7404129793510325,
+        "n": 155,
+        "cfg": {
+          "wa": 0.4,
+          "wb": 0.3,
+          "wc": 0.3,
+          "T": 1.5,
+          "acc": 0.7404129793510325,
+          "n": 339,
+          "mode": "sameT"
+        }
+      }
+    ],
+    "cfg": {
+      "wa": 0.4,
+      "wb": 0.3,
+      "wc": 0.3,
+      "T": 1.5,
+      "acc": 0.7489878542510121,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "disagree_vs_v7": 33,
+    "clears": false,
+    "ir_solo": 0.697029702970297
+  },
+  "top8": [
+    {
+      "ir": "classic9_base",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7489878542510121,
+      "honest_nested": 0.7439293523590541,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6918238993710691,
+          "tr_acc": 0.7701492537313432,
+          "n": 159,
+          "cfg": {
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "T": 1.0,
+            "acc": 0.7701492537313432,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "tr_acc": 0.7356687898089171,
+          "n": 180,
+          "cfg": {
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "T": 1.5,
+            "acc": 0.7356687898089171,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "tr_acc": 0.7404129793510325,
+          "n": 155,
+          "cfg": {
+            "wa": 0.4,
+            "wb": 0.3,
+            "wc": 0.3,
+            "T": 1.5,
+            "acc": 0.7404129793510325,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.4,
+        "wb": 0.3,
+        "wc": 0.3,
+        "T": 1.5,
+        "acc": 0.7489878542510121,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 33,
+      "clears": false,
+      "ir_solo": 0.697029702970297
+    },
+    {
+      "ir": "classic9_mix50",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7469635627530364,
+      "honest_nested": 0.734018619958973,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6981132075471698,
+          "tr_acc": 0.7671641791044777,
+          "n": 159,
+          "cfg": {
+            "wa": 0.6000000000000001,
+            "wb": 0.29999999999999993,
+            "wc": 0.09999999999999998,
+            "T": 1.5,
+            "acc": 0.7671641791044777,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7555555555555555,
+          "tr_acc": 0.732484076433121,
+          "n": 180,
+          "cfg": {
+            "wa": 0.45,
+            "wb": 0.35000000000000003,
+            "wc": 0.2,
+            "T": 1.0,
+            "acc": 0.732484076433121,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7483870967741936,
+          "tr_acc": 0.7433628318584071,
+          "n": 155,
+          "cfg": {
+            "wa": 0.55,
+            "wb": 0.35,
+            "wc": 0.09999999999999998,
+            "T": 2.0,
+            "acc": 0.7433628318584071,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.35,
+        "wc": 0.09999999999999998,
+        "T": 2.5,
+        "acc": 0.7469635627530364,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 17,
+      "clears": false,
+      "ir_solo": 0.700990099009901
+    },
+    {
+      "ir": "classic9_mix50",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7408906882591093,
+      "honest_nested": 0.7254423930930322,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.660377358490566,
+          "tr_acc": 0.7671641791044777,
+          "n": 159,
+          "cfg": {
+            "wa": 0.55,
+            "wb": 0.19999999999999998,
+            "wc": 0.24999999999999997,
+            "T": 2.5,
+            "acc": 0.7671641791044777,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7611111111111111,
+          "tr_acc": 0.7261146496815286,
+          "n": 180,
+          "cfg": {
+            "wa": 0.5,
+            "wb": 0.4,
+            "wc": 0.09999999999999998,
+            "T": 1.0,
+            "acc": 0.7261146496815286,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "tr_acc": 0.7345132743362832,
+          "n": 155,
+          "cfg": {
+            "wa": 0.45,
+            "wb": 0.35000000000000003,
+            "wc": 0.2,
+            "T": 1.0,
+            "acc": 0.7345132743362832,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.45,
+        "wb": 0.35000000000000003,
+        "wc": 0.2,
+        "T": 1.0,
+        "acc": 0.7408906882591093,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 21,
+      "clears": false,
+      "ir_solo": 0.700990099009901
+    },
+    {
+      "ir": "classic9_mix50",
+      "th": "th_v6_soft",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7408906882591093,
+      "honest_nested": 0.7217386893893285,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.660377358490566,
+          "tr_acc": 0.7701492537313432,
+          "n": 159,
+          "cfg": {
+            "wa": 0.45,
+            "wb": 0.35000000000000003,
+            "wc": 0.2,
+            "T": 2.5,
+            "acc": 0.7701492537313432,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.75,
+          "tr_acc": 0.7261146496815286,
+          "n": 180,
+          "cfg": {
+            "wa": 0.25,
+            "wb": 0.7000000000000001,
+            "wc": 0.04999999999999993,
+            "T": 1.5,
+            "acc": 0.7261146496815286,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "tr_acc": 0.7315634218289085,
+          "n": 155,
+          "cfg": {
+            "wa": 0.30000000000000004,
+            "wb": 0.6,
+            "wc": 0.09999999999999998,
+            "T": 1.5,
+            "acc": 0.7315634218289085,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.35000000000000003,
+        "wb": 0.5499999999999999,
+        "wc": 0.09999999999999998,
+        "T": 2.5,
+        "acc": 0.7408906882591093,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 21,
+      "clears": false,
+      "ir_solo": 0.700990099009901
+    },
+    {
+      "ir": "classic9_temp",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ir_v4",
+      "mode": "sameT",
+      "full": 0.7267206477732794,
+      "honest_nested": 0.7156398638443678,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6540880503144654,
+          "tr_acc": 0.7611940298507462,
+          "n": 159,
+          "cfg": {
+            "wa": 0.6000000000000001,
+            "wb": 0.14999999999999997,
+            "wc": 0.24999999999999994,
+            "T": 3.0,
+            "acc": 0.7611940298507462,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7444444444444445,
+          "tr_acc": 0.7165605095541401,
+          "n": 180,
+          "cfg": {
+            "wa": 0.55,
+            "wb": 0.35,
+            "wc": 0.09999999999999998,
+            "T": 1.5,
+            "acc": 0.7165605095541401,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7483870967741936,
+          "tr_acc": 0.7168141592920354,
+          "n": 155,
+          "cfg": {
+            "wa": 0.55,
+            "wb": 0.35,
+            "wc": 0.09999999999999998,
+            "T": 1.5,
+            "acc": 0.7168141592920354,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.35,
+        "wc": 0.09999999999999998,
+        "T": 1.5,
+        "acc": 0.7267206477732794,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 34,
+      "clears": false,
+      "ir_solo": 0.6792079207920793
+    },
+    {
+      "ir": "classic9_temp",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7267206477732794,
+      "honest_nested": 0.7137339104168076,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.660377358490566,
+          "tr_acc": 0.7582089552238805,
+          "n": 159,
+          "cfg": {
+            "wa": 0.6000000000000001,
+            "wb": 0.14999999999999997,
+            "wc": 0.24999999999999994,
+            "T": 3.0,
+            "acc": 0.7582089552238805,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7388888888888889,
+          "tr_acc": 0.7133757961783439,
+          "n": 180,
+          "cfg": {
+            "wa": 0.30000000000000004,
+            "wb": 0.39999999999999997,
+            "wc": 0.3,
+            "T": 2.0,
+            "acc": 0.7133757961783439,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7419354838709677,
+          "tr_acc": 0.7138643067846607,
+          "n": 155,
+          "cfg": {
+            "wa": 0.5,
+            "wb": 0.35000000000000003,
+            "wc": 0.14999999999999997,
+            "T": 1.5,
+            "acc": 0.7138643067846607,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.6000000000000001,
+        "wb": 0.14999999999999997,
+        "wc": 0.24999999999999994,
+        "T": 3.0,
+        "acc": 0.7267206477732794,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 44,
+      "clears": false,
+      "ir_solo": 0.6792079207920793
+    },
+    {
+      "ir": "classic9_temp_top6",
+      "th": "th_v6_v2trio",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7226720647773279,
+      "honest_nested": 0.7098938256576722,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6415094339622641,
+          "tr_acc": 0.7582089552238805,
+          "n": 159,
+          "cfg": {
+            "wa": 0.65,
+            "wb": 0.049999999999999996,
+            "wc": 0.3,
+            "T": 2.5,
+            "acc": 0.7582089552238805,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7333333333333333,
+          "tr_acc": 0.7101910828025477,
+          "n": 180,
+          "cfg": {
+            "wa": 0.45,
+            "wb": 0.45,
+            "wc": 0.10000000000000003,
+            "T": 1.5,
+            "acc": 0.7101910828025477,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "tr_acc": 0.7079646017699115,
+          "n": 155,
+          "cfg": {
+            "wa": 0.5,
+            "wb": 0.30000000000000004,
+            "wc": 0.19999999999999996,
+            "T": 2.5,
+            "acc": 0.7079646017699115,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.3,
+        "wc": 0.14999999999999997,
+        "T": 2.0,
+        "acc": 0.7226720647773279,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 34,
+      "clears": false,
+      "ir_solo": 0.6673267326732674
+    },
+    {
+      "ir": "classic9_temp",
+      "th": "th_v6_soft",
+      "mid": "mid_ens4_bonetcn",
+      "mode": "sameT",
+      "full": 0.7267206477732794,
+      "honest_nested": 0.7060819188025519,
+      "folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6540880503144654,
+          "tr_acc": 0.7611940298507462,
+          "n": 159,
+          "cfg": {
+            "wa": 0.4,
+            "wb": 0.39999999999999997,
+            "wc": 0.2,
+            "T": 3.0,
+            "acc": 0.7611940298507462,
+            "n": 335,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7222222222222222,
+          "tr_acc": 0.7165605095541401,
+          "n": 180,
+          "cfg": {
+            "wa": 0.2,
+            "wb": 0.6000000000000001,
+            "wc": 0.19999999999999996,
+            "T": 2.5,
+            "acc": 0.7165605095541401,
+            "n": 314,
+            "mode": "sameT"
+          }
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7419354838709677,
+          "tr_acc": 0.7109144542772862,
+          "n": 155,
+          "cfg": {
+            "wa": 0.30000000000000004,
+            "wb": 0.6499999999999999,
+            "wc": 0.050000000000000044,
+            "T": 1.5,
+            "acc": 0.7109144542772862,
+            "n": 339,
+            "mode": "sameT"
+          }
+        }
+      ],
+      "cfg": {
+        "wa": 0.2,
+        "wb": 0.65,
+        "wc": 0.15000000000000002,
+        "T": 3.0,
+        "acc": 0.7267206477732794,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "disagree_vs_v7": 52,
+      "clears": false,
+      "ir_solo": 0.6792079207920793
+    }
+  ],
+  "wrote_csv": false,
+  "csv": null,
+  "gap_to_gate_nested": 0.019107084887909465,
+  "imu_note": "IMU CSVs present; skeleton_imu_v2 already in mid_ens*; spectrogram-only 4th soft stream NOT trained this turn (gap_to_gate=0.019107084887909465). Train tiny IMU-spec CNN only if parent greenlights.",
+  "next_roi": [
+    "MISS: temporal TTA on classic9 did not clear gate (best honest nested 0.7439 << 0.763; worse than ir_v21b 0.7481)",
+    "Small-track IR ceiling: keep submission_ir_v7.csv @ public 0.69154 / hold 0.753",
+    "Do NOT train new IR Kinetics-3D / Thermal R2+1D seeds / Mid arch / LOUO class stacks",
+    "Optional low-ROI: tiny IMU spectrogram 4th soft stream (parent call); else shift to Large track"
+  ],
+  "gpu_handoff": {
+    "machine": "MosCraciunXXX",
+    "machineId": "4ff6e647-6f8c-4d02-88f0-5dda6684ae36",
+    "at_start": "idle RTX 3060 6GB taken for TTA infer",
+    "at_end": "releasing GPU after ir_v22; yield to LMT if needed",
+    "finished_at": "2026-09-09 22:54:36 PT",
+    "status": "FREE",
+    "confirmed_at": "2026-09-09 22:56:17 PT",
+    "nvidia_smi": "0 MiB used, 0% util \u2014 yield to LMT"
+  },
+  "elapsed_sec": 3012.4,
+  "notes": [
+    "Nested sameT only (no perT grid) to avoid ir_v9-style overfit",
+    "No new Kinetics IR 3D train; classic9 ckpts only",
+    "Prefer th_v6_v2trio + mid_ens4_bonetcn per ir_v21b"
+  ],
+  "ceiling": {
+    "verdict": "IR temporal-stride/multi-clip TTA does not lift honest nested; diluted solo IR (0.679 vs classic9_base 0.697). Best remains classic9_base+th_v6_v2trio+mid_ens4 sameT nested=0.7439 < gate 0.763 (gap 0.019). Prior ir_v21b conf_gate nested=0.7481 still best gated but also miss.",
+    "vs_ir_v21b_best_nested": 0.7481222244764546,
+    "vs_gate": 0.7630364372469636,
+    "delta_vs_v21b": -0.004192872117400492,
+    "delta_vs_gate": -0.019107084887909465,
+    "stop_new_ir_kinetics": true,
+    "imu_4th_stream": "optional only; gap~0.019 and mid already includes skeleton_imu \u2014 expect low ROI unless parent greenlights tiny spectrogram train"
+  }
+}

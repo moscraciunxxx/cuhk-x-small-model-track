@@ -1,0 +1,243 @@
+{
+  "tag": "ir_v29b_error_driven",
+  "updated_at": "2026-09-11 05:53:46 PT",
+  "outcome": "WIN",
+  "keep_ir_v7": false,
+  "wrote_csv": false,
+  "public_submit": null,
+  "promote_gate": {
+    "nested_fixed_min": 0.75196,
+    "disagree_vs_v7_max": 15,
+    "mid": "classic_aligned_mid"
+  },
+  "v7_reproduce": {
+    "full": 0.7530364372469636,
+    "nested_fixed": 0.7519623092355898
+  },
+  "error_stats": {
+    "v7_wrong": 122,
+    "v7_wrong_t24_right": 19,
+    "c9_t24_disagree": 112,
+    "t24_s42_solo": 0.697029702970297,
+    "c9_solo": 0.697029702970297
+  },
+  "n_clear": 120,
+  "best": {
+    "path": "ir_logit_swap_then_v7cfg",
+    "pmax": 0.4,
+    "amin": 0.55,
+    "maxch": 5,
+    "n_swapped": 3,
+    "full": 0.7550607287449392,
+    "nested_fixed": 0.75405874529429,
+    "disagree_vs_v7": 1,
+    "delta_nested": 0.002096436058700135,
+    "ir_solo": 0.7029702970297029,
+    "clears": true
+  },
+  "top_near": [
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 5,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 8,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 10,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 12,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 15,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.6,
+      "maxch": 5,
+      "n_swapped": 2,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.700990099009901,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.6,
+      "maxch": 8,
+      "n_swapped": 2,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.700990099009901,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.6,
+      "maxch": 10,
+      "n_swapped": 2,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.700990099009901,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.6,
+      "maxch": 12,
+      "n_swapped": 2,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.700990099009901,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.6,
+      "maxch": 15,
+      "n_swapped": 2,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.700990099009901,
+      "clears": true
+    }
+  ],
+  "clears": [
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 5,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 8,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 10,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 12,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    },
+    {
+      "path": "ir_logit_swap_then_v7cfg",
+      "pmax": 0.4,
+      "amin": 0.55,
+      "maxch": 15,
+      "n_swapped": 3,
+      "full": 0.7550607287449392,
+      "nested_fixed": 0.75405874529429,
+      "disagree_vs_v7": 1,
+      "delta_nested": 0.002096436058700135,
+      "ir_solo": 0.7029702970297029,
+      "clears": true
+    }
+  ],
+  "elapsed_s": 0.24417710304260254,
+  "next_roi": [
+    "Keep ir_v7 unless clears",
+    "Await ir_v29 recipe train (classic cache mixup0.1 freeze@10)",
+    "No kaggle submit without SAFE win"
+  ]
+}

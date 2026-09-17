@@ -1,0 +1,37 @@
+﻿{
+  "tag": "ir_v12_status",
+  "finished_pt": "2026-09-09 ~02:15 PT",
+  "gpu": {"device": "RTX 3060 Laptop 6GB", "vs_LMT": "free throughout; no LMT GPU training competing", "used_for": "Depth IR-box YOLO cache + 5-seed R2P1D-18 train"},
+  "ir_v7_still_best": {"public": 0.69154, "hold": 0.7530, "nested": 0.7520},
+  "depth_irbox": {
+    "cache": "cache/depth_color_yolo_v4_irbox",
+    "detect_test": "yolo_ir 399/405 (~98.5%) vs old depth motion~34%",
+    "ckpts": "checkpoints/depth_yolo_r2p1d18_v12",
+    "members_hold": {"42": 0.6376, "123": 0.6416, "7": 0.6455, "2024": 0.6535, "11": 0.6812},
+    "ens5_hold": 0.6653,
+    "vs_v11_ens": "+0.083 (0.582 -> 0.665)"
+  },
+  "fuse_gate": {
+    "min_delta": 0.01,
+    "min_disagree": 20,
+    "linear_4way": "wd->0 always; hold 0.751 nested 0.750 (undershoot v7)",
+    "confidence_gate": "best ~0.73 hold — hurts",
+    "seed_agree_gate": "best ~0.747 — below v7",
+    "class_cond_nested_retune": "max ~0.754 (+0.002) — not +0.01",
+    "depth_corrects_v7_wrong": "18/122 ens, 30/122 best11",
+    "clear_win": false
+  },
+  "wrote_csv": false,
+  "submit": "DO NOT — keep ir_v7",
+  "angles_done": [
+    "1 Depth longer multi-seed on IR-box crops (DONE — solo win, fuse fail)",
+    "2 public 0.71 notes: YOLO11n + R(2+1)D-34 + Depth+IR; torchvision here has no r2plus1d_34",
+    "3 two-stage/conf/agree/margin/classcond gates (DONE — no clear win)",
+    "4 MidFuse improve (NOT started this turn — lower ROI vs Depth crop fix)"
+  ],
+  "next_high_roi_if_parent_wants": [
+    "Early-fusion IR+Depth (shared YOLO box, 6ch or dual-stem) — late fuse saturates",
+    "Custom R2Plus1D-34 or YOLO11n crops to close public 0.71 gap on IR alone",
+    "MidFuse lift only if early-fuse fails (wc=0.09 already helps v7)"
+  ]
+}

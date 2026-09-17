@@ -1,0 +1,167 @@
+{
+  "tag": "ir_v15_upgrade",
+  "outcome": "MISS",
+  "keep_ir_v7": true,
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "top_candidate": {
+    "source": "grid",
+    "pool": "classic9_mv",
+    "ens": "top8",
+    "full": 0.7550607287449392,
+    "nested": 0.7546561168594036,
+    "cfg": {
+      "wa": 0.47500000000000003,
+      "wb": 0.3999999999999999,
+      "wc": 0.125,
+      "T": 3.0,
+      "acc": 0.7550607287449392,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "members": 9
+  },
+  "disagree_vs_v7": 19,
+  "clears_gate": false,
+  "wrote_csv": false,
+  "csv": null,
+  "mv_member_acc": {
+    "mv_pool_seed42": 0.695049504950495,
+    "mv_pool_seed55": 0.6811881188118812,
+    "mv_pool_seed2024": 0.6792079207920793,
+    "mv_pool_seed777": 0.6792079207920793,
+    "mv_pool_seed11": 0.6772277227722773,
+    "mv_pool_seed99": 0.6693069306930693,
+    "mv_pool_seed333": 0.6693069306930693,
+    "mv_pool_seed123": 0.6653465346534654,
+    "mv_pool_seed7": 0.6633663366336634,
+    "mv_v13_seed4096": 0.6554455445544555,
+    "mv_v13_seed999": 0.6534653465346535,
+    "mv_pool_seed1": 0.6514851485148515,
+    "mv_v13_seed2026": 0.6396039603960396
+  },
+  "v15_member_acc": {
+    "v15_seed555": 0.6574257425742575,
+    "v15_seed2048": 0.6871287128712872
+  },
+  "grid_top5": [
+    {
+      "pool": "classic9_mv",
+      "ens": "top8",
+      "triple_acc": 0.7550607287449392,
+      "nested_fixed_mean": 0.7546561168594036,
+      "ens_acc": 0.7029702970297029,
+      "n_members": 9
+    },
+    {
+      "pool": "classic_all_mv",
+      "ens": "top8",
+      "triple_acc": 0.7550607287449392,
+      "nested_fixed_mean": 0.7546561168594036,
+      "ens_acc": 0.7029702970297029,
+      "n_members": 10
+    },
+    {
+      "pool": "classic_mv_plus_v13mv",
+      "ens": "top8",
+      "triple_acc": 0.7550607287449392,
+      "nested_fixed_mean": 0.7546561168594036,
+      "ens_acc": 0.7029702970297029,
+      "n_members": 13
+    },
+    {
+      "pool": "sel9_plus_mv_top3",
+      "ens": "top12",
+      "triple_acc": 0.7550607287449392,
+      "nested_fixed_mean": 0.7544115326525551,
+      "ens_acc": 0.7049504950495049,
+      "n_members": 12
+    },
+    {
+      "pool": "sel9_plus_mv_top3",
+      "ens": "all_mean",
+      "triple_acc": 0.7550607287449392,
+      "nested_fixed_mean": 0.7544115326525551,
+      "ens_acc": 0.7049504950495049,
+      "n_members": 12
+    }
+  ],
+  "refine_top3": [
+    {
+      "pool": "classic9_mv",
+      "ens": "all_mean",
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.32499999999999996,
+        "wc": 0.125,
+        "T": 2.5,
+        "mode": "sameT",
+        "acc": 0.7550607287449392,
+        "n": 494
+      },
+      "full": 0.7550607287449392,
+      "nested": 0.7542210500214152,
+      "clears": false
+    },
+    {
+      "pool": "classic9_mv",
+      "ens": "all_acc_w",
+      "cfg": {
+        "wa": 0.5,
+        "wb": 0.375,
+        "wc": 0.125,
+        "T": 1.5,
+        "mode": "sameT",
+        "acc": 0.7530364372469636,
+        "n": 494
+      },
+      "full": 0.7530364372469636,
+      "nested": 0.7525596808007032,
+      "clears": false
+    },
+    {
+      "pool": "classic9_mv",
+      "ens": "top9",
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.32499999999999996,
+        "wc": 0.125,
+        "T": 2.5,
+        "mode": "sameT",
+        "acc": 0.7550607287449392,
+        "n": 494
+      },
+      "full": 0.7550607287449392,
+      "nested": 0.7542210500214152,
+      "clears": false
+    }
+  ],
+  "conf_cal": {
+    "full": 0.742914979757085,
+    "nested": 0.7429476341831789,
+    "thr": 0.4,
+    "w_aux": 0.25,
+    "T_ir": 1.5,
+    "cfg": {
+      "wa": 0.6,
+      "wb": 0.3,
+      "wc": 0.10000000000000003,
+      "T": 1.0
+    }
+  },
+  "next_roi": [
+    "Multi-view TTA + stronger seeds did not clear +0.01 nested gate",
+    "Consider longer train (epochs 48+) on best new seed only, or temporal-stride TTA",
+    "Avoid YOLO11n/Depth; stay ir_yolo_v4",
+    "If IR ens plateaus ~0.71-0.72, bottleneck may be Thermal/Mid fusion not IR"
+  ],
+  "elapsed_sec": 6380.8,
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  }
+}

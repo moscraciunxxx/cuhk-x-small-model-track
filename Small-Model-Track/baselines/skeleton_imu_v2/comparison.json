@@ -1,0 +1,38 @@
+{
+  "v1_holdout": 0.479,
+  "candidates": [
+    {
+      "name": "midfuse_v2b",
+      "mean_val_acc": 0.5050853925069481,
+      "std_val_acc": 0.05826910368539711,
+      "holdout": 0.5366336633663367
+    },
+    {
+      "name": "gru_attn",
+      "mean_val_acc": 0.4994490142031826,
+      "std_val_acc": 0.06024244960170696,
+      "holdout": 0.502970297029703
+    },
+    {
+      "name": "deepconv",
+      "mean_val_acc": 0.4778904419074511,
+      "std_val_acc": 0.04167052256471976,
+      "holdout": 0.5148514851485149
+    },
+    {
+      "name": "midfuse_v2a_balanced_sampler",
+      "mean_val_acc": 0.46168,
+      "std_val_acc": 0.05501379463370982,
+      "holdout": 0.4851
+    }
+  ],
+  "selected": "midfuse_v2b",
+  "delta_cv_vs_v1_holdout": 0.02608539250694808,
+  "delta_holdout_vs_v1": 0.057633663366336685,
+  "submission": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\skeleton_imu_v2\\submission_skeleton_imu_v2.csv",
+  "ensemble": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\skeleton_imu_v2\\submission_skeleton_imu_v2_ensemble.csv",
+  "ckpt": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\skeleton_imu_v2\\checkpoints\\best.pt",
+  "ckpt_mb": 8.355,
+  "params": 2072072,
+  "folder": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\skeleton_imu_v2"
+}

@@ -1,0 +1,187 @@
+{
+  "track": "v7_stgcn",
+  "model": "stgcn_fuse + latefuse MidFuse",
+  "n_params_stgcn_fuse": 1449180,
+  "holdout_stgcn_best": 0.4792079207920792,
+  "holdout_stgcn_cv_run": 0.4277227722772277,
+  "mean_cv_stgcn": 0.4571103988967754,
+  "std_cv_stgcn": 0.053673064174242405,
+  "folds_stgcn": [
+    {
+      "tag": "fold0",
+      "best_val_acc": 0.4154818325434439,
+      "n_train": 2298,
+      "n_val": 633,
+      "n_params": 1449180,
+      "ckpt": "checkpoints_cv\\best_fold0.pt",
+      "elapsed_sec": 365.38992285728455,
+      "val_users": [
+        4,
+        6,
+        8,
+        21
+      ],
+      "train_users": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "tag": "fold1",
+      "best_val_acc": 0.48643410852713176,
+      "n_train": 2415,
+      "n_val": 516,
+      "n_params": 1449180,
+      "ckpt": "checkpoints_cv\\best_fold1.pt",
+      "elapsed_sec": 377.2385878562927,
+      "val_users": [
+        17,
+        22,
+        24
+      ],
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        16,
+        18,
+        19,
+        20,
+        21,
+        23
+      ]
+    },
+    {
+      "tag": "fold2",
+      "best_val_acc": 0.49904397705544934,
+      "n_train": 2408,
+      "n_val": 523,
+      "n_params": 1449180,
+      "ckpt": "checkpoints_cv\\best_fold2.pt",
+      "elapsed_sec": 373.4525480270386,
+      "val_users": [
+        18,
+        19,
+        20
+      ],
+      "train_users": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "tag": "fold3",
+      "best_val_acc": 0.5116279069767442,
+      "n_train": 2286,
+      "n_val": 645,
+      "n_params": 1449180,
+      "ckpt": "checkpoints_cv\\best_fold3.pt",
+      "elapsed_sec": 363.32648062705994,
+      "val_users": [
+        2,
+        3,
+        16,
+        23
+      ],
+      "train_users": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
+      "tag": "fold4",
+      "best_val_acc": 0.3729641693811075,
+      "n_train": 2317,
+      "n_val": 614,
+      "n_params": 1449180,
+      "ckpt": "checkpoints_cv\\best_fold4.pt",
+      "elapsed_sec": 283.11667370796204,
+      "val_users": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "train_users": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "agreement_holdout": 0.5247524752475248,
+  "latefuse": {
+    "selected_alpha_stgcn": 0.5,
+    "oof_acc": 0.5234954657873042,
+    "oof_midfuse": 0.5032976092333058,
+    "oof_stgcn": 0.47444352844187965,
+    "oof_agreement": 0.5239076669414674,
+    "oof_delta_vs_v3": 0.02199546578730427,
+    "holdout_acc": 0.5425742574257426,
+    "holdout_midfuse": 0.5366336633663367,
+    "holdout_delta_vs_midfuse": 0.005940594059405946,
+    "holdout_agreement": 0.5247524752475248
+  },
+  "baseline_midfuse_holdout": 0.5366336633663367,
+  "baseline_v3_oof": 0.5015,
+  "clear_holdout_win": false,
+  "clearly_better_oof": true,
+  "ping_disk_saver": true,
+  "submission": "D:\\CUHK-X\\Small-Model-Track\\baselines\\v7_stgcn\\submission_v7_latefuse.csv",
+  "submission_overwrote_track": true,
+  "finished_at_unix": 1788797079.5655744
+}

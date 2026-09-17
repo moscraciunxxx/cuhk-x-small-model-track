@@ -1,0 +1,351 @@
+{
+  "tag": "ir_yolo11n_v1",
+  "gate": {
+    "hold_min": 0.7630364372469636,
+    "nested_min": 0.7630364372469636,
+    "min_disagree": 20
+  },
+  "detect_yolo11n": {
+    "train": {
+      "yolo": 2899,
+      "motion": 27,
+      "center": 7
+    },
+    "test": {
+      "yolo": 398,
+      "center": 4,
+      "motion": 3
+    }
+  },
+  "detect_yolov8n_v4": {
+    "train": {
+      "yolo": 2905,
+      "motion": 24,
+      "center": 4
+    },
+    "test": {
+      "yolo": 399,
+      "center": 4,
+      "motion": 2
+    }
+  },
+  "y11_members": {
+    "y11_seed42": 0.6772277227722773,
+    "y11_seed123": 0.6673267326732674,
+    "y11_seed7": 0.6673267326732674
+  },
+  "y11_ens_hold": 0.689108910891089,
+  "top_candidate": {
+    "source": "grid",
+    "pool": "classic9",
+    "ens": "top8",
+    "full": 0.7510121457489879,
+    "nested": 0.7502186605351547,
+    "cfg": {
+      "wa": 0.525,
+      "wb": 0.35,
+      "wc": 0.125,
+      "T": 3.0,
+      "acc": 0.7510121457489879,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "members": 9
+  },
+  "disagree_vs_v7": 11,
+  "clears_gate": false,
+  "wrote_csv": false,
+  "csv": null,
+  "keep_ir_v7": true,
+  "grid_top5": [
+    {
+      "pool": "classic9",
+      "ens": "top8",
+      "ens_acc": 0.7029702970297029,
+      "n_members": 9,
+      "triple_acc": 0.7510121457489879,
+      "triple_cfg": {
+        "wa": 0.525,
+        "wb": 0.35,
+        "wc": 0.125,
+        "T": 3.0,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed_mean": 0.7502186605351547,
+      "nested_fixed_folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.710691823899371,
+          "n": 159
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7722222222222223,
+          "n": 180
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7677419354838709,
+          "n": 155
+        }
+      ],
+      "nested_retune_mean": 0.7232918554586236,
+      "gate_hold": 0.7510121457489879,
+      "gate_nested": 0.7502186605351547,
+      "clears_metric_gate": false
+    },
+    {
+      "pool": "classic9_plus_y11",
+      "ens": "top11",
+      "ens_acc": 0.7069306930693069,
+      "n_members": 12,
+      "triple_acc": 0.7510121457489879,
+      "triple_cfg": {
+        "wa": 0.6000000000000001,
+        "wb": 0.32499999999999996,
+        "wc": 0.07499999999999996,
+        "T": 3.0,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed_mean": 0.7500281779040149,
+      "nested_fixed_folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.6981132075471698,
+          "n": 159
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7777777777777778,
+          "n": 180
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7741935483870968,
+          "n": 155
+        }
+      ],
+      "nested_retune_mean": 0.7193976691237799,
+      "gate_hold": 0.7510121457489879,
+      "gate_nested": 0.7500281779040149,
+      "clears_metric_gate": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "all_mean",
+      "ens_acc": 0.7089108910891089,
+      "n_members": 9,
+      "triple_acc": 0.7510121457489879,
+      "triple_cfg": {
+        "wa": 0.55,
+        "wb": 0.35,
+        "wc": 0.09999999999999998,
+        "T": 2.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed_mean": 0.7498658731768897,
+      "nested_fixed_folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.7169811320754716,
+          "n": 159
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7777777777777778,
+          "n": 180
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "n": 155
+        }
+      ],
+      "nested_retune_mean": 0.7212495209756318,
+      "gate_hold": 0.7510121457489879,
+      "gate_nested": 0.7498658731768897,
+      "clears_metric_gate": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "all_acc_w",
+      "ens_acc": 0.7089108910891089,
+      "n_members": 9,
+      "triple_acc": 0.7510121457489879,
+      "triple_cfg": {
+        "wa": 0.55,
+        "wb": 0.35,
+        "wc": 0.09999999999999998,
+        "T": 2.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed_mean": 0.7498658731768897,
+      "nested_fixed_folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.7169811320754716,
+          "n": 159
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7777777777777778,
+          "n": 180
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "n": 155
+        }
+      ],
+      "nested_retune_mean": 0.7233459570343319,
+      "gate_hold": 0.7510121457489879,
+      "gate_nested": 0.7498658731768897,
+      "clears_metric_gate": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "top9",
+      "ens_acc": 0.7089108910891089,
+      "n_members": 9,
+      "triple_acc": 0.7510121457489879,
+      "triple_cfg": {
+        "wa": 0.55,
+        "wb": 0.35,
+        "wc": 0.09999999999999998,
+        "T": 2.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "nested_fixed_mean": 0.7498658731768897,
+      "nested_fixed_folds": [
+        {
+          "leave": 8,
+          "te_acc": 0.7169811320754716,
+          "n": 159
+        },
+        {
+          "leave": 9,
+          "te_acc": 0.7777777777777778,
+          "n": 180
+        },
+        {
+          "leave": 24,
+          "te_acc": 0.7548387096774194,
+          "n": 155
+        }
+      ],
+      "nested_retune_mean": 0.7212495209756318,
+      "gate_hold": 0.7510121457489879,
+      "gate_nested": 0.7498658731768897,
+      "clears_metric_gate": false
+    }
+  ],
+  "refine_top5": [
+    {
+      "pool": "classic9",
+      "ens": "top8",
+      "best_nested": {
+        "cfg": {
+          "wa": 0.525,
+          "wb": 0.35,
+          "wc": 0.125,
+          "T": 3.0,
+          "mode": "sameT",
+          "acc": 0.7510121457489879,
+          "n": 494
+        },
+        "full": 0.7510121457489879,
+        "nested": 0.7502186605351547
+      },
+      "clears": false
+    },
+    {
+      "pool": "classic9_plus_y11",
+      "ens": "top11",
+      "best_nested": {
+        "cfg": {
+          "wa": 0.6,
+          "wb": 0.32499999999999996,
+          "wc": 0.07500000000000007,
+          "T": 3.0,
+          "mode": "sameT",
+          "acc": 0.7510121457489879,
+          "n": 494
+        },
+        "full": 0.7510121457489879,
+        "nested": 0.7500281779040149
+      },
+      "clears": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "all_mean",
+      "best_nested": {
+        "cfg": {
+          "wa": 0.55,
+          "wb": 0.35,
+          "wc": 0.09999999999999998,
+          "T": 2.5,
+          "mode": "sameT",
+          "acc": 0.7510121457489879,
+          "n": 494
+        },
+        "full": 0.7510121457489879,
+        "nested": 0.7498658731768897
+      },
+      "clears": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "all_acc_w",
+      "best_nested": {
+        "cfg": {
+          "wa": 0.55,
+          "wb": 0.35,
+          "wc": 0.09999999999999998,
+          "T": 2.5,
+          "mode": "sameT",
+          "acc": 0.7510121457489879,
+          "n": 494
+        },
+        "full": 0.7510121457489879,
+        "nested": 0.7498658731768897
+      },
+      "clears": false
+    },
+    {
+      "pool": "classic9",
+      "ens": "top9",
+      "best_nested": {
+        "cfg": {
+          "wa": 0.55,
+          "wb": 0.35,
+          "wc": 0.09999999999999998,
+          "T": 2.5,
+          "mode": "sameT",
+          "acc": 0.7510121457489879,
+          "n": 494
+        },
+        "full": 0.7510121457489879,
+        "nested": 0.7498658731768897
+      },
+      "clears": false
+    }
+  ],
+  "elapsed_s": 77.51118469238281,
+  "pack_note": "yolo11n.pt ~5.4MB + r2p1d18 fp16 ~60MB <=100MB OK",
+  "notes": [
+    "YOLO11n IR crop cache ir_yolo_11n_v1; detect ~98.8% vs v4 ~99.0% (proceed)",
+    "Do NOT auto-submit; parent decides",
+    "GPU freed after train"
+  ]
+}

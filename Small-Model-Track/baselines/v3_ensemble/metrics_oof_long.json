@@ -1,0 +1,78 @@
+{
+  "oof_accuracy": 0.49709996588195154,
+  "mean_fold_oof": 0.500847166912519,
+  "std_fold_oof": 0.05601173057294884,
+  "folds": [
+    {
+      "fold": 0,
+      "ckpt": "checkpoints\\best_fold0.pt",
+      "oof_acc": 0.45339652448657186,
+      "ckpt_val_acc": 0.45339652448657186,
+      "n_val": 633,
+      "val_users": [
+        4,
+        6,
+        8,
+        21
+      ]
+    },
+    {
+      "fold": 1,
+      "ckpt": "checkpoints\\best_fold1.pt",
+      "oof_acc": 0.5717054263565892,
+      "ckpt_val_acc": 0.5717054263565892,
+      "n_val": 516,
+      "val_users": [
+        17,
+        22,
+        24
+      ]
+    },
+    {
+      "fold": 2,
+      "ckpt": "checkpoints\\best_fold2.pt",
+      "oof_acc": 0.5411089866156787,
+      "ckpt_val_acc": 0.5411089866156787,
+      "n_val": 523,
+      "val_users": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "fold": 3,
+      "ckpt": "checkpoints\\best_fold3.pt",
+      "oof_acc": 0.517829457364341,
+      "ckpt_val_acc": 0.517829457364341,
+      "n_val": 645,
+      "val_users": [
+        2,
+        3,
+        16,
+        23
+      ]
+    },
+    {
+      "fold": 4,
+      "ckpt": "checkpoints\\best_fold4.pt",
+      "oof_acc": 0.4201954397394137,
+      "ckpt_val_acc": 0.4201954397394137,
+      "n_val": 614,
+      "val_users": [
+        1,
+        5,
+        7,
+        9
+      ]
+    }
+  ],
+  "n_ensemble_models": 5,
+  "ckpt_dir": "checkpoints",
+  "submission": "submission_v3_long_ensemble.csv",
+  "agreement_vs_single_v2": 0.6370370370370371,
+  "v2_cv_mean": 0.5050853925069481,
+  "v2_cv_std": 0.05826910368539711,
+  "v2_holdout": 0.5366336633663367,
+  "note": "OOF = softmax preds from each fold model on its GroupKFold val users; test = mean of 5 fold softmaxes"
+}

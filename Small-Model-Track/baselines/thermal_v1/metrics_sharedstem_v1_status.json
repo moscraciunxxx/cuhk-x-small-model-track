@@ -1,0 +1,98 @@
+{
+  "tag": "sharedstem_ir_depth_v1_deadend",
+  "finished_pt": "2026-09-09 04:04 PT",
+  "gpu_handoff": {
+    "waited_for_LMT": "emotion Depth+IR smoke40 on 3060; resumed after 0 MiB free",
+    "sharedstem_train": "seed42 ~67min (~01:53-04:00 PT), VRAM~2.4GB peak"
+  },
+  "size_design": {
+    "dual_indep_fp16_mb": 119.58,
+    "shared_siamese_fp16_mb": 59.83,
+    "hybrid_ir_compact_fp16_mb": 60.7,
+    "ch6_fp16_mb": 59.8,
+    "size_ok": "shared/hybrid/ch6 (+yolo~66MB total); dual ILLEGAL"
+  },
+  "results": {
+    "earlyfuse_ch6_seed42": {
+      "hold": 0.6356,
+      "nested": 0.6338
+    },
+    "shared_seed42": {
+      "hold": 0.6059405940594059,
+      "nested": 0.606668793638459,
+      "best_ep": 12,
+      "early_stop_ep": 20
+    },
+    "vs_ir_solo_members": "IR pool seeds ~0.65-0.68; shared WORSE than IR-alone"
+  },
+  "fuse_probe": {
+    "tag": "probe_sharedstem_fuse",
+    "shared_solo": 0.6059405940594059,
+    "replace_ir": {
+      "hold": 0.6882591093117408,
+      "nested": 0.6872962737539731,
+      "dis": 118,
+      "clear": false
+    },
+    "fuse3_shared_th_mid": {
+      "cfg": {
+        "wa": 0.15000000000000002,
+        "wb": 0.5499999999999999,
+        "wc": 0.30000000000000004,
+        "T": 2.5,
+        "acc": 0.6963562753036437,
+        "n": 494,
+        "mode": "sameT"
+      },
+      "hold": 0.6963562753036437,
+      "nested": 0.6948941637925204,
+      "dis": 99,
+      "clear": false
+    },
+    "fuse4": {
+      "cfg": {
+        "wa": 0.55,
+        "wb": 0.35000000000000003,
+        "wc": 0.1,
+        "wd": -8.326672684688674e-17,
+        "T": 2.5,
+        "acc": 0.7510121457489879,
+        "n": 494,
+        "mode": "sameT4"
+      },
+      "hold": 0.7510121457489879,
+      "nested": 0.7498117716011813,
+      "dis": 2,
+      "clear": false
+    },
+    "best_conf_gate": {
+      "thr": 0.25,
+      "w": 0.15,
+      "acc": 0.7165991902834008,
+      "nested": 0.7155857622686593,
+      "dis": 37,
+      "clear": false
+    },
+    "any_clear": false,
+    "wrote_csv": false,
+    "submit": "DO NOT - keep ir_v7",
+    "note": "sharedstem seed42 hopeless solo; fuse saturates like depth; pivot IR-only"
+  },
+  "gate": {
+    "min_hold": 0.7630364372469636,
+    "clear_win": false,
+    "wrote_csv": false
+  },
+  "ir_v7_still_best": {
+    "public": 0.69154,
+    "hold": 0.753,
+    "nested": 0.752
+  },
+  "verdict": "DEAD-END: size-legal dual/shared early-fuse underperforms IR solo; late-fuse wd->0 saturates. Pivot IR-only.",
+  "next_roi": [
+    "IR-only upgrade: new strong seeds on ir_yolo_v4 + retune fuse vs v7 gate",
+    "YOLO11n IR crop rebuild (ultralytics supports) then R2P1D-18 retrain \u2014 matches public ~0.71 notes; tradeoff=full cache rebuild time",
+    "Avoid r2plus1d34 (not in torchvision); avoid dual pack until distill-to-single"
+  ],
+  "submit": "DO NOT - keep ir_v7"
+}

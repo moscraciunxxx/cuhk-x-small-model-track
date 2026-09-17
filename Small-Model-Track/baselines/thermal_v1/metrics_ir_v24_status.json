@@ -1,0 +1,39 @@
+{
+  "tag": "ir_v25_focal_ft",
+  "outcome": "MISS_IN_PROGRESS",
+  "keep_ir_v7": true,
+  "wrote_csv": false,
+  "csv": null,
+  "gate": {
+    "hold_min": 0.758,
+    "nested_min": 0.758,
+    "min_disagree": 20
+  },
+  "best_public": {
+    "csv": "submission_ir_v7.csv",
+    "public": 0.69154,
+    "hold": 0.7530364372469636
+  },
+  "progress": {
+    "focal_classic_ens": 0.6812,
+    "ft_ce_ens3": 0.6871,
+    "focal_ft_ens2": 0.697,
+    "best_honest": 0.7423,
+    "best_full_blend": 0.753,
+    "best_cfg_note": "c9_0.4_ff_0.4_ft_0.2 full0.753 honest0.740; finegrid honest0.742; indepT full0.755 honest0.742"
+  },
+  "angles": {
+    "4_focal_ce": "DONE_MISS",
+    "6_ft_cache": "DONE yolo2930",
+    "7_ft_ce_cls": "DONE_MISS ens0.687",
+    "8_multi_swap": "MISS",
+    "10_focal_on_ft": "DONE_2SEED ens0.697 best_honest_contrib",
+    "11_focal_ft_more_seeds": "RUNNING s888/s11"
+  },
+  "next_roi": [
+    "Finish focal_ft seeds 888+11",
+    "X3D or t24 on FT crops",
+    "hold ir_v7 \u2014 no weak CSV"
+  ],
+  "updated_at": "2026-09-10 11:45:19 PT"
+}

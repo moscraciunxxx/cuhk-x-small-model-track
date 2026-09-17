@@ -1,0 +1,19 @@
+{
+  "holdout_acc": 0.5753968253968254,
+  "holdout_macro_f1": 0.5028,
+  "holdout_users": [
+    8,
+    9,
+    24
+  ],
+  "fp16_pack_mb": 59.85,
+  "yolo_mb": 6.25,
+  "total_approx_mb": 66.1,
+  "empty_test_fallback": 10,
+  "fallback_source": "skeleton_imu_v2/submission_skeleton_imu_v2_ensemble.csv",
+  "submission": "D:\\CUHK-X\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v1.csv",
+  "promoted_track_submission": "D:\\CUHK-X\\Small-Model-Track\\submission.csv",
+  "honest_midfuse_holdout_acc": 0.5228,
+  "depth_cnn_gru_holdout_acc": 0.2099,
+  "ckpt": "D:\\CUHK-X\\Small-Model-Track\\baselines\\thermal_v1\\checkpoints\\thermal_yolo_r2p1d18\\model_fp16.pt"
+}

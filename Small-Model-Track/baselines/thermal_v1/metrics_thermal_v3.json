@@ -1,0 +1,125 @@
+{
+  "holdout_acc_ensemble_best": 0.6031746031746031,
+  "holdout_macro_f1_ensemble_best": 0.5198877621440928,
+  "best_holdout_blend_key": "v2_trio",
+  "ensemble_search": {
+    "top3": {
+      "ens_acc": 0.5912698412698413,
+      "blend": {
+        "w": 0.6000000000000001,
+        "T": 3.0,
+        "acc": 0.6477732793522267,
+        "n": 494
+      },
+      "tags": [
+        "pool_seed2024",
+        "pool_seed99",
+        "v1"
+      ]
+    },
+    "top4": {
+      "ens_acc": 0.5892857142857143,
+      "blend": {
+        "w": 0.625,
+        "T": 3.0,
+        "acc": 0.6518218623481782,
+        "n": 494
+      },
+      "tags": [
+        "pool_seed2024",
+        "pool_seed99",
+        "v1",
+        "seed7"
+      ]
+    },
+    "top5": {
+      "ens_acc": 0.5932539682539683,
+      "blend": {
+        "w": 0.65,
+        "T": 3.0,
+        "acc": 0.6558704453441295,
+        "n": 494
+      },
+      "tags": [
+        "pool_seed2024",
+        "pool_seed99",
+        "v1",
+        "seed7",
+        "seed123"
+      ]
+    },
+    "v2_trio": {
+      "ens_acc": 0.6031746031746031,
+      "blend": {
+        "w": 0.625,
+        "T": 3.0,
+        "acc": 0.6740890688259109,
+        "n": 494
+      },
+      "tags": [
+        "v1",
+        "seed123",
+        "seed7"
+      ]
+    }
+  },
+  "member_scores": {
+    "pool_seed2024": 0.5813492063492064,
+    "pool_seed99": 0.5773809523809523,
+    "v1": 0.5753968253968254,
+    "seed7": 0.5674603174603174,
+    "seed123": 0.5654761904761905,
+    "pool_seed42": 0.5555555555555556
+  },
+  "holdout_acc_blend_primary": 0.6740890688259109,
+  "fuse_primary_holdout_tuned": {
+    "w": 0.625,
+    "T": 3.0,
+    "acc": 0.6740890688259109,
+    "n": 494
+  },
+  "oof_acc": 0.5433598659405111,
+  "oof_fuse": {
+    "w": 0.375,
+    "T": 2.5,
+    "acc": 0.7774869109947644,
+    "n": 2292
+  },
+  "honest_holdout_with_oof_weights": 0.6194331983805668,
+  "compromise_fuse": {
+    "w": 0.5,
+    "T": 2.75
+  },
+  "test_logits_source": "alldata_mean_from_train_v3",
+  "alldata_tags": [
+    "all_seed42",
+    "all_seed99",
+    "all_seed2024"
+  ],
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "submission": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v3.csv",
+  "submission_oof": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v3_oof.csv",
+  "submission_compromise": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v3_compromise.csv",
+  "submission_video": "D:\\Coding Compete\\CUHK-X Competition Small Model Track\\Small-Model-Track\\baselines\\thermal_v1\\submission_thermal_v3_video.csv",
+  "empty_fallback": 10,
+  "v2_blend_holdout": 0.6639676113360324,
+  "delta_primary_vs_v2": 0.010121457489878471,
+  "public_v2": 0.58706,
+  "method": "v3 finalize: alldata test logits + holdout-tuned MidFuse fuse on best pool ens; OOF/compromise alts",
+  "holdout_users": [
+    8,
+    9,
+    24
+  ],
+  "size_ok_under_100mb": true,
+  "notes": [
+    "PRIMARY submission_thermal_v3.csv uses holdout-tuned fuse (clear local lift) + alldata thermal logits",
+    "submission_thermal_v3_oof.csv uses GKF-OOF fuse weights (w~0.375) \u2014 may help public if MidFuse generalizes",
+    "submission_thermal_v3_compromise.csv averages holdout/OOF fuse params",
+    "Do not auto-submit; human upload",
+    "Best single seed pool_seed2024 holdout 0.5813; v2 trio still best for blend diversity",
+    "GKF OOF thermal alone 0.543; OOF blend inflated 0.777 because MidFuse strong on pool"
+  ]
+}

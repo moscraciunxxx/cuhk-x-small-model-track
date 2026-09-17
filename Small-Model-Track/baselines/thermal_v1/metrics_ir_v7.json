@@ -1,0 +1,74 @@
+{
+  "tag": "ir_v7",
+  "primary": "submission_ir_v7.csv",
+  "method": "all9 IR seeds logit-mean + Thermal v2_trio + MidFuse; finer same-T grid (T=2.5, wc~0.09)",
+  "holdout_acc": 0.7530364372469636,
+  "cfg": {
+    "wa": 0.56,
+    "wb": 0.35,
+    "wc": 0.09,
+    "T": 2.5,
+    "acc": 0.7530364372469636,
+    "n": 494,
+    "mode": "sameT"
+  },
+  "delta_vs_v6": 0.006072874493927127,
+  "nested_fixed_cfg": 0.7519623092355898,
+  "nested_v6_fixed": 0.7459,
+  "alt_accw": {
+    "csv": "submission_ir_v7_accw.csv",
+    "cfg": {
+      "wa": 0.54,
+      "wb": 0.34,
+      "wc": 0.12,
+      "T": 2.25,
+      "acc": 0.7510121457489879,
+      "n": 494,
+      "mode": "sameT"
+    },
+    "hold": 0.7510121457489879
+  },
+  "ir_members": {
+    "pool_seed11": 0.6772277227722773,
+    "pool_seed123": 0.6613861386138614,
+    "pool_seed2024": 0.6792079207920793,
+    "pool_seed42": 0.6752475247524753,
+    "pool_seed7": 0.6633663366336634,
+    "pool_seed99": 0.6673267326732674,
+    "pool_seed1": 0.6455445544554456,
+    "pool_seed333": 0.6554455445544555,
+    "pool_seed777": 0.6653465346534654
+  },
+  "ir_order": [
+    "pool_seed2024",
+    "pool_seed11",
+    "pool_seed42",
+    "pool_seed99",
+    "pool_seed777",
+    "pool_seed7",
+    "pool_seed123",
+    "pool_seed333",
+    "pool_seed1"
+  ],
+  "disagree_vs_v6": 3,
+  "disagree_accw_vs_v6": 7,
+  "empty_fallback": 0,
+  "promoted_track": "D:\\CUHK-X\\Small-Model-Track\\submission.csv",
+  "fp16_pack_mb": 59.85159111022949,
+  "yolo_mb": 6.246372222900391,
+  "total_approx_mb": 66.09796333312988,
+  "size_ok_under_100mb": true,
+  "notes": [
+    "PRIMARY hold 0.7530 (+0.0061 vs v6 0.7470) \u2014 CLEAR WIN",
+    "Fixed-cfg LOUO nested 0.752 > v6 nested 0.746 (re-tune-per-fold nested was pessimistic)",
+    "Weights near v6 (0.56/0.36/0.08@1.5) -> (0.56/0.35/0.09@2.5); mainly T refine",
+    "alt all_acc_w 0.7510 also clear; kept as submission_ir_v7_accw.csv",
+    "Do not Kaggle-submit from this script; <=100MB pack ok",
+    "Depth_Color skipped"
+  ],
+  "recommend_submit_order": [
+    "submission_ir_v7.csv (all9+triple hold 0.7530) \u2014 PRIMARY",
+    "submission_ir_v7_accw.csv \u2014 alt 0.7510",
+    "submission_ir_v6.csv \u2014 backup hold 0.7470"
+  ]
+}

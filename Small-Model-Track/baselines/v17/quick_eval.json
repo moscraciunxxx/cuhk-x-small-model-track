@@ -1,0 +1,255 @@
+{
+  "selected": {
+    "name": "solo_kd_a02",
+    "nested_oof": 0.6694146743610883,
+    "holdout": 0.601980198019802,
+    "keys": [
+      "kd_a02"
+    ],
+    "family": "eq"
+  },
+  "clear_win": false,
+  "top20": [
+    {
+      "name": "solo_kd_a02",
+      "nested_oof": 0.6694146743610883,
+      "holdout": 0.601980198019802,
+      "keys": [
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_c_kd3_kd_a02",
+      "nested_oof": 0.6681780708985985,
+      "holdout": 0.6158415841584158,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "conf_kd_kd_c_kd3_kd_a02",
+      "nested_oof": 0.667353668590272,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "conf_kd2_kd3_kd_a02",
+      "nested_oof": 0.6652926628194559,
+      "holdout": 0.6118811881188119,
+      "keys": [
+        "kd2",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "conf_kd_kd2_kd_c_kd_alt_kd_a02",
+      "nested_oof": 0.6648804616652927,
+      "holdout": 0.6217821782178218,
+      "keys": [
+        "kd",
+        "kd2",
+        "kd_c",
+        "kd_alt",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "conf_kd_kd_a02",
+      "nested_oof": 0.6648804616652927,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "eq_kd_kd3_kd_a02",
+      "nested_oof": 0.6648804616652927,
+      "holdout": 0.6118811881188119,
+      "keys": [
+        "kd",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_c_kd_alt_kd3_kd_a02",
+      "nested_oof": 0.6644682605111294,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd_alt",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "conf_kd_kd_c_kd_alt_kd3_kd_a02",
+      "nested_oof": 0.6644682605111294,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd_alt",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "eq_kd2_kd3_kd_a02",
+      "nested_oof": 0.6644682605111294,
+      "holdout": 0.6118811881188119,
+      "keys": [
+        "kd2",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd2_kd_c_kd_alt_kd_a02",
+      "nested_oof": 0.6640560593569662,
+      "holdout": 0.6217821782178218,
+      "keys": [
+        "kd",
+        "kd2",
+        "kd_c",
+        "kd_alt",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_a02",
+      "nested_oof": 0.6640560593569662,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_alt_kd_a02",
+      "nested_oof": 0.6640560593569662,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_alt",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_c_kd_alt_kd_a02",
+      "nested_oof": 0.6636438582028029,
+      "holdout": 0.6277227722772277,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd_alt",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd_c_kd_a02",
+      "nested_oof": 0.6636438582028029,
+      "holdout": 0.6257425742574257,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "eq_kd_kd2_kd_c_kd_alt_kd3_kd_a02",
+      "nested_oof": 0.6636438582028029,
+      "holdout": 0.6198019801980198,
+      "keys": [
+        "kd",
+        "kd2",
+        "kd_c",
+        "kd_alt",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "conf_kd_kd2_kd_c_kd3_kd_a02",
+      "nested_oof": 0.6636438582028029,
+      "holdout": 0.6158415841584158,
+      "keys": [
+        "kd",
+        "kd2",
+        "kd_c",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "conf_kd_kd3_kd_a02",
+      "nested_oof": 0.6636438582028029,
+      "holdout": 0.6118811881188119,
+      "keys": [
+        "kd",
+        "kd3",
+        "kd_a02"
+      ],
+      "family": "conf"
+    },
+    {
+      "name": "eq_kd_kd_c_kd3",
+      "nested_oof": 0.6632316570486397,
+      "holdout": 0.6237623762376238,
+      "keys": [
+        "kd",
+        "kd_c",
+        "kd3"
+      ],
+      "family": "eq"
+    },
+    {
+      "name": "conf_kd_kd_alt_kd_a02",
+      "nested_oof": 0.6632316570486397,
+      "holdout": 0.6178217821782178,
+      "keys": [
+        "kd",
+        "kd_alt",
+        "kd_a02"
+      ],
+      "family": "conf"
+    }
+  ],
+  "n": 120,
+  "branches": [
+    "kd",
+    "kd2",
+    "kd_c",
+    "kd_alt",
+    "kd3",
+    "kd_a02"
+  ]
+}

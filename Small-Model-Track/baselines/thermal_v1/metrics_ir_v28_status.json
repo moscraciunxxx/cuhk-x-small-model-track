@@ -1,0 +1,78 @@
+﻿{
+    "track_submission_hash_match_v7":  true,
+    "csv":  null,
+    "track_submission_restored_to_v7":  true,
+    "tag":  "ir_v28_t24_tta",
+    "n_clear_better_than_v7":  0,
+    "public_submit":  null,
+    "wrote_csv":  false,
+    "keep_ir_v7":  true,
+    "strongb_final":  {
+                          "best_ep":  6,
+                          "verdict":  "MISS_below_0.69_no_safe_fuse",
+                          "prior_v24_s42":  0.69703,
+                          "log":  "logs/train_t24_strongb_s42.log",
+                          "best":  0.663366,
+                          "ckpt":  "checkpoints/ir_yolo_r2p1d18_focal_ft_t24_strongb",
+                          "early_stop_ep":  18
+                      },
+    "v7_reproduce":  {
+                         "full":  0.753036,
+                         "nested_fixed":  0.751962
+                     },
+    "promote_gate":  {
+                         "disagree_vs_v7_max":  15,
+                         "nested_fixed_min":  0.75196,
+                         "note":  "ens4 mid breaks v7",
+                         "mid":  "classic_aligned_mid"
+                     },
+    "verdict":  "TTA on T24 s42 does not lift fuse past v7 under SAFE gate; keep ir_v7",
+    "best_small_dis_non_v7":  {
+                                  "delta":  -0.00185,
+                                  "ir":  "cgate15_t42bf/t42bft/ff thr0.45-0.65",
+                                  "dis":  6,
+                                  "nested_fixed":  0.75011,
+                                  "full":  0.75101
+                              },
+    "next_roi":  [
+                     "KEEP submission_ir_v7.csv / track submission.csv — no kaggle submit",
+                     "Avoid large-disagree fuses (v26 lesson)",
+                     "GPU free; yield to HOTC/LMT if claimed",
+                     "Optional later: different IR backbone/recipe only if capacity; do not chase mild TTA"
+                 ],
+    "updated_at":  "2026-09-11 05:48:36 PT",
+    "outcome":  "MISS_KEEP_V7_NO_SUBMIT",
+    "best_public":  {
+                        "csv":  "submission_ir_v7.csv",
+                        "public":  0.69154,
+                        "note":  "ir_v26 public 0.67164 WORSE"
+                    },
+    "best_near_miss":  {
+                           "delta":  -0.00014,
+                           "nested_fixed":  0.75183,
+                           "note":  "just under gate 0.75196",
+                           "dis":  13,
+                           "ir":  "c9_0.80_t42bf_0.20 near",
+                           "full":  0.75304
+                       },
+    "n_clear_including_v7_identity":  1,
+    "tta_seed_hold":  {
+                          "2025":  {
+                                       "bft":  0.6356,
+                                       "bf":  0.6693,
+                                       "base":  0.6713
+                                   },
+                          "42":  {
+                                     "bft":  0.6594,
+                                     "note":  "flip/trev hurt vs base",
+                                     "bf":  0.6891,
+                                     "base":  0.697
+                                 },
+                          "888":  {
+                                      "bft":  0.6554,
+                                      "note":  "flip slight lift solo; still weak for fuse",
+                                      "bf":  0.6832,
+                                      "base":  0.6792
+                                  }
+                      }
+}
